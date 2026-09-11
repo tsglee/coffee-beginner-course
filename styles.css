@@ -54,7 +54,8 @@ a { color: var(--accent-deep); }
 
 .hero { position: relative; min-height: min(92vh, 820px); display: grid; align-items: end; color: #fff8f0; overflow: hidden; }
 .hero-media { position: absolute; inset: 0; }
-.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 38% 26%; }
+.hero-media picture, .hero-media img { width: 100%; height: 100%; display: block; }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 42% 28%; }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,12,8,.25) 0%, rgba(20,12,8,.35) 40%, rgba(20,12,8,.78) 100%); }
 .hero-content { position: relative; z-index: 1; padding: 7rem 0 3.5rem; max-width: 760px; margin-left: max(1rem, calc((100% - var(--max)) / 2)); margin-right: auto; width: min(100% - 2rem, 760px); }
 .eyebrow { margin: 0 0 .85rem; font-weight: 700; letter-spacing: .08em; font-size: .86rem; text-transform: none; color: #efd2b0; }
@@ -155,8 +156,10 @@ h2 { margin: 0 0 .75rem; font-family: var(--serif); font-size: clamp(1.7rem, 3.2
   .mosaic .m-wide { grid-column: auto; }
 }
 @media (max-width: 860px) {
-  .hero { min-height: min(76vh, 640px); }
-  .hero-media img { object-position: 28% 18%; }
+  .hero { min-height: min(88vh, 760px); }
+  .hero-media img { object-position: center 20%; }
+
+
   .nav-toggle { display: flex; }
   .site-nav { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0; padding: .75rem 1rem 1rem; background: rgba(244,235,224,.98); border-bottom: 1px solid var(--line); }
   .site-nav.open { display: flex; }
@@ -176,3 +179,8 @@ h2 { margin: 0 0 .75rem; font-family: var(--serif); font-size: clamp(1.7rem, 3.2
 .story-photos .shot.tall img { height: 460px; object-fit: cover; object-position: center top; }
 
 .instructor-card img[alt="講師露露"] { object-position: 50% 18%; }
+
+.hero-media picture {
+  position: absolute;
+  inset: 0;
+}
