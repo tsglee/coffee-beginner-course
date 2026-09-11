@@ -13,7 +13,7 @@ python3 -m http.server 8765
 
 ## LINE 連結
 
-在 `index.html` 搜尋 `REPLACE_ME`，換成真實 LINE 好友網址。
+LINE 加好友連結已設為 `https://lin.ee/82NRV6w`（官方「加入好友」按鈕）。
 
 ## 示意心得
 
