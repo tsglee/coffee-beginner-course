@@ -1,38 +1,24 @@
-# 手沖咖啡初階班｜一頁式宣傳網站
+# 手沖咖啡初階班｜一頁式宣傳網站（視覺加強版）
 
-新北林口小班制咖啡初階課的靜態宣傳頁（繁體中文）。
+新北林口小班制咖啡初階課的靜態宣傳頁（繁體中文），含教室／講師照片與示意學員心得。
 
 ## 本地預覽
 
-直接用瀏覽器開啟 `index.html`，或在專案目錄執行：
-
 ```bash
-python3 -m http.server 8080
+cd ~/Documents/coffee-beginner-course
+python3 -m http.server 8765
 ```
 
-然後打開 http://localhost:8080
+打開 http://127.0.0.1:8765/
 
-## 換成真實 LINE 連結
+## LINE 連結
 
-在 `index.html` 找到 id 為 `line-cta` 的按鈕，把：
+在 `index.html` 搜尋 `REPLACE_ME`，換成真實 LINE 好友網址。
 
-`https://line.me/ti/p/REPLACE_ME`
+## 示意心得
 
-改成你們的 LINE 好友／官方帳號邀請網址。也可以搜尋整份檔案中的 `REPLACE_ME`。
+頁面上「學員心得」20 則為**範例／示意文案**，方便預覽版面，請替換成真實學員回饋後再正式對外使用。
 
-## GitHub Pages（可選）
+## 圖片
 
-1. Repo Settings → Pages
-2. Source 選 Deploy from a branch
-3. Branch 選 `main` / root
-4. 儲存後即可用公開網址（實際網址以 GitHub 顯示為準）
-
-若要以 Pages 公開，記得把 repo 設為 Public，或使用 GitHub Pro 的 private Pages。
-
-## 課程資訊摘要
-
-- 學費：NT$6,800／人
-- 時數：一天六小時
-- 人數：最多四人；一人也可開班
-- 講師：阿勳、露露（CSCA 台灣咖啡協會證照）
-- 地點：新北市林口區
+`images/` 內為課程提供之照片之網頁優化版本。
