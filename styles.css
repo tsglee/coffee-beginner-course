@@ -166,7 +166,6 @@ h2 { margin: 0 0 .75rem; font-family: var(--serif); font-size: clamp(1.7rem, 3.2
   .site-nav a { padding: .75rem .4rem; border-bottom: 1px solid var(--line); }
   .site-nav a.btn { margin-top: .5rem; border-bottom: none; justify-content: center; }
   .story-grid, .story-photos, .learn-layout, .instructor-grid, .outcome-grid, .details-panel, .mosaic, .t-grid, .detail-list { grid-template-columns: 1fr; }
-  .hero-content { padding-top: 6rem; }
   .shot.tall img, .shot:not(.tall) img, .instructor-card img, .feature-card img { height: 320px; }
   .mosaic figure, .mosaic img, .mosaic .m-wide, .mosaic .m-wide img { min-height: 220px; }
 }
@@ -338,5 +337,48 @@ h2 { margin: 0 0 .75rem; font-family: var(--serif); font-size: clamp(1.7rem, 3.2
 @media (max-width: 860px) {
   .promo-inner { padding: 1.6rem 1.1rem 1.8rem; text-align: left; }
   .promo-points { justify-content: flex-start; }
+}
+
+@media (max-width: 860px) {
+  .hero {
+    min-height: min(92vh, 820px);
+    align-items: end;
+  }
+  .hero-media img {
+    object-position: center 12%;
+  }
+  .hero-shade {
+    background: linear-gradient(
+      180deg,
+      rgba(20, 12, 8, 0.08) 0%,
+      rgba(20, 12, 8, 0.12) 38%,
+      rgba(20, 12, 8, 0.55) 62%,
+      rgba(20, 12, 8, 0.88) 100%
+    );
+  }
+  .hero-content {
+    padding: 0 0 1.6rem;
+    margin-top: clamp(12rem, 46vh, 28rem);
+    width: min(100% - 2rem, 760px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content h1 {
+    font-size: clamp(1.55rem, 7vw, 2rem);
+    margin-bottom: 0.65rem;
+  }
+  .hero-content .lead {
+    font-size: 0.98rem;
+    margin-bottom: 0.9rem;
+  }
+  .hero-content .eyebrow {
+    margin-bottom: 0.5rem;
+  }
+  .hero-content .chips {
+    margin-bottom: 1rem;
+  }
+  .hero-actions {
+    gap: 0.55rem;
+  }
 }
 
