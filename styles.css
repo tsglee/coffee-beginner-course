@@ -382,3 +382,54 @@ h2 { margin: 0 0 .75rem; font-family: var(--serif); font-size: clamp(1.7rem, 3.2
   }
 }
 
+.camp-outcomes {
+  margin: 0 0 1.6rem;
+  padding: 1.4rem 1.3rem 1.5rem;
+  border-radius: 24px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.camp-kicker {
+  margin: 0 0 1rem;
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+.camp-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+.camp-list li {
+  margin: 0;
+  padding: 1rem 0.7rem;
+  border-radius: 18px;
+  background: #f7efe4;
+  color: var(--espresso);
+  font-weight: 700;
+  line-height: 1.45;
+}
+.camp-list span {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: var(--serif);
+  font-size: 2rem;
+  color: var(--accent-deep);
+  line-height: 1;
+}
+.camp-close {
+  margin: 1.15rem 0 0;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  color: var(--espresso);
+  font-weight: 700;
+}
+@media (max-width: 860px) {
+  .camp-list { grid-template-columns: 1fr; }
+}
+
