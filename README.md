@@ -37,3 +37,5 @@ GitHub Pages 從 `main` 分支根目錄發布；`index.html` 為已建置正式�
 舊網站保留於 Git 歷史，替換前的版本為 `a107367`。需要回復時可對新版發布提交執行 `git revert`，再推送 `main`，避免重寫歷史。
 
 報名洽詢：https://lin.ee/5bkhZu1
+
+天空藍版同步相同品牌、Logo 與課程資訊，獨立公開於 https://tsglee.github.io/coffee-beginner-course/sky/。正式首頁沿用選定的 Stitch 版；兩頁的頁尾皆提供 LINE 洽詢。
