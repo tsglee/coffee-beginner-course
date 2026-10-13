@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>POUR &amp; DISCOVER / 阿勳 &amp; 露露・手沖體驗課</title>
+<!-- Google Fonts: Noto Serif TC, Noto Sans TC, Space Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&amp;family=Noto+Serif+TC:wght@400;500;600;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Noto+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#00272e",
+            "secondary-fixed-dim": "#eabf8a",
+            "on-background": "#1c1c17",
+            "surface-bright": "#fdf9f1",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#333a3c",
+            "inverse-on-surface": "#f4f0e8",
+            "on-tertiary-fixed": "#161d1f",
+            "inverse-primary": "#a3ced7",
+            "surface-dim": "#dddad2",
+            "tertiary": "#1d2426",
+            "primary-fixed-dim": "#a3ced7",
+            "surface": "#fdf9f1",
+            "surface-container": "#f1ede5",
+            "inverse-surface": "#31302b",
+            "surface-variant": "#e6e2da",
+            "surface-container-highest": "#e6e2da",
+            "on-surface-variant": "#41484a",
+            "on-secondary-fixed-variant": "#5e4117",
+            "tertiary-fixed": "#dde4e6",
+            "on-primary-fixed": "#001f25",
+            "on-tertiary-container": "#9ca3a6",
+            "on-primary-container": "#7fa9b2",
+            "on-surface": "#1c1c17",
+            "on-tertiary-fixed-variant": "#41484a",
+            "surface-container-high": "#ece8e0",
+            "error": "#ba1a1a",
+            "surface-tint": "#3b656d",
+            "secondary-fixed": "#ffddb5",
+            "on-secondary-fixed": "#2a1800",
+            "outline-variant": "#c0c8ca",
+            "secondary-container": "#ffd39c",
+            "secondary": "#79582c",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#bfeaf4",
+            "background": "#fdf9f1",
+            "on-secondary-container": "#79592d",
+            "primary-container": "#103e46",
+            "tertiary-fixed-dim": "#c0c8ca",
+            "surface-container-low": "#f7f3eb",
+            "on-secondary": "#ffffff",
+            "outline": "#71787a",
+            "on-primary-fixed-variant": "#224d55",
+            "on-error": "#ffffff",
+            "on-primary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "on-error-container": "#93000a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "5rem",
+            "space-lg": "3rem",
+            "space-sm": "0.75rem",
+            "margin-mobile": "1.5rem",
+            "margin": "4rem",
+            "space-xs": "0.375rem",
+            "gutter": "2rem",
+            "gutter-mobile": "1rem",
+            "space-md": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Noto Serif", "Noto Serif TC", "serif"],
+            "display-hero": ["Noto Serif", "Noto Serif TC", "serif"],
+            "body-lead": ["Noto Sans", "Noto Sans TC", "sans-serif"],
+            "quote-editorial": ["Noto Serif", "Noto Serif TC", "serif"],
+            "headline-sm": ["Noto Serif", "Noto Serif TC", "serif"],
+            "headline-lg": ["Noto Serif", "Noto Serif TC", "serif"],
+            "body-md": ["Noto Sans", "Noto Sans TC", "sans-serif"],
+            "headline-md": ["Noto Serif", "Noto Serif TC", "serif"],
+            "label-chapter": ["Space Mono", "monospace"],
+            "label-brass": ["Space Mono", "monospace"],
+            "display-hero-mobile": ["Noto Serif", "Noto Serif TC", "serif"],
+            "body-sm": ["Noto Sans", "Noto Sans TC", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-lg-mobile": ["28px", { "lineHeight": "38px", "letterSpacing": "0.03em", "fontWeight": "400" }],
+            "display-hero": ["56px", { "lineHeight": "68px", "letterSpacing": "0.06em", "fontWeight": "400" }],
+            "body-lead": ["17px", { "lineHeight": "32px", "letterSpacing": "0.02em", "fontWeight": "300" }],
+            "quote-editorial": ["22px", { "lineHeight": "40px", "letterSpacing": "0.05em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "30px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-lg": ["38px", { "lineHeight": "48px", "letterSpacing": "0.04em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "28px", "letterSpacing": "0.015em", "fontWeight": "400" }],
+            "headline-md": ["26px", { "lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "label-chapter": ["11px", { "lineHeight": "14px", "letterSpacing": "0.15em", "fontWeight": "400" }],
+            "label-brass": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "46px", "letterSpacing": "0.04em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Subtle editorial hairlines and custom touches */
+    .hairline-brass {
+      border-color: rgba(188, 149, 99, 0.4);
+    }
+    .hairline-dark {
+      border-color: rgba(16, 62, 70, 0.15);
+    }
+    .brass-badge {
+      border: 1px solid #BC9563;
+      letter-spacing: 0.15em;
+    }
+    .editorial-mat {
+      background-color: #FAF8F4;
+      border: 1px solid rgba(16, 62, 70, 0.12);
+    }
+    /* Smooth custom focus and transitions */
+    input:focus, select:focus {
+      outline: none;
+      border-color: #103E46;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-fixed selection:text-primary">
+<!-- ========================================== -->
+<!-- SHARED COMPONENT: TopNavBar                -->
+<!-- ========================================== -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/90 dark:bg-primary/95 backdrop-blur-md border-b border-secondary/30 dark:border-secondary/20 transition-all duration-300 ease-out">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin max-w-7xl mx-auto py-space-sm">
+<!-- Brand Logo Anchor -->
+<a class="font-headline-sm text-headline-sm text-primary dark:text-surface tracking-wider font-bold" href="#">
+        POUR &amp; DISCOVER / 阿勳 &amp; 露露
+      </a>
+<!-- Desktop Navigation Cluster -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant dark:text-outline-variant font-label-brass text-label-brass hover:text-secondary dark:hover:text-secondary-fixed pb-1 transition-colors duration-200" href="#philosophy">
+          PHILOSOPHY / 理念
+        </a>
+<a class="text-secondary dark:text-secondary-fixed border-b border-secondary font-label-brass text-label-brass pb-1 transition-colors duration-200" href="#curriculum">
+          CURRICULUM / 課程章節
+        </a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-brass text-label-brass hover:text-secondary dark:hover:text-secondary-fixed pb-1 transition-colors duration-200" href="#technique">
+          TECHNIQUE / 沖煮工藝
+        </a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-brass text-label-brass hover:text-secondary dark:hover:text-secondary-fixed pb-1 transition-colors duration-200" href="#reservation">
+          RESERVATION / 預約席位
+        </a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center space-x-4">
+<a class="hidden lg:inline-block font-label-brass text-label-brass text-primary dark:text-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 underline underline-offset-4" href="#curriculum">
+          課程簡章
+        </a>
+<a class="bg-primary text-surface px-5 py-2.5 font-label-brass text-label-brass hover:bg-tertiary transition-colors duration-200 flex items-center gap-1.5 border border-primary" href="https://lin.ee/5bkhZu1" rel="noopener noreferrer" target="_blank">
+          立即預約席次
+        </a>
+<span class="material-symbols-outlined text-primary dark:text-surface cursor-pointer text-xl hidden sm:inline-block" data-icon="bookmark_border">bookmark_border</span>
+</div>
+</div>
+</header>
+<main>
+<!-- ========================================== -->
+<!-- HERO SECTION                               -->
+<!-- ========================================== -->
+<section class="relative min-h-[90vh] md:min-h-[850px] flex items-center overflow-hidden bg-primary">
+<!-- Full Background Image with Cinematic Overlays -->
+<div class="absolute inset-0 z-0">
+<img alt="Artisanal pour over coffee ritual with steaming V60 dripper and brass gooseneck kettle on rustic table" class="w-full h-full object-cover object-right md:object-center opacity-85 scale-105 transform motion-safe:transition-transform motion-safe:duration-1000" src="https://lh3.googleusercontent.com/aida/AEtjO1XRmKPL4QduR3OePmBqrBSkWJpRQrDrA8G5qtp49HJSK5U88eLrQhjrJW2BF91a3Jd2mJs3pcrGiFzMbbtxYPsJL3K3YnXu5Tq3yOPNQ40ldobiZCWNfACcOYoYIHdU2JW7RRD_89wgVjO3XrGlI5pE5wu-TXgcBJzqXrrOLS_vhw6eEUgwtSlSEeT0lPZAXMrQDFBSivp3xjI-5su1cTaYtYdHEJ5oRQEL4CYuceouZixXb53sxLBw"/>
+<!-- Editorial Deep Teal Gradient Overlays -->
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/40"></div>
+</div>
+<!-- Hero Editorial Content Grid -->
+<div class="relative z-10 max-w-7xl mx-auto w-full px-margin-mobile md:px-margin py-space-xl grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-8 lg:col-span-7 text-surface">
+<!-- Monograph Chapter Indicator -->
+<div class="inline-flex items-center gap-2 mb-6 border border-secondary-fixed-dim/40 px-3 py-1 bg-primary/40 backdrop-blur-sm">
+<span class="w-1.5 h-1.5 bg-secondary-fixed-dim inline-block"></span>
+<span class="font-label-brass text-label-brass text-secondary-fixed tracking-widest">
+              MONOGRAPH NO. 04 / SPECIALTY WORKSHOP
+            </span>
+</div>
+<!-- Main Value Proposition -->
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-surface-bright mb-6 leading-tight font-normal">
+            新手也能照著做，<br/>
+<span class="italic font-quote-editorial text-secondary-fixed-dim">沖出自己的</span>好咖啡。
+          </h1>
+<!-- Supporting Statement -->
+<p class="font-body-lead text-body-lead text-surface-container/90 mb-10 max-w-2xl font-light">
+            四小時，從手沖 SOP 到世界冠軍 4:6 沖法，學會調整風味，也學會挑豆。以工藝之眼拆解注水與時間，還原產區最初的風土清香。
+          </p>
+<!-- Metadata Badges: Pricing, Duration, Experience -->
+<div class="grid grid-cols-3 gap-3 md:gap-4 max-w-lg mb-10 border-t border-b border-surface-variant/20 py-4">
+<div class="border-r border-surface-variant/20 pr-3">
+<span class="block font-label-chapter text-label-chapter text-secondary-fixed-dim mb-1">TUITION</span>
+<span class="font-headline-sm text-headline-sm text-surface-bright">NT$1,800</span>
+<span class="text-xs text-outline-variant">／人</span>
+</div>
+<div class="border-r border-surface-variant/20 pr-3">
+<span class="block font-label-chapter text-label-chapter text-secondary-fixed-dim mb-1">DURATION</span>
+<span class="font-headline-sm text-headline-sm text-surface-bright">四小時</span>
+<span class="text-xs text-outline-variant">沉浸精修</span>
+</div>
+<div>
+<span class="block font-label-chapter text-label-chapter text-secondary-fixed-dim mb-1">PREREQUISITE</span>
+<span class="font-headline-sm text-headline-sm text-surface-bright">零經驗</span>
+<span class="text-xs text-outline-variant">皆可輕鬆參加</span>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+<a class="inline-flex justify-center items-center px-8 py-4 bg-secondary-fixed-dim text-primary font-label-brass text-label-brass hover:bg-surface-bright transition-all duration-300 shadow-sm text-center" href="https://lin.ee/5bkhZu1" rel="noopener noreferrer" target="_blank">
+              LINE 詢問開課時間
+              <span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="inline-flex justify-center items-center px-8 py-4 border border-surface-variant/40 text-surface hover:border-secondary-fixed-dim hover:text-secondary-fixed-dim font-label-brass text-label-brass transition-all duration-300 text-center" href="#curriculum">
+              看看課程內容
+            </a>
+</div>
+</div>
+<!-- Atmospheric Right Spatial Breather with Subtle Coordinate Label -->
+<div class="hidden md:flex md:col-span-4 lg:col-span-5 justify-end items-end h-full">
+<div class="text-right text-surface/40 font-label-chapter text-label-chapter space-y-1">
+<p>POUR PROFILE : V60 CERAMIC</p>
+<p>WATER RATIO : 1:15 GOLDEN</p>
+<p>EXTRACTION TEMP : 91.5°C</p>
+<p class="text-secondary-fixed-dim pt-2">TAIPEI / NEW TAIPEI ATELIER</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- PHILOSOPHY / INTRO STATEMENT               -->
+<!-- ========================================== -->
+<section class="py-space-xl border-b border-primary/10 bg-surface" id="philosophy">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-baseline">
+<div class="md:col-span-4">
+<div class="inline-block border-l-2 border-secondary pl-3">
+<span class="font-label-chapter text-label-chapter text-secondary tracking-widest block mb-1">PROLOGUE / 序言</span>
+<h2 class="font-headline-md text-headline-md text-primary font-medium">一杯咖啡的凝神片刻</h2>
+</div>
+</div>
+<div class="md:col-span-8 space-y-6 text-on-surface-variant">
+<p class="font-body-lead text-body-lead text-primary font-normal leading-relaxed">
+              「手沖不是繁複的化學公式，而是對生活細微變化的敏銳傾聽。」
+            </p>
+<p class="font-body-md text-body-md leading-relaxed">
+              在日常喧囂中，水流落入咖啡粉層那一刻的悶蒸（Bloom），是時間最溫柔的凝滯。我們屏除過度玄虛的形容詞，從基礎流速、水溫與顆粒度出發，帶你透徹理解每一滴咖啡液體的生成邏輯。不需要昂貴器材，只要掌握物理核心，在家就能重複還原一杯層次分明、回甘悠長的好咖啡。
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 1: FOUR CURRICULUM MODULES         -->
+<!-- ========================================== -->
+<section class="py-space-xl bg-background" id="curriculum">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-8 mb-12 border-b border-primary/15">
+<div>
+<span class="font-label-chapter text-label-chapter text-secondary tracking-widest block mb-2">CURRICULUM MODULES</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">四大課程章節</h2>
+</div>
+<p class="mt-4 md:mt-0 font-body-sm text-body-sm text-on-surface-variant max-w-md">
+            循序漸進的實作體系。以極簡物理概念建立手感，並以科學量化公式賦予每位學員自主調味的自由度。
+          </p>
+</div>
+<!-- Asymmetric Editorial Chapters -->
+<div class="space-y-16">
+<!-- CHAPTER 01 -->
+<article class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start p-6 md:p-8 bg-surface-bright border border-primary/10">
+<div class="md:col-span-4 border-l-2 border-secondary pl-4">
+<span class="font-label-brass text-label-brass text-secondary">CHAPTER 01</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1 mb-3">新手手沖 SOP</h3>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="font-label-brass text-[10px] uppercase px-2 py-0.5 border border-primary/20 text-primary">注水流速</span>
+<span class="font-label-brass text-[10px] uppercase px-2 py-0.5 border border-primary/20 text-primary">悶蒸排氣</span>
+<span class="font-label-brass text-[10px] uppercase px-2 py-0.5 border border-primary/20 text-primary">均勻萃取</span>
+</div>
+</div>
+<div class="md:col-span-8 space-y-4">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                掌握注水水流穩定度、濾紙貼合、燜蒸節奏與均勻萃取基礎。建立標準化手沖流程，讓沖煮不再憑感覺，每次都能沖出穩定一致的好品質。
+              </p>
+<!-- SOP Breakdown Mini Diagram -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-primary/10 text-xs text-on-surface-variant">
+<div class="p-3 bg-surface-container-low border border-primary/5">
+<span class="font-label-brass text-secondary block mb-1">STEP 01</span>
+<span class="font-medium text-primary block mb-1">潤濕與貼合</span>
+                  溫壺去紙味，校正濾紙中心線垂直度。
+                </div>
+<div class="p-3 bg-surface-container-low border border-primary/5">
+<span class="font-label-brass text-secondary block mb-1">STEP 02</span>
+<span class="font-medium text-primary block mb-1">30秒黃金悶蒸</span>
+                  均勻浸潤粉層，觀察二氧化碳均勻呼吸。
+                </div>
+<div class="p-3 bg-surface-container-low border border-primary/5">
+<span class="font-label-brass text-secondary block mb-1">STEP 03</span>
+<span class="font-medium text-primary block mb-1">同心圓注水</span>
+                  控管水柱高度與擾動，避免邊緣通道效應。
+                </div>
+</div>
+</div>
+</article>
+<!-- CHAPTER 02 (with 4:6 Diagram) -->
+<article class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start p-6 md:p-8 bg-surface-bright border border-primary/10">
+<div class="md:col-span-4 border-l-2 border-secondary pl-4">
+<span class="font-label-brass text-label-brass text-secondary">CHAPTER 02</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1 mb-3">粕谷哲 4:6 沖法</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                拆解前段酸甜比與後段厚實度的科學分段沖煮技術。即使新手也能透過精準的水量分配公式，自由調配出果酸明亮或圓潤濃醇的個人風味。
+              </p>
+<div class="inline-block px-2.5 py-1 bg-surface-container text-primary font-label-brass text-[11px] border border-secondary/30">
+                WORLD BREWERS CUP WINNING METHOD
+              </div>
+</div>
+<!-- Elegant 4:6 Visual Diagram -->
+<div class="md:col-span-8">
+<div class="editorial-mat p-5 border border-primary/15">
+<div class="flex items-center justify-between mb-3 pb-2 border-b border-primary/10">
+<span class="font-label-chapter text-label-chapter text-primary font-bold">THE 4:6 METHOD WATER ALLOCATION MATRIX</span>
+<span class="font-label-brass text-label-brass text-secondary">TOTAL WATER : 100%</span>
+</div>
+<!-- Split Bar Visual -->
+<div class="flex h-12 w-full border border-primary/20 mb-4 overflow-hidden">
+<!-- 40% Block -->
+<div class="w-[40%] bg-primary-container text-surface flex flex-col justify-center items-center px-2 border-r border-secondary/40">
+<span class="font-label-brass text-xs text-secondary-fixed">40% 前段水量</span>
+<span class="text-[10px] opacity-80">決定酸甜風味平衡</span>
+</div>
+<!-- 60% Block -->
+<div class="w-[60%] bg-surface-container-high text-primary flex flex-col justify-center items-center px-2">
+<span class="font-label-brass text-xs font-bold text-secondary">60% 後段水量</span>
+<span class="text-[10px] text-on-surface-variant">決定濃度與口感厚實度</span>
+</div>
+</div>
+<!-- Detailed Breakdown Columns -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+<div class="p-3 bg-white border border-primary/10">
+<div class="flex justify-between items-center text-primary font-bold mb-1">
+<span>第 1 刀 + 第 2 刀（酸甜比例）</span>
+<span class="font-label-brass text-secondary">40%</span>
+</div>
+<ul class="space-y-1 text-on-surface-variant text-[11px]">
+<li>• <strong>偏好微酸明亮：</strong>第 1 刀水量較多，第 2 刀較少</li>
+<li>• <strong>偏好甘甜醇厚：</strong>第 1 刀水量較少，第 2 刀較多</li>
+</ul>
+</div>
+<div class="p-3 bg-white border border-primary/10">
+<div class="flex justify-between items-center text-primary font-bold mb-1">
+<span>第 3, 4, 5 刀（強度與體度）</span>
+<span class="font-label-brass text-secondary">60%</span>
+</div>
+<ul class="space-y-1 text-on-surface-variant text-[11px]">
+<li>• <strong>口感清爽柔和：</strong>均分為 2 等份注水（各 30%）</li>
+<li>• <strong>厚實濃郁尾韻：</strong>均分為 3 等份注水（各 20%）</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- CHAPTER 03 -->
+<article class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start p-6 md:p-8 bg-surface-bright border border-primary/10">
+<div class="md:col-span-4 border-l-2 border-secondary pl-4">
+<span class="font-label-brass text-label-brass text-secondary">CHAPTER 03</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1 mb-3">四大參數調整</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                學會看懂杯中風味：太苦如何微調？太酸如何修正？建立你的感官修正指引。
+              </p>
+</div>
+<div class="md:col-span-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Water Temp -->
+<div class="p-4 bg-surface-container-low border border-primary/10">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline-sm text-headline-sm text-primary">水溫</span>
+<span class="font-label-brass text-label-brass text-secondary">88°C – 93°C</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    溫度越高萃取率越強。淺焙花果香建議 91°C–93°C；深焙堅果黑可可建議 88°C 降低焦苦澀感。
+                  </p>
+</div>
+<!-- Grind Size -->
+<div class="p-4 bg-surface-container-low border border-primary/10">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline-sm text-headline-sm text-primary">研磨刻度</span>
+<span class="font-label-brass text-label-brass text-secondary">中細研磨</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    顆粒如二號砂糖粗細。流速過快且風味平淡請調細；流速過慢造成乾澀鎖喉則應放粗刻度。
+                  </p>
+</div>
+<!-- Ratio -->
+<div class="p-4 bg-surface-container-low border border-primary/10">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline-sm text-headline-sm text-primary">粉水比</span>
+<span class="font-label-brass text-label-brass text-secondary">1:15 – 1:16</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    以 15g 咖啡粉萃取 225ml–240ml 水量。掌握主體濃淡度與酸甜延展性，新手最不易失敗的安全區間。
+                  </p>
+</div>
+<!-- Time -->
+<div class="p-4 bg-surface-container-low border border-primary/10">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline-sm text-headline-sm text-primary">萃取時間</span>
+<span class="font-label-brass text-label-brass text-secondary">2:15 – 2:45</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    掌控浸漬與落水流速。萃取過久容易析出後段木質雜味與單寧酸澀，時序掌控是純淨杯測的關鍵。
+                  </p>
+</div>
+</div>
+</div>
+</article>
+<!-- CHAPTER 04 (Objective Comparison Table) -->
+<article class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start p-6 md:p-8 bg-surface-bright border border-primary/10">
+<div class="md:col-span-4 border-l-2 border-secondary pl-4">
+<span class="font-label-brass text-label-brass text-secondary">CHAPTER 04</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1 mb-3">精品豆與商業豆</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                認識烘焙度、處理法、產區標示與瑕疵豆指南。不帶偏見地認識不同咖啡定位，找到真正貼近自己日常品飲預算與口感偏好的豆款。
+              </p>
+</div>
+<div class="md:col-span-8 overflow-x-auto">
+<table class="w-full text-left border-collapse text-xs md:text-sm">
+<thead>
+<tr class="border-b-2 border-primary/20 bg-surface-container">
+<th class="py-3 px-3 font-label-brass text-secondary">比對向度</th>
+<th class="py-3 px-3 font-headline-sm text-headline-sm text-primary">精品咖啡 (Specialty)</th>
+<th class="py-3 px-3 font-headline-sm text-headline-sm text-on-surface-variant">商業豆 (Commercial)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-primary/10">
+<tr>
+<td class="py-3 px-3 font-label-brass text-secondary font-bold whitespace-nowrap">產地資訊</td>
+<td class="py-3 px-3 text-primary">具備可追溯性，標示特定莊園、微批次、海拔與處理法（如水洗、日曬、厭氧）。</td>
+<td class="py-3 px-3 text-on-surface-variant">通常為跨區域或跨國家的混合調配豆（Blend），強調品質穩定一致性。</td>
+</tr>
+<tr>
+<td class="py-3 px-3 font-label-brass text-secondary font-bold whitespace-nowrap">風味訴求</td>
+<td class="py-3 px-3 text-primary">保留原始產區地域風土（Terroir），展現明亮果酸、花香、甜感與細膩層次。</td>
+<td class="py-3 px-3 text-on-surface-variant">追求大眾普遍接受的厚實度、焦糖可可香與低酸度，非常適合加入鮮奶調飲。</td>
+</tr>
+<tr>
+<td class="py-3 px-3 font-label-brass text-secondary font-bold whitespace-nowrap">品質評估</td>
+<td class="py-3 px-3 text-primary">經過 SCA 專業杯測評分達 80 分以上，生豆瑕疵率經過極嚴格挑選。</td>
+<td class="py-3 px-3 text-on-surface-variant">大規模機械化採收與規格化烘焙，以經濟實惠的大量供應為首要目標。</td>
+</tr>
+<tr>
+<td class="py-3 px-3 font-label-brass text-secondary font-bold whitespace-nowrap">選購方向</td>
+<td class="py-3 px-3 text-primary">適合喜愛細品黑咖啡單品風味、探索不同產地特殊調性的咖啡玩家。</td>
+<td class="py-3 px-3 text-on-surface-variant">適合辦公室大量日常品飲、義式濃縮拿鐵基底，預算親民易取得。</td>
+</tr>
+</tbody>
+</table>
+<div class="mt-2 text-right">
+<span class="text-[11px] text-outline italic">※ 尊重每種飲用情境，每種豆款皆有其最佳呈現舞台</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 2: 4-HOUR LEARNING JOURNEY         -->
+<!-- ========================================== -->
+<section class="py-space-xl bg-surface-container-low border-t border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="max-w-2xl mb-14">
+<span class="font-label-chapter text-label-chapter text-secondary tracking-widest block mb-2">IMMERSIVE TIMELINE</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">四小時學習旅程</h2>
+<p class="mt-3 font-body-md text-body-md text-on-surface-variant">
+            無壓力、不填鴨。我們揚棄僵化的時間倒數表，依照每位學員的吸收節奏與手感逐步深化。
+          </p>
+</div>
+<!-- Continuous Editorial Timeline (Phases 01 to 05) -->
+<div class="relative border-l border-secondary/30 ml-3 md:ml-6 pl-6 md:pl-10 space-y-12">
+<!-- Phase 01 -->
+<div class="relative group">
+<span class="absolute -left-[31px] md:-left-[47px] top-1 w-3 h-3 bg-secondary rounded-full ring-4 ring-surface-container-low"></span>
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-2">
+<span class="font-label-brass text-label-brass text-secondary">PHASE 01</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">認識咖啡</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+              豆種風土、產區風味特徵解密。開展嗅覺與感官，由講師引導親自感受乾香（Fragrance）與注水後濕香（Aroma）的精妙質變。
+            </p>
+</div>
+<!-- Phase 02 -->
+<div class="relative group">
+<span class="absolute -left-[31px] md:-left-[47px] top-1 w-3 h-3 bg-secondary rounded-full ring-4 ring-surface-container-low"></span>
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-2">
+<span class="font-label-brass text-label-brass text-secondary">PHASE 02</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">練習 SOP</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+              雙講師把手握壺穩定度調校。練習中心垂直均勻注水，掌握悶蒸時粉層像漢堡般均勻膨脹呼吸的視覺與流速節奏。
+            </p>
+</div>
+<!-- Phase 03 -->
+<div class="relative group">
+<span class="absolute -left-[31px] md:-left-[47px] top-1 w-3 h-3 bg-secondary rounded-full ring-4 ring-surface-container-low"></span>
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-2">
+<span class="font-label-brass text-label-brass text-secondary">PHASE 03</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">調整參數</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+              刻度變更與水溫調控實驗。進行雙杯對比盲飲實測，直觀感受「高溫 vs 低溫」、「粗研磨 vs 細研磨」在舌尖酸甜與苦澀的戲劇性變化。
+            </p>
+</div>
+<!-- Phase 04 -->
+<div class="relative group">
+<span class="absolute -left-[31px] md:-left-[47px] top-1 w-3 h-3 bg-secondary rounded-full ring-4 ring-surface-container-low"></span>
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-2">
+<span class="font-label-brass text-label-brass text-secondary">PHASE 04</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">4:6 進階練習</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+              世界冠軍分段注水實作演練。依據自己偏好的水果酸質或醇厚甘甜感，親手計算並微調專屬自己的 4:6 水量比例分配。
+            </p>
+</div>
+<!-- Phase 05 -->
+<div class="relative group">
+<span class="absolute -left-[31px] md:-left-[47px] top-1 w-3 h-3 bg-secondary rounded-full ring-4 ring-surface-container-low"></span>
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-2">
+<span class="font-label-brass text-label-brass text-secondary">PHASE 05</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">回顧與提問</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+              全面解惑居家沖煮痛點。整理完整課堂筆記重點，講師針對每位學員個別的握壺力道給予客製化的流速改善建議。
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 3: TANGIBLE LEARNING MATERIALS     -->
+<!-- ========================================== -->
+<section class="py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5">
+<span class="font-label-chapter text-label-chapter text-secondary tracking-widest block mb-2">ATELIER STATIONERY</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">實體學習教材</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+              學習不該在下課走出教室時結束。我們特別設計了能在日常吧台陪伴你反覆練習的實體印刷品，讓沖煮的記憶具體沉澱。
+            </p>
+<div class="p-4 border-l-2 border-secondary bg-surface-container text-xs text-on-surface-variant">
+<strong class="text-primary block font-medium mb-1">【課堂器材說明】</strong>
+              課堂全程提供全套專業手沖器具、電子秤、磨豆機與精選精品熟豆練習操作，無贈送硬體器材。
+            </div>
+</div>
+<!-- Editorial Presentation Stationery Mockup Card -->
+<div class="md:col-span-7">
+<div class="editorial-mat p-8 relative border border-primary/15 shadow-sm">
+<div class="flex justify-between items-center pb-4 mb-6 border-b border-primary/10">
+<span class="font-label-brass text-label-brass text-secondary">INCLUDED COMPANION KITS</span>
+<span class="font-label-chapter text-label-chapter text-outline bg-surface px-2 py-0.5 border border-primary/10">教材示意</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Material 01 -->
+<div class="bg-surface-bright p-5 border border-primary/10 flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 bg-primary text-secondary-fixed flex items-center justify-center font-label-brass text-xs mb-3">01</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">SOP 學習卡</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                      隨身口袋型防水步驟卡。清晰標註標準萃取注水時序與刻度對照，回家擺在廚房或咖啡吧台旁，看著就能輕鬆重現穩定手法。
+                    </p>
+</div>
+<div class="pt-4 mt-4 border-t border-primary/10 font-label-brass text-[11px] text-secondary">
+                    MATTE WATERPROOF FINISH
+                  </div>
+</div>
+<!-- Material 02 -->
+<div class="bg-surface-bright p-5 border border-primary/10 flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 bg-primary text-secondary-fixed flex items-center justify-center font-label-brass text-xs mb-3">02</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">一本可以寫滿筆記的講義</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                      包含注水軌跡圖解、SCA風味輪記述表與參數實驗日誌。厚磅書寫紙張，為你的手沖歷程留下踏實的感官成長痕跡。
+                    </p>
+</div>
+<div class="pt-4 mt-4 border-t border-primary/10 font-label-brass text-[11px] text-secondary">
+                    PRINTED SPECIALTY MONOGRAPH
+                  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 4: TWO INSTRUCTORS                 -->
+<!-- ========================================== -->
+<section class="py-space-xl bg-background border-t border-primary/10">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="max-w-2xl mb-12">
+<span class="font-label-chapter text-label-chapter text-secondary tracking-widest block mb-2">CO-TEACHING ATELIER</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">雙講師親授・細緻陪伴</h2>
+<p class="mt-3 font-body-md text-body-md text-on-surface-variant">
+            阿勳 &amp; 露露。親切且專注的手沖生活家與風味導師。堅持精緻小班或一對一深入引導，一人即可開班。
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Instructor: 阿勳 -->
+<div class="editorial-mat p-6 md:p-8 border border-primary/15 relative">
+<div class="flex items-center gap-4 mb-6">
+<!-- Reserved Photo Placeholder -->
+<div class="w-20 h-20 bg-surface-container border border-primary/20 flex flex-col items-center justify-center text-primary/40 font-label-brass text-xs">
+<span class="material-symbols-outlined text-2xl text-secondary" data-icon="person">person</span>
+<span>阿勳</span>
+</div>
+<div>
+<span class="font-label-brass text-label-brass text-secondary">FLOW &amp; MECHANICS</span>
+<h3 class="font-headline-md text-headline-md text-primary">阿勳</h3>
+<span class="text-xs text-outline font-label-chapter">手沖工藝與物理手感導師</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed border-t border-primary/10 pt-4">
+              專注於引導初學者建立穩定的物理注水手感。透過拆解手腕支撐點、出水流速與手壺重心轉移，讓學員在最短時間內擺脫手震與注水忽快忽慢的挫折，體會水流在粉層上緩步蔓延的安定感。
+            </p>
+</div>
+<!-- Instructor: 露露 -->
+<div class="editorial-mat p-6 md:p-8 border border-primary/15 relative">
+<div class="flex items-center gap-4 mb-6">
+<!-- Reserved Photo Placeholder -->
+<div class="w-20 h-20 bg-surface-container border border-primary/20 flex flex-col items-center justify-center text-primary/40 font-label-brass text-xs">
+<span class="material-symbols-outlined text-2xl text-secondary" data-icon="person">person</span>
+<span>露露</span>
+</div>
+<div>
+<span class="font-label-brass text-label-brass text-secondary">SENSORY &amp; CUPPING</span>
+<h3 class="font-headline-md text-headline-md text-primary">露露</h3>
+<span class="text-xs text-outline font-label-chapter">嗅覺感官與風味探索導師</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed border-t border-primary/10 pt-4">
+              專注於嗅覺與味覺感官的細膩引導。擅長用日常生活的具體記憶轉譯抽象的產區風味（花香、柑橘、莓果或蜂蜜甜感），陪伴學員打開心智味覺庫，學會辨認咖啡風味的明暗與層次變化。
+            </p>
+</div>
+</div>
+<div class="mt-8 text-center">
+<p class="font-label-brass text-label-brass text-secondary">
+            ★ 雙講師共同進班教學 ｜ 隨時近身校正握壺 ｜ 絕無旁觀等待的冷落時光
+          </p>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 5: INQUIRIES / FAQ                 -->
+<!-- ========================================== -->
+<section class="py-space-xl bg-surface-container-high/40 border-t border-primary/10">
+<div class="max-w-4xl mx-auto px-margin-mobile md:px-margin">
+<div class="text-center mb-12">
+<span class="font-label-chapter text-label-chapter text-secondary tracking-widest block mb-2">QUESTIONS &amp; ANSWERS</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">常見問題</h2>
+<p class="mt-2 font-body-sm text-body-sm text-on-surface-variant">
+            在預約席位前，你可能想了解的細節
+          </p>
+</div>
+<div class="space-y-4">
+<!-- Q1 -->
+<div class="bg-surface p-6 border border-primary/10">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2 flex items-start gap-2">
+<span class="text-secondary font-label-brass">Q1.</span>
+              完全沒有沖煮咖啡經驗可以參加嗎？
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant pl-6">
+              可以，這門課正是專為「零基礎」學員所量身打造。我們從最基礎的如何握壺、如何站姿平衡與水流控制開始，即使過去從未拿過手沖壺，也能在雙講師的細心引導下一步步上手。
+            </p>
+</div>
+<!-- Q2 -->
+<div class="bg-surface p-6 border border-primary/10">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2 flex items-start gap-2">
+<span class="text-secondary font-label-brass">Q2.</span>
+              授課地點在哪裡？
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant pl-6">
+              常態開放於<strong>新北林口／樹林／土城</strong>的舒適合作空間或專屬小班教室。環境靜謐優雅，採光充足，專為專注品飲與沖煮實作所挑選。
+            </p>
+</div>
+<!-- Q3 -->
+<div class="bg-surface p-6 border border-primary/10">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2 flex items-start gap-2">
+<span class="text-secondary font-label-brass">Q3.</span>
+              開課時間與確切地址如何確認？
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant pl-6">
+              我們維持一人即可開班的高彈性。歡迎直接點擊下方「LINE 詢問開課時間」與阿勳或露露聯繫，討論並確認適合您的平日白天、夜間或週末時段，我們將即時提供交通指引與確認單。
+            </p>
+</div>
+<!-- Q4 -->
+<div class="bg-surface p-6 border border-primary/10">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2 flex items-start gap-2">
+<span class="text-secondary font-label-brass">Q4.</span>
+              需要自備任何手沖器具嗎？
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant pl-6">
+              不需要。教室現場已備妥全套專業手沖壺（Brewista / Fellow）、經典 V60 濾杯、高精度電子秤、專業磨豆機與精選精品咖啡豆。你只需帶著一顆放鬆而好奇的心前來體驗即可。
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 6: FINAL RESERVATION CTA           -->
+<!-- ========================================== -->
+<section class="py-space-xl bg-primary text-surface relative overflow-hidden" id="reservation">
+<!-- Fine Hairline Brass Frame Background Overlay -->
+<div class="absolute inset-4 md:inset-8 border border-secondary-fixed-dim/20 pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-margin-mobile md:px-margin text-center">
+<span class="font-label-chapter text-label-chapter text-secondary-fixed tracking-widest block mb-4">
+          RESERVATION &amp; ENROLLMENT
+        </span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-display-hero text-surface-bright mb-6">
+          為自己預約一段<br class="hidden sm:inline"/>專注而溫潤的咖啡時光
+        </h2>
+<!-- Recap Value Block -->
+<div class="editorial-mat !bg-primary-container p-6 md:p-8 border border-secondary-fixed-dim/30 max-w-2xl mx-auto mb-8 text-left">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-label-brass">
+<div class="text-secondary-fixed">
+              ✦ 體驗學費：NT$1,800／人
+            </div>
+<div class="text-secondary-fixed">
+              ✦ 課程時長：4 小時完整沉浸教學
+            </div>
+<div class="text-secondary-fixed">
+              ✦ 師資陣容：阿勳 &amp; 露露 雙講師親授
+            </div>
+<div class="text-secondary-fixed">
+              ✦ 附贈教材：SOP 學習卡與完整手沖講義
+            </div>
+</div>
+<div class="mt-4 pt-4 border-t border-secondary-fixed-dim/20 text-xs text-outline-variant flex items-center justify-between">
+<span>教室地點：新北林口／樹林／土城</span>
+<span class="text-secondary-fixed-dim font-bold">一人即可成班</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-surface-container max-w-xl mx-auto mb-8">
+          無需等待揪團湊人數。直接透過 LINE 官方帳號與我們聯絡，挑選一個屬於你的好日子，開始手沖生活。
+        </p>
+<!-- Main Button -->
+<div class="flex justify-center">
+<a class="inline-flex items-center px-10 py-5 bg-secondary-fixed-dim text-primary font-label-brass text-label-brass hover:bg-surface-bright transition-all duration-300 shadow-md tracking-wider text-base" href="https://lin.ee/5bkhZu1" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined mr-2 text-xl" data-icon="chat">chat</span>
+            LINE 詢問開課時間
+          </a>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- SHARED COMPONENT: Footer                   -->
+<!-- ========================================== -->
+<footer class="w-full bg-primary dark:bg-tertiary text-surface dark:text-surface-bright border-t border-secondary/20 dark:border-secondary/10">
+<div class="w-full px-margin-mobile md:px-margin py-space-lg md:py-space-xl max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-gutter">
+<!-- Brand & Editorial Info -->
+<div class="space-y-4 max-w-md">
+<h3 class="font-headline-lg text-headline-lg text-surface tracking-widest">
+          POUR &amp; DISCOVER
+        </h3>
+<p class="font-body-sm text-body-sm text-outline-variant">
+          阿勳 &amp; 露露・手沖體驗課。專注於手沖咖啡教育與日常美感實踐，在手握水壺的沉靜片刻中，找回屬於自己的節奏與風味。
+        </p>
+<p class="font-label-chapter text-label-chapter text-secondary-fixed-dim">
+          © 2024 POUR &amp; DISCOVER / 阿勳 &amp; 露露・手沖體驗課. ALL RIGHTS RESERVED. TAIWAN SPECIALTY COFFEE ATELIER.
+        </p>
+</div>
+<!-- Footer Quick Links Cluster -->
+<div class="flex flex-col sm:flex-row gap-8 md:gap-12 text-sm">
+<div>
+<span class="font-label-chapter text-label-chapter text-secondary-fixed-dim block mb-3">NAVIGATION</span>
+<ul class="space-y-2">
+<li>
+<a class="text-outline-variant dark:text-outline hover:text-secondary-fixed dark:hover:text-secondary-fixed transition-colors duration-200" href="https://www.instagram.com" rel="noopener noreferrer" target="_blank">
+                INSTAGRAM / 紀實
+              </a>
+</li>
+<li>
+<a class="text-outline-variant dark:text-outline hover:text-secondary-fixed dark:hover:text-secondary-fixed transition-colors duration-200" href="#curriculum">
+                TERMS / 席位規範
+              </a>
+</li>
+</ul>
+</div>
+<div>
+<span class="font-label-chapter text-label-chapter text-secondary-fixed-dim block mb-3">LOCATION &amp; CONTACT</span>
+<ul class="space-y-2">
+<li>
+<a class="text-outline-variant dark:text-outline hover:text-secondary-fixed dark:hover:text-secondary-fixed transition-colors duration-200" href="#reservation">
+                LOCATION / 工作室席位
+              </a>
+</li>
+<li>
+<a class="text-outline-variant dark:text-outline hover:text-secondary-fixed dark:hover:text-secondary-fixed transition-colors duration-200" href="https://lin.ee/5bkhZu1" rel="noopener noreferrer" target="_blank">
+                CONTACT / 聯繫工坊
+              </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

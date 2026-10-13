@@ -1,0 +1,41 @@
+export const course = {
+  brand: '露露咖啡日記', english: 'Ruru Coffee Journal',
+  name: '好好手沖', nameEnglish: 'Good Good Pour',
+  title: '新手也能照著做，沖出自己的好咖啡。',
+  subtitle: '四小時，從手沖 SOP 到世界冠軍 4:6 沖法，學會調整風味，也學會挑豆。',
+  price: 'NT$1,800', duration: '四小時', line: 'https://lin.ee/5bkhZu1',
+  locations: ['林口', '樹林', '土城'],
+  parameters: [
+    { id: 'temperature', en: 'TEMPERATURE', title: '水溫', question: '熱一點，味道會不一樣嗎？', description: '水溫會影響萃取速度。提高水溫通常有助於萃取，但風味仍會隨豆子、烘焙與其他參數改變。', tip: '用同一支豆子比較，練習找到合適的溫度。', alt: '帶有蒸氣的手沖壺與溫度測量器材示意' },
+    { id: 'grind', en: 'GRIND SIZE', title: '研磨刻度', question: '磨細一點，就一定更好喝？', description: '粗細影響粉粒的接觸面積與水流。研磨較細可能增加萃取，也可能讓流速變慢；刻度需依磨豆機與豆子調整。', tip: '觀察流速與品飲結果，不只記住磨豆機的數字。', alt: '兩種不同粗細的咖啡粉與磨豆機示意' },
+    { id: 'dose', en: 'COFFEE DOSE', title: '豆量', question: '想喝濃一點，從哪裡開始？', description: '豆量與用水量一起決定粉水比。在用水量固定時，增加豆量會改變濃度，也會改變粉床與沖煮表現。', tip: '先把豆量與水量秤準，再練習調整濃淡。', alt: '咖啡豆放在電子秤上的陶瓷容器內' },
+    { id: 'time', en: 'BREW TIME', title: '時間', question: '沖得越久，味道越完整？', description: '時間是觀察萃取的線索，也受研磨與注水方式影響。不能只用秒數判斷好壞，要一起看流速與杯中風味。', tip: '記下總時間，配合味道回顧每一次沖煮。', alt: '計時器與裝有咖啡的玻璃分享壺' }
+  ],
+  comparison: [
+    ['產地資訊', '常強調產區、莊園、品種與處理法等細節。', '常以品牌、配方或穩定供應為主要資訊；揭露程度依產品而異。'],
+    ['風味訴求', '常呈現產地與處理帶來的特色，例如花香、果香或甜感。', '常追求一致、熟悉的風味，方便日常飲用或搭配奶飲。'],
+    ['品質評估', '重視可辨識的特色與其價值，搭配感官及品質評估。', '常重視一致性、成本與用途；也可以有良好品質。'],
+    ['選購方向', '看產地資訊與風味描述，再選符合喜好的豆子。', '看配方、烘焙、鮮度與用途，選適合日常需求的產品。']
+  ],
+  journey: [
+    ['認識咖啡', '從品飲開始，認識豆子與自己的喜好。'],
+    ['練習 SOP', '跟著步驟動手沖，建立可以重複的流程。'],
+    ['調整參數', '比較水溫、刻度、豆量與時間的影響。'],
+    ['4:6 進階練習', '體驗分段注水，練習有方向地調整風味。'],
+    ['回顧與提問', '把重點寫進講義，整理回家練習的方向。']
+  ],
+  faqs: [
+    ['完全沒有手沖經驗，也能參加嗎？', '可以。這堂四小時體驗課為新手設計，兩位講師會從基礎帶你練習，不需要先懂專業術語。'],
+    ['在哪裡上課？怎麼確認日期？', '林口、樹林、土城都可以安排課程。請透過 LINE 告訴我們方便的地區與時間，再確認日期及詳細地址。'],
+    ['一個人也可以報名嗎？', '可以，一人也可開班，由阿勳與露露兩位講師親自授課。實際安排與人數請透過 LINE 確認。'],
+    ['需要自己帶器材嗎？', '器材與課前準備安排，請在報名前透過 LINE 確認。課程不包含贈送器材。'],
+    ['NT$1,800 包含什麼？', '包含每人四小時體驗課、兩位講師親自授課、SOP 學習卡，以及一本可以充分做筆記的講義。'],
+    ['學完可以直接套用到所有咖啡豆嗎？', '你會帶走可照著練習的流程與調整方向。不同豆子、烘焙與器材仍需要微調；課堂會練習用風味判斷下一步。']
+  ]
+};
+export const variants = [
+  { id: 'sky', letter: 'A', name: '天空藍極簡', en: 'A LITTLE BLUE, A BETTER BREW.', theme: '#DDF2FF', tag: '清爽・清楚・輕盈', description: '天空藍與白色留白，讓第一次手沖變得簡單。', hero: 'hero-sky', category: 'THE CLEAR ONE' },
+  { id: 'sage', letter: 'B', name: '日常咖啡誌', en: 'MAKE ROOM FOR A SLOW MORNING.', theme: '#DCE5D7', tag: '溫柔・日常・自然', description: '奶油白、鼠尾草綠與自然光，像翻開一本咖啡誌。', hero: 'hero-sage', category: 'THE SLOW ONE' },
+  { id: 'bold', letter: 'C', name: '大膽沖煮海報', en: 'FIRST BREW. BIG COFFEE ENERGY.', theme: '#244FE0', tag: '醒目・活力・大膽', description: '鈷藍、大字與不對稱構圖，把學咖啡的期待放大。', hero: 'hero-bold', category: 'THE BOLD ONE' },
+  { id: 'stitch', letter: 'D', name: 'Stitch 精品編輯版', en: 'THE ART OF A BETTER EVERYDAY.', theme: '#103E46', tag: '深青綠・編輯式・Google Stitch', description: '由 Google Stitch 生成設計，再完成本地網站。', hero: 'hero-stitch', category: 'THE EDITORIAL ONE' }
+];
