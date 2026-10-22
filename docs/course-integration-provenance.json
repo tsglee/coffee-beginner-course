@@ -1,0 +1,82 @@
+{
+  "source_project": "coffee_class_site",
+  "source_branch": "codex/coffee-redesign",
+  "source_commit": "d7482971be5b985829a278e83cbf008559788e87",
+  "source_content": "content/course.mjs",
+  "integration_branch": "forward",
+  "assets": [
+    {
+      "source": "assets/generated/hero-stitch.jpg",
+      "destination": "assets/courses/hero-stitch.jpg",
+      "sha256": "a1b3b1094089a1cc8490e0383d1b3c74e7812637a396713afefac35d13cb0c50",
+      "type": "generated course illustration"
+    },
+    {
+      "source": "assets/generated/sop.jpg",
+      "destination": "assets/courses/sop.jpg",
+      "sha256": "c379f2b9fe6d910f14c2008e6331172f6c8cb503c4858462cd498e6ba7ab7d0e",
+      "type": "generated course illustration"
+    },
+    {
+      "source": "assets/generated/champion.jpg",
+      "destination": "assets/courses/champion.jpg",
+      "sha256": "eab771bbcd3c5de3c11e387a1a826d3e86f0380818d5a59bd38b59f171bc3b73",
+      "type": "generated course illustration"
+    },
+    {
+      "source": "assets/generated/param-temperature.jpg",
+      "destination": "assets/courses/param-temperature.jpg",
+      "sha256": "79f2bef7c2d642dbd495a27fb9a47e271d9ca34b1dd99b85e830d442a6f757c6",
+      "type": "generated course illustration"
+    },
+    {
+      "source": "assets/generated/param-grind.jpg",
+      "destination": "assets/courses/param-grind.jpg",
+      "sha256": "9f9bdaa5b3a9b6765194769f774537c96d6e16621a42f00db9b8e7edcb256b3c",
+      "type": "generated course illustration"
+    },
+    {
+      "source": "assets/generated/param-dose.jpg",
+      "destination": "assets/courses/param-dose.jpg",
+      "sha256": "30280445516cb175d2cb55e3164b8952e588f73e55e67eafbd39e3fc04673c5d",
+      "type": "generated course illustration"
+    },
+    {
+      "source": "assets/generated/param-time.jpg",
+      "destination": "assets/courses/param-time.jpg",
+      "sha256": "6fbe0d3e3bfed0dd57d46b7170e2a4c61a727a620e9adde8e16a17a8adc17919",
+      "type": "generated course illustration"
+    },
+    {
+      "source": "assets/generated/beans.jpg",
+      "destination": "assets/courses/beans.jpg",
+      "sha256": "8767404978f9506cd0f00c449d967e64ffe6abf57d67b1010675c2ceef35eac3",
+      "type": "generated course illustration"
+    },
+    {
+      "source": "images/hsun-card.jpg",
+      "destination": "assets/courses/hsun-card.jpg",
+      "sha256": "16507f2f37e3aa15530da58c2a89f1896af6587af00c3b469bfebbe2b3a733b2",
+      "type": "user-provided real photo"
+    },
+    {
+      "source": "images/lulu-card.jpg",
+      "destination": "assets/courses/lulu-card.jpg",
+      "sha256": "57e822ef9ca9281e5980e90c7892b024c20bc021202df05b1aade8ccf22aae06",
+      "type": "user-provided real photo"
+    },
+    {
+      "source": "images/class-pour.jpg",
+      "destination": "assets/courses/class-pour.jpg",
+      "sha256": "9ee6cea5b3ee42f20a999dbada5aa2fb995f78fb6006220d47347aa30159a0c3",
+      "type": "user-provided real photo"
+    },
+    {
+      "source": "images/class-circle.jpg",
+      "destination": "assets/courses/class-circle.jpg",
+      "sha256": "3322dbaf61c87742cbd9af773ce92207700ff086d74799795833e0052dd49a95",
+      "type": "user-provided real photo"
+    }
+  ],
+  "notes": "Course facts and existing LINE inquiry link are preserved. Original source project is unchanged. Course illustrations are generated; instructor and classroom images are user-provided real photos."
+}

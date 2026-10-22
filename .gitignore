@@ -3,3 +3,6 @@ node_modules/
 .env*
 .cache/
 .preview.log
+
+__pycache__/
+dist/

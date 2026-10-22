@@ -1,41 +1,70 @@
-# 露露咖啡日記 Ruru Coffee Journal
+# 佛我咖啡 / Forward Coffee
 
-「好好手沖 Good Good Pour」新手手沖體驗課正式網站。採用選定的 Google Stitch 深青綠、象牙白與黃銅色編輯式設計。
+This repository publishes 佛我咖啡 / FORWARD COFFEE: a bilingual roasted-coffee storefront and the 好好手沖 workshop. The integrated version replaces the former course-only website on `main`, as requested by the user. See [deployment and rollback notes](docs/DEPLOYMENT-2026-10-22.md). See [course integration notes](docs/FORWARD-INTEGRATION.md) and the [five-coffee catalog guide](docs/FORWARD-CATALOG.md).
 
-公開網址：https://tsglee.github.io/coffee-beginner-course/
+A bilingual, responsive roasted-coffee storefront and operable administration demo. Plain HTML, CSS and JavaScript; no build step, npm installation, backend or database is required.
 
-課程為 NT$1,800／人、四小時、零經驗可參加。林口、樹林、土城可安排；一人也可開班，由阿勳與露露親自授課。包含 SOP 學習卡與筆記講義。
+- Live Chinese site: https://tsglee.github.io/coffee-beginner-course/?lang=zh
+- Live English site: https://tsglee.github.io/coffee-beginner-course/?lang=en
+- Repository: https://github.com/tsglee/coffee-beginner-course
+- **For another AI agent: read [docs/AGENT-HANDOFF.md](docs/AGENT-HANDOFF.md) first.**
 
-## 預覽與修改
+## Run locally
 
-已生成的網站可直接啟動，不需要 API 金鑰：
-
-```sh
-python3 -m http.server 8766 --bind 127.0.0.1
-```
-
-開啟 http://127.0.0.1:8766/。修改來源後，以 Node.js 20.18.1 以上重建：
+Unzip the handoff package and open a terminal in `encounter-coffee/`, the directory containing `index.html`:
 
 ```sh
-npm ci
-npm run build
-npm run check
+python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-- `content/course.mjs`：品牌、課程、參數、比較表與 FAQ。
-- `scripts/site.mjs`：共用版型與 Stitch 編排；正式建置只輸出選定版本。
-- `scripts/build.mjs`：正式首頁建置，支援 GitHub Pages 專案路徑。
-- `assets/site.css`、`assets/stitch.css`、`assets/site.js`：版型與互動。
-- `assets/brand/ruru-logo.png`：使用者提供的原始透明 Logo。
-- `assets/generated/`：GPT 生成手沖情境；`images/`：真實講師與課堂照片。
-- `design/stitch/`：保留原始 Stitch 設計及本地實作說明。
+Open http://127.0.0.1:4173/?lang=en or http://127.0.0.1:4173/?lang=zh. Stop the server with Ctrl+C. Use HTTP rather than double-clicking HTML files so all pages share a consistent browser storage origin.
 
-## 發布與回復
+## Pages
 
-GitHub Pages 從 `main` 分支根目錄發布；`index.html` 為已建置正式首頁。圖片、樣式及腳本使用相對路徑，適用 `/coffee-beginner-course/`。網站訪客不需要呼叫 Stitch 或其他 API。
+| File | Purpose |
+| --- | --- |
+| `index.html` | Three-photo hero carousel, four palettes, five sample coffees, selection story, brew guide and FAQ |
+| `courses.html` | Complete 好好手沖 workshop, instructors, materials, FAQ and original LINE inquiry link |
+| `shop.html` | Five sample roasted coffees with origin/roast filters, English/Chinese search and sorting |
+| `product.html?id=guji` | Six-image gallery, 250g/500g bags, stock, flavor, origin, roast date and duration |
+| `checkout.html` | Shared demo cart, weight/price calculations and local demo orders |
+| `admin-orders.html` | Products, stock, roast batches, orders, reports, settings and backup tools |
+| `story.html`, `about.html` | Responsive brand story and contact information |
 
-舊網站保留於 Git 歷史，替換前的版本為 `a107367`。需要回復時可對新版發布提交執行 `git revert`，再推送 `main`，避免重寫歷史。
+Append `?lang=en` to a page URL, or `&lang=en` when an existing product query is present. The EN / 繁中 switch keeps the product ID and anchor. Both languages use the same stored demo data.
 
-報名洽詢：https://lin.ee/5bkhZu1
+## Validate
 
-天空藍版同步相同品牌、Logo 與課程資訊，獨立公開於 https://tsglee.github.io/coffee-beginner-course/sky/。正式首頁沿用選定的 Stitch 版；兩頁的頁尾皆提供 LINE 洽詢。
+Node.js is needed only for tests (Node 18+ recommended):
+
+```sh
+node tests/store.test.cjs
+node tests/i18n.test.cjs
+node tests/course.test.cjs
+```
+
+There are 23 store/localization/course checks. Browser viewport validation is documented in [docs/ENGLISH-RWD.md](docs/ENGLISH-RWD.md).
+
+## Package a committed snapshot
+
+In a clean Git checkout, using Python 3.9+:
+
+```sh
+python3 scripts/package_site.py --release-date 2026-10-14
+```
+
+This creates one ZIP in the ignored `dist/` directory, containing the committed source, all tracked website assets, tests, instructions and a generated `RELEASE-MANIFEST.json` with the exact Git commit and per-file SHA-256 hashes. It excludes Git history and browser-saved data.
+
+Verify a received archive with:
+
+```sh
+python3 scripts/package_site.py --verify /path/to/encounter-coffee-package.zip
+```
+
+See the handoff guide for GitHub Pages deployment, repository synchronization and how to continue development from an extracted source snapshot.
+
+## Demo boundaries
+
+Data is saved in this browser's `localStorage`. There is no real authentication, multi-user database, payment, shipping or email service. Prices, stock, roast dates, batches and customer/order records are sample data. Product/origin images are illustrative. Do not treat this as a production commerce backend.
+
+The package contains the initial catalog, not edits made inside a user's browser. To transfer those edits too, export a JSON backup in Admin → Store & data settings and import it in the receiving browser. Google Fonts and official reference links require internet; local site assets and system-font fallbacks remain usable without it.

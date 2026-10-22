@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const path=require('node:path');
+const root=path.resolve(__dirname,'..');
+function locale(lang){const window={};const location={href:'https://tsglee.github.io/coffee-beginner-course/product.html?id=guji&lang='+lang+'#brew-guide',search:'?id=guji&lang='+lang,origin:'https://tsglee.github.io'};const c=vm.createContext({window,location,URL,URLSearchParams});for(const file of ['catalog-data.js','en-dictionary.js','i18n.js'])vm.runInContext(fs.readFileSync(path.join(root,'assets',file),'utf8'),c);return {I:window.CoffeeI18n,seed:window.COFFEE_SEED}}
+function test(name,fn){fn();console.log('PASS',name)}
+test('all five seeded coffees have English names, flavors, descriptions and image alt text',()=>{const {I,seed}=locale('en');for(const p of seed.products){for(const value of [p.name,p.country,p.region,p.description,...p.flavors,...p.gallery.map(i=>i.alt)])assert.ok(!/[\u4e00-\u9fff]/.test(I.translate(value)),value)}});
+test('locale links preserve product IDs and anchors, including switching back to Chinese',()=>{const {I}=locale('en');assert.equal(I.localLink('product.html?id=guji#brew-guide'),'/coffee-beginner-course/product.html?id=guji&lang=en#brew-guide');assert.equal(I.localLink('product.html?id=guji&lang=en#brew-guide','zh'),'/coffee-beginner-course/product.html?id=guji&lang=zh#brew-guide')});
+test('source, email and backup links are not rewritten',()=>{const {I}=locale('en');for(const link of ['https://example.com/product','mailto:hello@example.com','docs/research.md'])assert.equal(I.localLink(link),link)});
+test('dynamic counts, bag sizes, roast durations and price references remain accurate',()=>{const {I}=locale('en');assert.equal(I.translate('1 包 × 500g = 500g'),'1 bag × 500g = 500g');assert.equal(I.translate('21 包可售'),'21 bags available');assert.equal(I.translate('9 分 30 秒'),'9 min 30 sec');assert.equal(I.translate('找到 2 款熟豆'),'Found 2 coffees');assert.equal(I.translate('將用備份的 10 款商品與 3 筆訂單取代目前資料。'),'Replace current data with 10 products and 3 orders from the backup.')});
+test('Chinese copy is unchanged and localization never mutates shared catalog data',()=>{const {I,seed}=locale('zh');const before=JSON.stringify(seed);assert.equal(I.translate('1 包 × 500g = 500g'),'1 包 × 500g = 500g');assert.equal(JSON.stringify(seed),before);const en=locale('en');const original=en.seed.products[0].name;en.I.translate(original);assert.equal(en.seed.products[0].name,original)});

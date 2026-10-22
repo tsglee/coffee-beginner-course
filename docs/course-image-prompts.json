@@ -1,0 +1,79 @@
+[
+  {
+    "name": "hero-sky",
+    "prompt": "photorealistic editorial hand pour-over coffee. Wide horizontal composition, a white ceramic V60 dripper on clear glass server, elegant silver gooseneck kettle pouring a physically plausible thin stream into coffee grounds. Equipment concentrated on RIGHT half, LEFT half and top half calm clean negative space pale sky blue. Bright window sunlight, tactile linen, light blue wall and white tabletop, exquisitely restrained premium magazine photography. No faces, no logos, no text, no numbers, no watermark. Realistic glass, coffee brown, fresh gentle atmosphere. Website hero with overlaid headline.",
+    "tool": "built-in image_gen",
+    "originalPath": "/Users/tsglee/.codex/generated_images/01a130c5-a936-7c92-9a16-881b989c64fa/exec-a115a10c-edfa-4995-883e-ef134d1ab0eb.png",
+    "websitePath": "assets/generated/hero-sky.jpg"
+  },
+  {
+    "name": "hero-sage",
+    "prompt": "photorealistic premium lifestyle pour-over coffee photograph, wide landscape. White ceramic dripper, glass carafe of coffee, slender brass gooseneck kettle pouring gentle water into grounds, few coffee beans, textured ivory linen and muted sage green surroundings. Objects on lower RIGHT, CENTER and LEFT upper background empty softly lit, for overlay copy. Gentle natural morning light, calm editorial photography, beautiful tactile materials. No face, no logos, no lettering, no watermark.",
+    "tool": "built-in image_gen",
+    "originalPath": "/Users/tsglee/.codex/generated_images/01a130c5-a936-7c92-9a16-881b989c64fa/exec-04efdfc1-0d08-46af-9eb9-00e21e277d26.png",
+    "websitePath": "assets/generated/hero-sage.jpg"
+  },
+  {
+    "name": "hero-bold",
+    "prompt": "Photorealistic advertising still life of hand pour-over coffee. Wide landscape, tight dramatic close-up of cobalt blue ribbed ceramic dripper atop clear glass carafe with amber coffee, polished metal gooseneck kettle and fine realistic water stream. Main dripper RIGHT lower half. Deep cobalt blue background on left two thirds remains uncluttered for large white headline overlay. Hard directional studio sunlight with elegant shadows and peach highlight on countertop, striking graphic composition, sophisticated premium photography. No typography, no logos, no faces, no watermark.",
+    "tool": "built-in image_gen",
+    "originalPath": "/Users/tsglee/.codex/generated_images/01a130c5-a936-7c92-9a16-881b989c64fa/exec-c95070b6-606e-4b95-9d93-2b95d6d82daa.png",
+    "websitePath": "assets/generated/hero-bold.jpg"
+  },
+  {
+    "name": "hero-stitch",
+    "prompt": "Premium photorealistic editorial pour-over coffee, wide landscape cinematic photograph. Off-white ribbed ceramic V60, transparent coffee server and brushed brass gooseneck kettle gently pouring realistic water into coffee grounds. Objects clustered in RIGHT half, LEFT and upper background deep midnight teal, intentionally uncluttered for white headline overlay. Warm narrow sunlight on ceramic and amber coffee, dramatic elegant shadows, refined specialty coffee magazine quality, real tactile materials. No people, logos, letters, text or watermark.",
+    "tool": "built-in image_gen",
+    "originalPath": "/Users/tsglee/.codex/generated_images/01a130c5-a936-7c92-9a16-881b989c64fa/exec-a7d84e46-b3a7-44e6-bd01-12015ca1a6da.png",
+    "websitePath": "assets/generated/hero-stitch.jpg"
+  },
+  {
+    "name": "sop",
+    "prompt": "Premium photorealistic tabletop pour-over coffee preparation still life. White ribbed ceramic V60 on glass coffee server, folded paper filters, small bowl of coffee beans, manual coffee grinder and clean digital scale with BLANK unlit screen, gooseneck kettle. Objects neatly arranged in natural order with ample breathing room on pale ivory tabletop, powder blue background, soft morning sunlight. Landscape 3:2, restrained editorial still life. No text, no labels, no logos, no watermark.",
+    "tool": "built-in image_gen",
+    "originalPath": "/Users/tsglee/.codex/generated_images/01a130c5-a936-7c92-9a16-881b989c64fa/exec-5007e09d-8343-4245-b8dd-beba11acd4fb.png",
+    "websitePath": "assets/generated/sop.jpg"
+  },
+  {
+    "name": "champion",
+    "prompt": "Editorial close-up photorealistic pour-over coffee process: adult hand holding polished slim gooseneck kettle pours thin water stream directly into coffee bed in a white ribbed V60 dripper on glass carafe of amber coffee. Digital scale under carafe screen turned off, calm sky-blue linen background, natural window light, professional specialty coffee photography, landscape 3:2. Focus on pouring water and coffee blooming, physically accurate equipment, no face, no text, no logos, no watermark.",
+    "tool": "built-in image_gen",
+    "originalPath": "/Users/tsglee/.codex/generated_images/01a130c5-a936-7c92-9a16-881b989c64fa/exec-1813a73d-8a76-4b60-8eab-8b81b74a6eb7.png",
+    "websitePath": "assets/generated/champion.jpg"
+  },
+  {
+    "name": "beans",
+    "prompt": "Premium photorealistic editorial coffee bean selection still life. Two small ivory ceramic dishes of roasted coffee beans side by side, one lighter brown beans and one darker roast, blank kraft coffee bags behind them, subtle cup of brewed coffee at edge, sage-blue neutral tabletop. Soft raking sunlight, beautiful tactile bean detail, horizontal landscape 3:2. No labels, no scores, no people, no text, no logos, no watermark. Differences in roast are visual examples, do not portray defective or rotten beans.",
+    "tool": "built-in image_gen",
+    "originalPath": "/Users/tsglee/.codex/generated_images/01a130c5-a936-7c92-9a16-881b989c64fa/exec-6551431b-c4dc-44a3-9bab-69dedc788af5.png",
+    "websitePath": "assets/generated/beans.jpg"
+  },
+  {
+    "name": "param-temperature",
+    "prompt": "Photorealistic premium editorial macro of a slim metal thermometer probe and a polished gooseneck coffee kettle with gentle steam on clean pale sky blue tabletop. Thermometer display out of view, no readable numbers. White ceramic pour-over cone softly blurred in background. Close-up landscape 3:2, soft natural daylight, understated elegant coffee education asset, realistic physically plausible kettle. No text, no logos, no watermark.",
+    "tool": "built-in image_gen",
+    "originalPath": "/Users/tsglee/.codex/generated_images/01a130c5-a936-7c92-9a16-881b989c64fa/exec-e427290b-3687-4d08-b3c4-a7c5c9c9f595.png",
+    "websitePath": "assets/generated/param-temperature.jpg"
+  },
+  {
+    "name": "param-grind",
+    "prompt": "Photorealistic premium editorial macro photograph, ground coffee in two small white ceramic dishes, one visibly finer texture and one coarser texture, manual burr coffee grinder edge behind, sage-blue neutral backdrop, soft directional daylight, beautiful warm brown coffee detail. Landscape 3:2 with clean breathing room, physically plausible coffee particles. No text, no labels, no logos, no watermark.",
+    "tool": "built-in image_gen",
+    "originalPath": "/Users/tsglee/.codex/generated_images/01a130c5-a936-7c92-9a16-881b989c64fa/exec-d1a0207d-eaef-4b38-ade4-9300a8453427.png",
+    "websitePath": "assets/generated/param-grind.jpg"
+  },
+  {
+    "name": "param-dose",
+    "prompt": "Photorealistic premium editorial macro of roasted coffee beans inside a shallow white ceramic dish on a sleek coffee scale, unlit blank display. A few beans beside the scale on an ivory tabletop with pale sky blue background. Natural morning window light, lovely tactile detail, coffee education asset, landscape 3:2. No readable numbers, no text, no logos, no watermark.",
+    "tool": "built-in image_gen",
+    "originalPath": "/Users/tsglee/.codex/generated_images/01a130c5-a936-7c92-9a16-881b989c64fa/exec-7430303b-f83b-48aa-8569-a3fdc062bc47.png",
+    "websitePath": "assets/generated/param-dose.jpg"
+  },
+  {
+    "name": "param-time",
+    "prompt": "Photorealistic premium editorial close-up of a minimal analog stopwatch resting next to clear glass coffee server half-filled with amber coffee, small white pour-over dripper in background. Watch uses only simple tick marks without digits or letters. Light blue linen and ivory table, soft sunlight, quiet restrained premium coffee magazine styling, landscape 3:2. No text, no logos, no watermark.",
+    "tool": "built-in image_gen",
+    "originalPath": "/Users/tsglee/.codex/generated_images/01a130c5-a936-7c92-9a16-881b989c64fa/exec-f920d529-c402-4a21-ac8f-4930bba4be44.png",
+    "websitePath": "assets/generated/param-time.jpg"
+  }
+]
