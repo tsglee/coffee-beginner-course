@@ -11,7 +11,7 @@
       ${image('hero-stitch', '細口手沖壺向濾杯注水的課程攝影示意', true)}
       <div class="course-hero-shade"></div>
       <div class="wrapper course-hero-content">
-        <p class="course-eyebrow">FORWARD COFFEE / HANDS-ON WORKSHOP</p>
+        <p class="course-eyebrow">RURU COFFEE JOURNAL / HANDS-ON WORKSHOP</p>
         <p class="course-name">${e(c.name)}</p>
         <h1 id="course-title">從第一杯，<br>沖出自己的好咖啡。</h1>
         <p class="course-hero-lead">${e(c.subtitle)}</p>

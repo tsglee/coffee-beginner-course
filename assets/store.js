@@ -41,6 +41,7 @@
  // Retain old products and their order associations; retire only listings that retain their original demo names.
  function migrateCatalog(saved){
   const seed=window.COFFEE_SEED;
+  if(['四選淨豆','一遇','佛我咖啡','Forward Coffee','FORWARD COFFEE'].includes(saved.settings.shopName))saved.settings.shopName=seed.settings.shopName;
   if(saved.serviceRevision!==seed.serviceRevision){
    if(saved.settings.supportEmail==='contact@pureselectcoffee.tw')saved.settings.supportEmail=seed.settings.supportEmail;
    if(saved.settings.freeShipping===1500)saved.settings.freeShipping=seed.settings.freeShipping;
@@ -60,7 +61,7 @@
   }
   saved.catalogRevision=seed.catalogRevision;return saved;
  }
- function state(){let raw;try{raw=localStorage.getItem(KEY)}catch(_){return copy(memory)}if(!raw)return copy(memory);try{const saved=validate(JSON.parse(raw));if(['四選淨豆','一遇'].includes(saved.settings?.shopName))saved.settings.shopName=window.COFFEE_SEED.settings.shopName;return copy(validate(migrateCatalog(saved)))}catch(_){error('已保存的展示資料格式不相容，請先匯出或從設定還原示範資料')}}
+ function state(){let raw;try{raw=localStorage.getItem(KEY)}catch(_){return copy(memory)}if(!raw)return copy(memory);try{const saved=validate(JSON.parse(raw));return copy(validate(migrateCatalog(saved)))}catch(_){error('已保存的展示資料格式不相容，請先匯出或從設定還原示範資料')}}
  function commit(s){validate(s);s.updatedAt=new Date().toISOString();try{localStorage.setItem(KEY,JSON.stringify(s))}catch(_){error('資料無法保存：請檢查瀏覽器儲存權限或空間。此次修改未套用。')}memory=copy(s);window.dispatchEvent(new CustomEvent('coffee:change'));return copy(s)}
  const mutate=fn=>{const s=state();const result=fn(s);commit(s);return copy(result??s)};
  const getProduct=(s,id)=>s.products.find(p=>p.id===id)||error('找不到商品');

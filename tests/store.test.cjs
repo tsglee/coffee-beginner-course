@@ -18,9 +18,9 @@ check('backup roundtrip restores linked state; product with order history cannot
 
 check('backup rejects malformed timestamps, string stock values and repeated image-only galleries',()=>{const {S}=setup();let s=S.state();s.orders[0].createdAt='not-a-date';assert.throws(()=>S.importData(JSON.stringify(s)),/時間/);s=S.state();s.products[0].variants[0].stock='24';assert.throws(()=>S.importData(JSON.stringify(s)),/範圍/);s=S.state();s.products[0].gallery=Array(5).fill(s.products[0].gallery[0]);assert.throws(()=>S.importData(JSON.stringify(s)),/不同圖片/)});
 
-check('brand migration keeps saved orders and inventory, and preserves custom shop names',()=>{const {S,map}=setup();const saved=S.state();saved.settings.shopName='四選淨豆';saved.products[0].variants[0].stock=7;map.set('pure-select-store-v1',JSON.stringify(saved));const migrated=S.state();assert.equal(migrated.settings.shopName,'佛我咖啡');assert.equal(migrated.products[0].variants[0].stock,7);assert.deepEqual(migrated.orders,saved.orders);saved.settings.shopName='我的咖啡店';map.set('pure-select-store-v1',JSON.stringify(saved));assert.equal(S.state().settings.shopName,'我的咖啡店')});
+check('brand migration keeps saved orders and inventory, and preserves custom shop names',()=>{const {S,map}=setup();const saved=S.state();saved.settings.shopName='四選淨豆';saved.products[0].variants[0].stock=7;map.set('pure-select-store-v1',JSON.stringify(saved));const migrated=S.state();assert.equal(migrated.settings.shopName,'露露咖啡日記');assert.equal(migrated.products[0].variants[0].stock,7);assert.deepEqual(migrated.orders,saved.orders);saved.settings.shopName='我的咖啡店';map.set('pure-select-store-v1',JSON.stringify(saved));assert.equal(S.state().settings.shopName,'我的咖啡店')});
 
-check('Forward branch migrates the Encounter default while preserving saved cart and orders',()=>{const {S,map}=setup();S.addCart('guji','guji-250',2);const saved=S.state();saved.settings.shopName='一遇';map.set('pure-select-store-v1',JSON.stringify(saved));const current=S.state();assert.equal(current.settings.shopName,'佛我咖啡');assert.deepEqual(current.cart,saved.cart);assert.deepEqual(current.orders,saved.orders);assert.deepEqual(current.products,saved.products)});
+check('Ruru rebrand migrates the Encounter default while preserving saved cart and orders',()=>{const {S,map}=setup();S.addCart('guji','guji-250',2);const saved=S.state();saved.settings.shopName='一遇';map.set('pure-select-store-v1',JSON.stringify(saved));const current=S.state();assert.equal(current.settings.shopName,'露露咖啡日記');assert.deepEqual(current.cart,saved.cart);assert.deepEqual(current.orders,saved.orders);assert.deepEqual(current.products,saved.products)});
 
 check('legacy ten-coffee state becomes five public samples without deleting history, cart or custom products',()=>{
  const {S,map}=setup();const saved=JSON.parse(fs.readFileSync(path.join(base,'tests/fixtures/legacy-catalog.json'),'utf8'));
@@ -58,4 +58,10 @@ check('service defaults migrate while custom settings and historical orders are 
  assert.equal(map.get('pure-select-store-v1'),JSON.stringify(saved));
  saved.settings.supportEmail='hello@custom.example';saved.settings.freeShipping=2000;map.set('pure-select-store-v1',JSON.stringify(saved));
  assert.equal(S.state().settings.supportEmail,'hello@custom.example');assert.equal(S.state().settings.freeShipping,2000);
+});
+
+check('Ruru rebrand migrates saved and imported Forward defaults without changing commerce data or custom names',()=>{
+ const {S,map}=setup();S.addCart('guji','guji-250',2);const original=S.state();
+ for(const name of ['佛我咖啡','Forward Coffee','FORWARD COFFEE']) {const old=JSON.parse(JSON.stringify(original));old.settings.shopName=name;const raw=JSON.stringify(old);map.set('pure-select-store-v1',raw);const now=S.state();assert.equal(now.settings.shopName,'露露咖啡日記');assert.equal(map.get('pure-select-store-v1'),raw);for(const key of ['products','orders','cart','batches','ledger'])assert.deepEqual(now[key],old[key]);S.importData(raw);assert.equal(JSON.parse(map.get('pure-select-store-v1')).settings.shopName,'露露咖啡日記');}
+ const custom=JSON.parse(JSON.stringify(original));custom.settings.shopName='我的獨立咖啡品牌';S.importData(JSON.stringify(custom));assert.equal(S.state().settings.shopName,custom.settings.shopName);
 });

@@ -2,8 +2,8 @@
   'use strict';
   const root=document.documentElement;
   const save=(key,value)=>{try{localStorage.setItem(key,value)}catch(_){}};
-  const themeNames={terra:'暖陶日光',forest:'森野苔綠',cobalt:'靛藍檸光',nocturne:'夜焙琥珀'};
-  const themeColors={terra:'#f5eee4',forest:'#ecefe2',cobalt:'#eeecf8',nocturne:'#181e1d'};
+  const themeNames={terra:'霧藍日記',forest:'鼠尾草綠',cobalt:'蜜桃晨光',nocturne:'靜夜藍'};
+  const themeColors={terra:'#f6efe6',forest:'#eff1e8',cobalt:'#faf0e9',nocturne:'#1e3440'};
   const themeButtons=[...document.querySelectorAll('[data-theme-choice]')];
   const themeToggle=document.getElementById('theme-toggle');
   const themeOptions=document.getElementById('theme-options');

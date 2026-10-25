@@ -61,6 +61,7 @@ def verify(archive_path):
             "tests/store.test.cjs", "tests/i18n.test.cjs", "tests/course.test.cjs",
             "courses.html", "contact.html", "policies.html",
             "assets/business.css", "assets/business.js",
+            "assets/ruru.css", "assets/brand-theme.js", "assets/ruru/wordmark.svg", "assets/ruru/daylight-cat.png",
         }
         if not required.issubset(files):
             raise ValueError("Required website or handoff files are missing")
@@ -84,7 +85,7 @@ def package(root, output_dir, release_date):
             files[name] = {"bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
     manifest = {
         "format_version": 1,
-        "name": "佛我咖啡 / Forward Coffee",
+        "name": "露露咖啡日記 / Ruru Coffee Journal",
         "release_date": release_date.isoformat(),
         "repository_url": REPOSITORY,
         "public_url": PUBLIC_URL,
@@ -95,7 +96,7 @@ def package(root, output_dir, release_date):
         "files": files,
     }
     output_dir.mkdir(parents=True, exist_ok=True)
-    target = output_dir / f"encounter-coffee-{release_date.isoformat()}-{commit[:7]}.zip"
+    target = output_dir / f"ruru-coffee-journal-{release_date.isoformat()}-{commit[:7]}.zip"
     timestamp = (release_date.year, release_date.month, release_date.day, 0, 0, 0)
     with zipfile.ZipFile(target, "x", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
         for name, data in [*contents.items(), ("RELEASE-MANIFEST.json", (json.dumps(manifest, ensure_ascii=False, indent=2) + "\n").encode())]:
@@ -104,7 +105,7 @@ def package(root, output_dir, release_date):
             info.create_system = 3
             info.external_attr = (stat.S_IFREG | 0o644) << 16
             archive.writestr(info, data, compresslevel=9)
-        archive.comment = b"Forward Coffee committed source and agent handoff"
+        archive.comment = b"Ruru Coffee Journal committed source and agent handoff"
     verified = verify(target)
     digest = hashlib.sha256(target.read_bytes()).hexdigest()
     print(json.dumps({"zip": str(target.resolve()), "bytes": target.stat().st_size, "sha256": digest, "commit": commit, "source_files_verified": len(verified["files"])}, indent=2))

@@ -12,7 +12,8 @@ const t = window.CoffeeI18n.translate;
 function test(label, fn) { fn(); console.log('PASS', label); }
 
 test('imported course preserves tuition, duration, instructors, locations and original LINE destination', () => {
-  assert.equal(c.brand, '佛我咖啡');
+  assert.equal(c.brand, '露露咖啡日記');
+  assert.equal(c.english, 'Ruru Coffee Journal');
   assert.equal(c.name, '好好手沖');
   assert.equal(t(c.name), '好好手沖');
   assert.equal(c.priceNumber, 1800);
@@ -43,11 +44,12 @@ test('all 12 imported course images match the recorded source checksums', () => 
   assert.equal(provenance.assets.filter(a => a.type === 'user-provided real photo').length, 4);
 });
 
-test('all existing page shells expose the integrated course and use the Forward brand', () => {
+test('all existing page shells expose the integrated course and use the Ruru brand', () => {
   for (const file of ['index.html', 'shop.html', 'product.html', 'checkout.html', 'story.html', 'about.html', 'admin-orders.html']) {
     const html = fs.readFileSync(path.join(root, file), 'utf8');
     assert.ok(html.includes('href="courses.html"'), file);
-    assert.ok(html.includes('佛我咖啡'), file);
+    assert.ok(html.includes('露露咖啡日記'), file);
+    assert.ok(!html.includes('佛我咖啡') && !html.includes('FORWARD'), file);
     assert.ok(!html.includes('一遇') && !html.includes('ENCOUNTER'), file);
   }
   const html = fs.readFileSync(path.join(root, 'courses.html'), 'utf8');

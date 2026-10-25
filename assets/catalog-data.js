@@ -638,7 +638,7 @@ window.COFFEE_SEED = {
     }
   ],
   "settings": {
-    "shopName": "佛我咖啡",
+    "shopName": "露露咖啡日記",
     "shippingFee": 60,
     "freeShipping": 1000,
     "carouselSeconds": 6,
