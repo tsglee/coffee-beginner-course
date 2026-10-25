@@ -23,7 +23,7 @@ Open http://127.0.0.1:4173/?lang=en or http://127.0.0.1:4173/?lang=zh. Stop the 
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Equal workshop / coffee hero panels, four palettes, balanced service details and five sample coffees |
+| `index.html` | Course-first hero and three distinct chapters: workshop, five sample coffees, delivery/support |
 | `courses.html` | Complete 好好手沖 workshop, instructors, materials, FAQ and original LINE inquiry link |
 | `contact.html` | LINE and email contact with a copyable inquiry draft; nothing is sent automatically |
 | `policies.html` | Shipping, payment, returns, workshop booking and privacy information |

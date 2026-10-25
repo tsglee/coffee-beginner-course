@@ -4,7 +4,7 @@ This document is the starting point for another AI agent receiving the ZIP. It d
 
 ## Branch update: forward (2026-10-22)
 
-The integration was developed on `tsglee/coffee-site` branch `forward` at `74cdd4118c5d15801b45f48ce88e148c312a482d`. The user then explicitly requested replacing the course repository with this version. This repository, `tsglee/coffee-beginner-course`, now publishes the integrated site from `main` at https://tsglee.github.io/coffee-beginner-course/. The homepage now gives teaching and selling beans equal emphasis; keep both primary services visible in the first viewport. See `docs/DEPLOYMENT-2026-10-22.md` for the old release backup, compatibility redirect and rollback. The separate `coffee-site` repository was not merged into its own main.
+The integration was developed on `tsglee/coffee-site` branch `forward` at `74cdd4118c5d15801b45f48ce88e148c312a482d`. The user then explicitly requested replacing the course repository with this version. This repository, `tsglee/coffee-beginner-course`, now publishes the integrated site from `main` at https://tsglee.github.io/coffee-beginner-course/. The latest homepage leads with teaching, then introduces coffee sales in a separate chapter, followed by delivery/support. This follows the user’s latest direction and supersedes the earlier 50/50 hero. See `docs/DEPLOYMENT-2026-10-22.md` for the old release backup, compatibility redirect and rollback. The separate `coffee-site` repository was not merged into its own main.
 
 ## 1. Scope and design
 
@@ -48,6 +48,8 @@ All runtime images are local under `assets/`, including the generated JPEG asset
 | `assets/en-dictionary.js` | English copy keyed by original Chinese text |
 | `assets/i18n.js` | Language selection, text/attribute translation, dynamic content observer and internal link localization |
 | `assets/home.css` | Shared palette tokens and original homepage design |
+| `assets/home-sections.css` | Scoped course-first homepage, numbered chapters and distinct section backgrounds |
+| `assets/business.css`, `assets/business.js` | Shared customer support/footer styling and copyable inquiry drafts |
 | `assets/premium.css`, `assets/motion.js` | Shared editorial styling, unified course invitations, progressive reveal and reduced-motion handling |
 | `assets/commerce.css` | Storefront/admin components and base responsive layouts |
 | `assets/responsive.css` | English typography, language switch, editorial layouts and mobile corrections |
@@ -179,3 +181,7 @@ To rebuild a package from a clean Git checkout, run the command in README. To ve
 ## 2026-10-25: Equal services and buyer support
 
 See `docs/DUAL-BUSINESS-2026-10-25.md` for the current 50/50 homepage, confirmed pickup/COD terms, returns sources, inquiry workflow and settings migration. This supersedes the earlier bean-first design.
+
+## 2026-10-25: Course-first chapter layout
+
+The user found the equal-service composition confusing and requested teaching first, coffee sales second. The current homepage has one workshop hero, a chapter navigation strip, a complete course chapter, a separate coffee chapter with the existing carousel/catalog controls, and a dark delivery/support chapter. See `docs/HOME-CHAPTERS-2026-10-25.md`. This supersedes the 50/50 visual priority while preserving both businesses.
