@@ -43,3 +43,19 @@ check('custom catalogs and edited former demo listings survive catalog migration
  const custom=S.state();delete custom.catalogRevision;custom.products=custom.products.filter(p=>p.id==='brazil-cerrado');custom.batches=custom.batches.filter(b=>b.productId==='brazil-cerrado');custom.orders=[];custom.cart=[];custom.ledger=[];
  map.set('pure-select-store-v1',JSON.stringify(custom));assert.equal(S.state().products.length,1);
 });
+
+check('NT$1,000 free-shipping boundary uses product subtotal',()=>{
+ const {S}=setup();assert.equal(S.state().settings.freeShipping,1000);
+ const p=S.state().products.find(p=>p.id==='guji');p.variants[0].price=500;S.saveProduct(p);
+ S.addCart('guji','guji-250',1);assert.equal(S.cartDetails().shipping,60);
+ S.addCart('guji','guji-250',1);assert.equal(S.cartDetails().subtotal,1000);assert.equal(S.cartDetails().shipping,0);
+ assert.equal(S.createOrder(customer).total,1000);
+});
+check('service defaults migrate while custom settings and historical orders are preserved',()=>{
+ const {S,map}=setup();const saved=JSON.parse(fs.readFileSync(path.join(base,'tests/fixtures/legacy-catalog.json'),'utf8'));
+ map.set('pure-select-store-v1',JSON.stringify(saved));const current=S.state();
+ assert.equal(current.settings.supportEmail,'mmulight@gmail.com');assert.equal(current.settings.freeShipping,1000);assert.deepEqual(current.orders,saved.orders);
+ assert.equal(map.get('pure-select-store-v1'),JSON.stringify(saved));
+ saved.settings.supportEmail='hello@custom.example';saved.settings.freeShipping=2000;map.set('pure-select-store-v1',JSON.stringify(saved));
+ assert.equal(S.state().settings.supportEmail,'hello@custom.example');assert.equal(S.state().settings.freeShipping,2000);
+});

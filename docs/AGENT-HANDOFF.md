@@ -4,7 +4,7 @@ This document is the starting point for another AI agent receiving the ZIP. It d
 
 ## Branch update: forward (2026-10-22)
 
-The integration was developed on `tsglee/coffee-site` branch `forward` at `74cdd4118c5d15801b45f48ce88e148c312a482d`. The user then explicitly requested replacing the course repository with this version. This repository, `tsglee/coffee-beginner-course`, now publishes the integrated site from `main` at https://tsglee.github.io/coffee-beginner-course/. Keep the bean storefront primary and the full workshop on its own page. See `docs/DEPLOYMENT-2026-10-22.md` for the old release backup, compatibility redirect and rollback. The separate `coffee-site` repository was not merged into its own main.
+The integration was developed on `tsglee/coffee-site` branch `forward` at `74cdd4118c5d15801b45f48ce88e148c312a482d`. The user then explicitly requested replacing the course repository with this version. This repository, `tsglee/coffee-beginner-course`, now publishes the integrated site from `main` at https://tsglee.github.io/coffee-beginner-course/. The homepage now gives teaching and selling beans equal emphasis; keep both primary services visible in the first viewport. See `docs/DEPLOYMENT-2026-10-22.md` for the old release backup, compatibility redirect and rollback. The separate `coffee-site` repository was not merged into its own main.
 
 ## 1. Scope and design
 
@@ -39,7 +39,7 @@ All runtime images are local under `assets/`, including the generated JPEG asset
 
 | Path | Responsibility |
 | --- | --- |
-| Eight root HTML files | Page shells, static homepage/editorial content and ordered script/style loading |
+| Ten root HTML files | Page shells, static homepage/editorial content and ordered script/style loading |
 | `assets/catalog-data.js` | `window.COFFEE_SEED`: initial products, batches, orders, cart, ledger and settings |
 | `assets/store.js` | `window.CoffeeStore`: validation, transactions, local persistence and state-change events |
 | `assets/commerce.js` | Storefront rendering, filters, product galleries, quantity/weight calculations and checkout |
@@ -48,11 +48,11 @@ All runtime images are local under `assets/`, including the generated JPEG asset
 | `assets/en-dictionary.js` | English copy keyed by original Chinese text |
 | `assets/i18n.js` | Language selection, text/attribute translation, dynamic content observer and internal link localization |
 | `assets/home.css` | Shared palette tokens and original homepage design |
-| `assets/premium.css`, `assets/motion.js` | Bean-first editorial layout, unified course invitations, progressive reveal and reduced-motion handling |
+| `assets/premium.css`, `assets/motion.js` | Shared editorial styling, unified course invitations, progressive reveal and reduced-motion handling |
 | `assets/commerce.css` | Storefront/admin components and base responsive layouts |
 | `assets/responsive.css` | English typography, language switch, editorial layouts and mobile corrections |
 | `assets/catalog/` | Twelve added origin/bean/packaging/hero JPEG illustrations |
-| `tests/store.test.cjs` | Fourteen data/transaction/compatibility checks using a mocked localStorage |
+| `tests/store.test.cjs` | Sixteen data/transaction/compatibility checks using a mocked localStorage |
 | `tests/i18n.test.cjs` | Five localization/link/data-integrity checks |
 | `scripts/package_site.py` | Reproducible committed-source ZIP and hash-manifest creation/verification |
 
@@ -76,7 +76,7 @@ The five current sample products and historical catalog have English display tra
 
 ## 5. Data model and invariants
 
-Main storage key: `pure-select-store-v1`. Other keys include `pure-select-theme` and `pure-select-motion`. Browser origins are independent: localhost, GitHub Pages, different ports and another domain do not share data.
+Main storage key: `pure-select-store-v1`. Other keys include `pure-select-theme` and `pure-select-motion`. Origins are independent across domains and ports. GitHub Pages projects under the same tsglee.github.io origin share localStorage even when their repository paths differ.
 
 `CoffeeStore.state()` returns a copy of state. Mutations read the latest saved state, clone, validate and commit. A failed persistence write must not partially apply an order or inventory update. Notifications use `coffee:change` plus cross-tab `storage` events. This does not provide server-side, multi-user transaction guarantees.
 
@@ -126,7 +126,7 @@ node tests/i18n.test.cjs
 node tests/course.test.cjs
 ```
 
-Expected on this release: 14 store checks, 5 localization checks and 4 course-integration checks pass. They cover valid seed/gallery/SKUs, live-price order snapshots, overselling, cancellation, shipping/tracking, batch idempotency, storage rollback, import validation, historical product deletion, old-brand migration, English product copy, link/query/hash preservation and raw-data integrity.
+Expected on this release: 16 store checks, 5 localization checks and 4 course-integration checks pass. They cover valid seed/gallery/SKUs, live-price order snapshots, overselling, cancellation, shipping/tracking, batch idempotency, storage rollback, import validation, historical product deletion, old-brand migration, English product copy, link/query/hash preservation and raw-data integrity.
 
 Also check JavaScript syntax with `node --check` for changed files, local asset/link references and `git diff --check`. Use a real browser for interactions and visual verification. Previous viewport checks: 320×740, 390×844, 768×1024, 1280×900, and an 844×390 landscape homepage. Ten English product pages have been checked at 320px; the long Mandheling origin/altitude field exposed an overflow and was fixed using shrinkable grid columns.
 
@@ -175,3 +175,7 @@ Included: every tracked file at the packaged Git commit, all runtime images, bot
 Omitted: Git history, local ignored/untracked files, server processes, browser localStorage, external original generated PNGs, credentials and a production backend. To transfer browser changes, use the admin's JSON export/import separately; the source ZIP starts with the committed seed catalog. It does not silently extract user/browser data.
 
 To rebuild a package from a clean Git checkout, run the command in README. To verify any received ZIP, run the package script's `--verify` mode, which needs Python only and does not require a Git checkout.
+
+## 2026-10-25: Equal services and buyer support
+
+See `docs/DUAL-BUSINESS-2026-10-25.md` for the current 50/50 homepage, confirmed pickup/COD terms, returns sources, inquiry workflow and settings migration. This supersedes the earlier bean-first design.

@@ -58,7 +58,9 @@ def verify(archive_path):
             "README.md", "AGENTS.md", "docs/AGENT-HANDOFF.md",
             "assets/catalog-data.js", "assets/store.js", "assets/i18n.js",
             "assets/en-dictionary.js", "scripts/package_site.py",
-            "tests/store.test.cjs", "tests/i18n.test.cjs",
+            "tests/store.test.cjs", "tests/i18n.test.cjs", "tests/course.test.cjs",
+            "courses.html", "contact.html", "policies.html",
+            "assets/business.css", "assets/business.js",
         }
         if not required.issubset(files):
             raise ValueError("Required website or handoff files are missing")

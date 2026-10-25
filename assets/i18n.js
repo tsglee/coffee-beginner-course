@@ -9,6 +9,7 @@
     if (lang !== 'en') return text;
     if (Object.hasOwn(dictionary, text.trim())) return text.replace(text.trim(), dictionary[text.trim()]);
     return text
+      .replace(/「(.*?)」：(\d+) 款咖啡/g, (_, query, count) => '“'+query+'”: '+count+' '+(count==='1'?'coffee':'coffees'))
       .replace(/將用備份的 (\d+) 款商品與 (\d+) 筆訂單取代目前資料。/g, 'Replace current data with $1 products and $2 orders from the backup.')
       .replace(/(\d+) 款熟豆選品，從花果香到可可尾韻。/g, '$1 roasted coffees, from floral aromas to cocoa finishes.')
       .replace(/找到 (\d+) 款熟豆/g, 'Found $1 coffees')

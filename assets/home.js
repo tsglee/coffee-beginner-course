@@ -64,7 +64,7 @@
   document.getElementById('clear-search').addEventListener('click',()=>{flavor='all';search='';filterCoffee();flavorButtons[0].focus()});
   const searchDialog=document.getElementById('coffee-search');
   document.getElementById('search-open').addEventListener('click',()=>{closeMenu();closeThemes();searchDialog.showModal();document.getElementById('coffee-search-input').focus()});
-  document.getElementById('coffee-search-form').addEventListener('submit',event=>{event.preventDefault();search=document.getElementById('coffee-search-input').value.trim().toLocaleLowerCase();flavor='all';filterCoffee();searchDialog.close();document.getElementById('products').scrollIntoView({behavior:reducedMotion.matches?'instant':'smooth'});flavorButtons[0].focus({preventScroll:true})});
+  document.getElementById('coffee-search-form').addEventListener('submit',event=>{event.preventDefault();search=document.getElementById('coffee-search-input').value.trim().toLocaleLowerCase();flavor='all';filterCoffee();searchDialog.close();document.getElementById('products').scrollIntoView({behavior:reducedMotion.matches||root.dataset.motion==='paused'?'instant':'smooth'});flavorButtons[0].focus({preventScroll:true})});
 
   const processImages=[
     {src:'assets/ea2b33f262c8.jpg',alt:'產地工作者挑選咖啡果實'},

@@ -41,6 +41,11 @@
  // Retain old products and their order associations; retire only listings that retain their original demo names.
  function migrateCatalog(saved){
   const seed=window.COFFEE_SEED;
+  if(saved.serviceRevision!==seed.serviceRevision){
+   if(saved.settings.supportEmail==='contact@pureselectcoffee.tw')saved.settings.supportEmail=seed.settings.supportEmail;
+   if(saved.settings.freeShipping===1500)saved.settings.freeShipping=seed.settings.freeShipping;
+   saved.serviceRevision=seed.serviceRevision;
+  }
   if(saved.catalogRevision===seed.catalogRevision)return saved;
   const retired={"kenya-nyeri":"肯亞・涅里 水洗","colombia-huila":"哥倫比亞・薇拉 水洗","guatemala-antigua":"瓜地馬拉・安提瓜 水洗","costa-rica":"哥斯大黎加・塔拉珠 紅蜜","panama-geisha":"巴拿馬・波奎特 藝伎水洗","taiwan-alishan":"台灣・阿里山 山美水洗"};
   // A custom catalog does not receive new sample products.

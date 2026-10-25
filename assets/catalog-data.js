@@ -640,10 +640,11 @@ window.COFFEE_SEED = {
   "settings": {
     "shopName": "佛我咖啡",
     "shippingFee": 60,
-    "freeShipping": 1500,
+    "freeShipping": 1000,
     "carouselSeconds": 6,
-    "supportEmail": "contact@pureselectcoffee.tw"
+    "supportEmail": "mmulight@gmail.com"
   },
   "updatedAt": "2026-10-13T09:00:00+08:00",
-  "catalogRevision": "forward-five-v1"
+  "catalogRevision": "forward-five-v1",
+  "serviceRevision": "tw-pickup-20261025"
 };

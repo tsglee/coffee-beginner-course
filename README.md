@@ -23,8 +23,10 @@ Open http://127.0.0.1:4173/?lang=en or http://127.0.0.1:4173/?lang=zh. Stop the 
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Three-photo hero carousel, four palettes, five sample coffees, selection story, brew guide and FAQ |
+| `index.html` | Equal workshop / coffee hero panels, four palettes, balanced service details and five sample coffees |
 | `courses.html` | Complete 好好手沖 workshop, instructors, materials, FAQ and original LINE inquiry link |
+| `contact.html` | LINE and email contact with a copyable inquiry draft; nothing is sent automatically |
+| `policies.html` | Shipping, payment, returns, workshop booking and privacy information |
 | `shop.html` | Five sample roasted coffees with origin/roast filters, English/Chinese search and sorting |
 | `product.html?id=guji` | Six-image gallery, 250g/500g bags, stock, flavor, origin, roast date and duration |
 | `checkout.html` | Shared demo cart, weight/price calculations and local demo orders |
@@ -43,7 +45,7 @@ node tests/i18n.test.cjs
 node tests/course.test.cjs
 ```
 
-There are 23 store/localization/course checks. Browser viewport validation is documented in [docs/ENGLISH-RWD.md](docs/ENGLISH-RWD.md).
+There are 25 store/localization/course checks. Browser viewport validation is documented in [docs/ENGLISH-RWD.md](docs/ENGLISH-RWD.md).
 
 ## Package a committed snapshot
 
