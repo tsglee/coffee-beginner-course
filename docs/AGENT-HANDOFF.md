@@ -10,7 +10,7 @@ The integration was developed on `tsglee/coffee-site` branch `forward` at `74cdd
 
 The user asked for a distinctive photographic coffee brand site, inspired by the full-screen, slowly fading images on Encounter Coffee's reference site. The implementation is original project code and illustrative images; it is not a copy of that site's source or its merchant backend.
 
-The brand is **露露咖啡日記**, with **Ruru Coffee Journal** in English. The user separated this site from 佛我咖啡 / Forward Coffee on 2026-10-26; do not restore that former identity. The visual identity follows the user’s commemorative bag reference: ivory, mist blue, peach, sage, a serif Ruru wordmark and a sleeping cat. See `docs/RURU-BRAND-2026-10-26.md`. The workshop name stays **好好手沖** in both locales by user request; do not translate the course name. Do not restore the previous 四選淨豆 / Pure Select branding. The old `pure-select-*` storage keys remain intentionally compatible with existing browsers. The store model maps the previous default shop name to the current default without discarding orders or inventory; custom shop names are preserved.
+The brand is **露露咖啡日記**, with **Ruru Coffee Journal** in English. The user separated this site from 佛我咖啡 / Forward Coffee on 2026-10-26; do not restore that former identity. The current visual identity uses the user-supplied Ruru page logo and banner, plus ivory, mist blue, peach and sage accents. See `docs/RURU-BRAND-2026-10-26.md`. The workshop name stays **好好手沖** in both locales by user request; do not translate the course name. Do not restore the previous 四選淨豆 / Pure Select branding. The old `pure-select-*` storage keys remain intentionally compatible with existing browsers. The store model maps the previous default shop name to the current default without discarding orders or inventory; custom shop names are preserved.
 
 Implemented features:
 
@@ -48,7 +48,7 @@ All runtime images are local under `assets/`, including the generated JPEG asset
 | `assets/en-dictionary.js` | English copy keyed by original Chinese text |
 | `assets/i18n.js` | Language selection, text/attribute translation, dynamic content observer and internal link localization |
 | `assets/home.css` | Shared palette tokens and original homepage design |
-| `assets/ruru.css`, `assets/brand-theme.js`, `assets/ruru/` | Current shared Ruru identity, compatible theme preference, vector wordmark/favicon and brand illustration |
+| `assets/ruru.css`, `assets/brand-theme.js`, `assets/ruru/` | Current shared Ruru identity, compatible theme preference, official logo/banner and visual assets |
 | `assets/home-sections.css` | Scoped course-first homepage, numbered chapters and distinct section backgrounds |
 | `assets/business.css`, `assets/business.js` | Shared customer support/footer styling and copyable inquiry drafts |
 | `assets/premium.css`, `assets/motion.js` | Shared editorial styling, unified course invitations, progressive reveal and reduced-motion handling |
@@ -189,4 +189,8 @@ The user found the equal-service composition confusing and requested teaching fi
 
 ## 2026-10-26: Ruru identity
 
-All storefront pages and the demo admin now use 露露咖啡日記 / Ruru Coffee Journal. Workshop contents, product data, shipping/returns, links and course-first chapter order are unchanged. Existing known default shop names migrate to Ruru on read/import; custom names and all commerce records remain intact. The four existing theme IDs are retained with new brand palettes. `assets/ruru.css` must load after all other CSS. `assets/brand-theme.js` applies the saved preference across pages. The logo is a web reconstruction of the supplied reference’s serif wordmark, not an original vector file supplied by the user. The new cat illustration is decorative artwork, not a photograph of a product or course. Legacy internal batch IDs are intentionally retained.
+All storefront pages and the demo admin now use 露露咖啡日記 / Ruru Coffee Journal. Workshop contents, product data, shipping/returns, links and course-first chapter order are unchanged. Existing known default shop names migrate to Ruru on read/import; custom names and all commerce records remain intact. The four existing theme IDs are retained with new brand palettes. `assets/ruru.css` must load after all other CSS. `assets/brand-theme.js` applies the saved preference across pages. The user subsequently supplied the official page logo and banner, now used unchanged in place of the reconstructed wordmark and generated hero art. Asset hashes and provenance are in `docs/ruru-official-assets.json`. The banner is decorative brand artwork, not a product/classroom photograph. Legacy internal batch IDs are intentionally retained.
+
+## Official page assets (2026-10-26)
+
+Use `assets/ruru/official-logo.png` across headers, footers, demo admin and favicon. Use `assets/ruru/official-banner.png` in the homepage banner. The source PNGs are copied byte-for-byte from the user attachments. Layout-only CSS clips the banner’s supplied white margins and centers the artwork on narrow screens; the image itself is not edited. The Chinese/English booking introduction immediately follows the banner, with the booking action visible in the tested first viewports. Previous generated artwork and reconstructed SVG files are historical assets, not current logo/hero sources.

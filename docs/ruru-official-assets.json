@@ -1,0 +1,29 @@
+{
+  "provided_on": "2026-10-26",
+  "assets": [
+    {
+      "role": "official page logo",
+      "user_supplied_filename": "ChatGPT Image 2026年9月6日 下午10_30_34.png",
+      "destination": "assets/ruru/official-logo.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "bytes": 1317765,
+      "sha256": "a6c4c36e87890825e88696d9dec00eb1eea7aeb0eda31112a49dd16afdd758a0",
+      "content_modified": false
+    },
+    {
+      "role": "official page banner",
+      "user_supplied_filename": "ChatGPT Image 2026年9月10日 下午08_35_35.png",
+      "destination": "assets/ruru/official-banner.png",
+      "dimensions": [
+        1983,
+        793
+      ],
+      "bytes": 1580045,
+      "sha256": "94d5b3e1049426650b47df8620e56969c5ef3965eb74b65b3bfc1834811ed971",
+      "content_modified": false
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 This repository publishes 露露咖啡日記 / RURU COFFEE JOURNAL: a bilingual roasted-coffee storefront and the 好好手沖 workshop. The integrated version replaces the former course-only website on `main`, as requested by the user. See [deployment and rollback notes](docs/DEPLOYMENT-2026-10-22.md). See [course integration notes](docs/FORWARD-INTEGRATION.md) and the [five-coffee catalog guide](docs/FORWARD-CATALOG.md).
 
-The user separated this site from the Forward brand on 2026-10-26. The current identity follows the Ruru commemorative bag: ivory paper, misty blue, peach, sage and a sleeping cat. See [Ruru brand guide](docs/RURU-BRAND-2026-10-26.md).
+The user separated this site from the Forward brand on 2026-10-26. The current identity uses the user-supplied Ruru page logo and banner, with ivory paper, misty blue, peach and sage accents. See [Ruru brand guide](docs/RURU-BRAND-2026-10-26.md).
 
 A bilingual, responsive roasted-coffee storefront and operable administration demo. Plain HTML, CSS and JavaScript; no build step, npm installation, backend or database is required.
 

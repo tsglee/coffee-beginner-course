@@ -4,6 +4,14 @@ The user separated this site from 佛我咖啡 / Forward Coffee on 2026-10-26. A
 
 ## Design reference and current assets
 
+The user subsequently supplied the official page logo and banner. **These supersede the reconstructed SVG and generated cat hero below.** Both source PNGs are preserved byte-for-byte; filenames, dimensions and SHA-256 hashes are in `docs/ruru-official-assets.json`.
+
+- `assets/ruru/official-logo.png`: actual circular page logo, used throughout headers, footers, administration and favicon. It retains its transparency and original colors, including in dark mode.
+- `assets/ruru/official-banner.png`: actual page banner, used as a wide homepage image followed immediately by the course introduction/booking action. CSS hides its outer white margins and centers the original composition on mobile; embedded lettering remains as provided in both languages.
+- The current image integration uses no new image generation or content editing.
+
+### Earlier reference-derived assets (historical)
+
 The user supplied a commemorative coffee-bag design showing a serif Ruru wordmark, ivory paper, mist-blue hills, a peach sun, sage leaves and a sleeping gray-and-white cat. The site carries those visual cues into a light, editorial layout while preserving the course-first chapter order.
 
 - Main palette: ivory `#f6efe6`, ink blue `#213c47`, mist blue `#82a9bb`, peach `#eebda9`, sage `#8e9f89`. Interactive blue is darker for readable labels.
@@ -15,6 +23,10 @@ The user supplied a commemorative coffee-bag design showing a serif Ruru wordmar
 - `assets/brand-theme.js`: applies the existing saved palette preference before rendering on all full pages.
 
 The existing four theme IDs (`terra`, `forest`, `cobalt`, `nocturne`) remain compatible, now labeled 霧藍日記 / 鼠尾草綠 / 蜜桃晨光 / 靜夜藍. Do not reuse the old brown/green/purple visual defaults on this site. All four new options remain within the Ruru visual language.
+
+## Official-asset layout verification
+
+Ten full pages × two languages × four widths (320, 390, 768, 1440) = 80 checked combinations. No horizontal document overflow or completed broken images; each full page uses the official logo. The homepage course booking action fits the first screen in all eight locale/size combinations. Static local references, existing 26 tests and source-image byte equality were verified. Original files are retained without resizing, recoloring or regeneration.
 
 ## What stays the same
 

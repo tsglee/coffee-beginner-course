@@ -61,7 +61,7 @@ def verify(archive_path):
             "tests/store.test.cjs", "tests/i18n.test.cjs", "tests/course.test.cjs",
             "courses.html", "contact.html", "policies.html",
             "assets/business.css", "assets/business.js",
-            "assets/ruru.css", "assets/brand-theme.js", "assets/ruru/wordmark.svg", "assets/ruru/daylight-cat.png",
+            "assets/ruru.css", "assets/brand-theme.js", "assets/ruru/official-logo.png", "assets/ruru/official-banner.png",
         }
         if not required.issubset(files):
             raise ValueError("Required website or handoff files are missing")

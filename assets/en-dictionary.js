@@ -1111,3 +1111,7 @@ Object.assign(window.COFFEE_EN, {
   '已切換至蜜桃晨光配色': 'Switched to Peach morning',
   '已切換至靜夜藍配色': 'Switched to Quiet midnight'
 });
+Object.assign(window.COFFEE_EN, {
+  'Ruru coffee journal 粉專標誌': 'Official Ruru coffee journal page logo',
+  '露露咖啡日記粉專橫幅：Ruru 字標、熟睡的貓、手沖器材與晨光咖啡桌': 'Official Ruru Coffee Journal banner with its wordmark, sleeping cat and a sunlit table of brewing equipment'
+});
