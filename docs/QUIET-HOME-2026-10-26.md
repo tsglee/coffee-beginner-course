@@ -31,3 +31,7 @@ This implements the user's six annotated homepage comments and their follow-up t
 - Visual inspection of the hero, real duo photograph, class-coffee layout and neighboring section backgrounds. Manual hero auto-advance/pause, controls, existing flavor filter/search, mobile menu, primary links and four theme variants checked.
 - The browser UI does not expose an OS reduced-motion emulation control; that branch is covered by the controller tests and CSS rules. Do not claim physical-device or OS-preference testing.
 - No changes to product data, pricing, stock, order schema, checkout or course contents. Responsive checks use viewport emulation.
+
+## Catalog follow-up
+
+The user flagged the blue catalog introduction and demo notice as visually disconnected. `assets/ruru.css` now scopes the same quiet homepage palette to `body[data-page=catalog]`, including the four existing theme variants. The shop uses warm paper and pale sage surfaces with matching readable text, borders and controls. Product data, photographs and layout are unchanged. `shop.html` uses the `20261026-shop1` stylesheet version to refresh cached catalog styles.
