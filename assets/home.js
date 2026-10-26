@@ -3,7 +3,7 @@
   const root=document.documentElement;
   const save=(key,value)=>{try{localStorage.setItem(key,value)}catch(_){}};
   const themeNames={terra:'霧藍日記',forest:'鼠尾草綠',cobalt:'蜜桃晨光',nocturne:'靜夜藍'};
-  const themeColors={terra:'#f6efe6',forest:'#eff1e8',cobalt:'#faf0e9',nocturne:'#1e3440'};
+  const themeColors={terra:'#f6f5f0',forest:'#f1f4ec',cobalt:'#f7f3ee',nocturne:'#2c3938'};
   const themeButtons=[...document.querySelectorAll('[data-theme-choice]')];
   const themeToggle=document.getElementById('theme-toggle');
   const themeOptions=document.getElementById('theme-options');

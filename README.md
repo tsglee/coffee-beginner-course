@@ -2,7 +2,7 @@
 
 This repository publishes 露露咖啡日記 / RURU COFFEE JOURNAL: a bilingual roasted-coffee storefront and the 好好手沖 workshop. The integrated version replaces the former course-only website on `main`, as requested by the user. See [deployment and rollback notes](docs/DEPLOYMENT-2026-10-22.md). See [course integration notes](docs/FORWARD-INTEGRATION.md) and the [five-coffee catalog guide](docs/FORWARD-CATALOG.md).
 
-The user separated this site from the Forward brand on 2026-10-26. The current identity uses the user-supplied Ruru page logo and banner, with ivory paper, misty blue, peach and sage accents. See [Ruru brand guide](docs/RURU-BRAND-2026-10-26.md).
+The user separated this site from the Forward brand on 2026-10-26. The current identity keeps the official Ruru page logo and uses a quiet Japanese photographic homepage: warm paper, muted sage, soft photo crossfades, real teachers and class-coffee sales. See [latest homepage notes](docs/QUIET-HOME-2026-10-26.md). See [Ruru brand guide](docs/RURU-BRAND-2026-10-26.md).
 
 A bilingual, responsive roasted-coffee storefront and operable administration demo. Plain HTML, CSS and JavaScript; no build step, npm installation, backend or database is required.
 
@@ -25,7 +25,7 @@ Open http://127.0.0.1:4173/?lang=en or http://127.0.0.1:4173/?lang=zh. Stop the 
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Course-first hero and three distinct chapters: workshop, five sample coffees, delivery/support |
+| `index.html` | Quiet photographic hero for workshops and class coffees, real instructor portrait, monthly sample menu and delivery/support |
 | `courses.html` | Complete 好好手沖 workshop, instructors, materials, FAQ and original LINE inquiry link |
 | `contact.html` | LINE and email contact with a copyable inquiry draft; nothing is sent automatically |
 | `policies.html` | Shipping, payment, returns, workshop booking and privacy information |
@@ -45,9 +45,10 @@ Node.js is needed only for tests (Node 18+ recommended):
 node tests/store.test.cjs
 node tests/i18n.test.cjs
 node tests/course.test.cjs
+node tests/quiet-home.test.cjs
 ```
 
-There are 26 store/localization/course checks. Browser viewport validation is documented in [docs/ENGLISH-RWD.md](docs/ENGLISH-RWD.md).
+There are 29 store/localization/course/animation checks. Browser viewport validation is documented in [docs/ENGLISH-RWD.md](docs/ENGLISH-RWD.md).
 
 ## Package a committed snapshot
 

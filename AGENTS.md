@@ -2,7 +2,7 @@
 
 Read `README.md` and `docs/AGENT-HANDOFF.md` before changing this site. They describe the runtime, model invariants, localization, current demo scope and deployment.
 
-Keep the brand 露露咖啡日記 / RURU COFFEE JOURNAL (supersedes the former Forward identity) and the bilingual navigation. Use the supplied `assets/ruru/official-logo.png` and `official-banner.png` for the current identity; preserve their original image content. Preserve the compatible storage keys, original option values, order price snapshots and transactional stock behavior. This is a localStorage demo, not a real authenticated commerce service.
+Keep the brand 露露咖啡日記 / RURU COFFEE JOURNAL (supersedes the former Forward identity) and the bilingual navigation. Keep the supplied `assets/ruru/official-logo.png` as the current brand logo and preserve supplied originals. The latest user direction permits a new photographic homepage hero instead of the supplied banner. Keep real instructor photos authentic; do not generate substitute faces. Preserve the compatible storage keys, original option values, order price snapshots and transactional stock behavior. This is a localStorage demo, not a real authenticated commerce service.
 
 For behavior or locale changes, run the relevant `tests/*.test.cjs` checks and verify affected pages in a browser. Maintain mobile layouts and relative paths under `/coffee-beginner-course/`. Bump HTML CSS/JS version suffixes when changing runtime assets.
 

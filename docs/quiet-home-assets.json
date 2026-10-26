@@ -1,0 +1,28 @@
+{
+  "updated": "2026-10-26",
+  "assets": [
+    {
+      "source_project": "coffee_class_site",
+      "source": "images/duo-hero-web.jpg",
+      "destination": "assets/courses/teacher-duo.jpg",
+      "type": "real front-facing instructor photograph",
+      "sha256": "d07e020a35409e465f2a05e37fab2e157080756d6b10615543344b0363f19e0e",
+      "content_modified": false
+    },
+    {
+      "source_project": "coffee_class_site",
+      "source": "images/lulu-studio-web.jpg",
+      "destination": "assets/courses/lulu-studio.jpg",
+      "type": "real instructor brewing photograph",
+      "sha256": "c0e407d3c35bcae7e91cfb5d084b5f9a25d927154787ad16f3c61302d3024554",
+      "content_modified": false
+    },
+    {
+      "destination": "assets/ruru/quiet-brewing.png",
+      "type": "generated illustrative brewing photograph",
+      "tool": "built-in imagegen",
+      "prompt": "docs/quiet-hero-prompt.txt",
+      "sha256": "eee00a00e93fe6cf5ae0ea931ada61751a480284122e7140e96c8c0ff0f05899"
+    }
+  ]
+}

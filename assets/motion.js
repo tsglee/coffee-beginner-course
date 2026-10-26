@@ -5,7 +5,7 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   if (!('IntersectionObserver' in window)) return;
   const stopped = () => reduced.matches || root.dataset.motion === 'paused';
-  const selector = '.chapter-heading,.workshop-story-photo,.workshop-story-copy,.lesson-outcomes,.beans-introduction,.service-guides>a,.offering,.purchase-assurance,.dual-closing,.contact-paths article,.inquiry-layout,.support-intro,.brand-intro-heading,.brand-intro-detail,.section-heading,.coffee-card,.catalog-card,.course-preview-photo,.course-preview-copy,.roastery-photo,.roastery-copy,.process-layout,.ritual-copy,.ritual-photo,.faq-heading,.faq-list,.bean-shop-intro,.store-course-bridge,.course-section-heading,.course-module-photo,.course-module-copy,.course-parameter-card,.course-teachers article,.course-materials>div,.course-classroom';
+  const selector = '.teacher-spotlight,.quiet-course-summary,.chapter-heading,.workshop-story-photo,.workshop-story-copy,.lesson-outcomes,.beans-introduction,.service-guides>a,.offering,.purchase-assurance,.dual-closing,.contact-paths article,.inquiry-layout,.support-intro,.brand-intro-heading,.brand-intro-detail,.section-heading,.coffee-card,.catalog-card,.course-preview-photo,.course-preview-copy,.roastery-photo,.roastery-copy,.process-layout,.ritual-copy,.ritual-photo,.faq-heading,.faq-list,.bean-shop-intro,.store-course-bridge,.course-section-heading,.course-module-photo,.course-module-copy,.course-parameter-card,.course-teachers article,.course-materials>div,.course-classroom';
   const seen = new WeakSet();
   const reveal = element => { element.dataset.reveal = 'visible'; observer.unobserve(element); };
   const observer = new IntersectionObserver(entries => {

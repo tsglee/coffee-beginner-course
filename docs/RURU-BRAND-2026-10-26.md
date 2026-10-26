@@ -43,3 +43,7 @@ Known previous default shop names migrate to the new default on read/import. Rea
 - Responsive validation uses viewport emulation rather than physical devices.
 
 The transferable ZIP filename now starts `ruru-coffee-journal-`; the internal `encounter-coffee/` folder is retained for package-verifier compatibility. Its manifest identifies Ruru and the exact current commit. That legacy archive folder name is not a public brand label.
+
+## Latest direction: quiet photographic homepage
+
+The subsequent annotated feedback explicitly permits a new hero instead of the supplied banner. The official logo remains; the original banner is archived unchanged. Current homepage styling and art direction are documented in `docs/QUIET-HOME-2026-10-26.md`. The hero brewing scene is illustrative generated photography. The frontal duo portrait and Lulu brewing photograph are authentic supplied photos copied from the original course project, with no content editing.

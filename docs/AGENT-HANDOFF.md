@@ -10,7 +10,7 @@ The integration was developed on `tsglee/coffee-site` branch `forward` at `74cdd
 
 The user asked for a distinctive photographic coffee brand site, inspired by the full-screen, slowly fading images on Encounter Coffee's reference site. The implementation is original project code and illustrative images; it is not a copy of that site's source or its merchant backend.
 
-The brand is **露露咖啡日記**, with **Ruru Coffee Journal** in English. The user separated this site from 佛我咖啡 / Forward Coffee on 2026-10-26; do not restore that former identity. The current visual identity uses the user-supplied Ruru page logo and banner, plus ivory, mist blue, peach and sage accents. See `docs/RURU-BRAND-2026-10-26.md`. The workshop name stays **好好手沖** in both locales by user request; do not translate the course name. Do not restore the previous 四選淨豆 / Pure Select branding. The old `pure-select-*` storage keys remain intentionally compatible with existing browsers. The store model maps the previous default shop name to the current default without discarding orders or inventory; custom shop names are preserved.
+The brand is **露露咖啡日記**, with **Ruru Coffee Journal** in English. The user separated this site from 佛我咖啡 / Forward Coffee on 2026-10-26; do not restore that former identity. The current identity keeps the official Ruru logo and uses a quiet, photograph-led Japanese-style homepage. The latest user request permits replacing the supplied banner as the homepage hero; see `docs/QUIET-HOME-2026-10-26.md`. See `docs/RURU-BRAND-2026-10-26.md`. The workshop name stays **好好手沖** in both locales by user request; do not translate the course name. Do not restore the previous 四選淨豆 / Pure Select branding. The old `pure-select-*` storage keys remain intentionally compatible with existing browsers. The store model maps the previous default shop name to the current default without discarding orders or inventory; custom shop names are preserved.
 
 Implemented features:
 
@@ -49,6 +49,7 @@ All runtime images are local under `assets/`, including the generated JPEG asset
 | `assets/i18n.js` | Language selection, text/attribute translation, dynamic content observer and internal link localization |
 | `assets/home.css` | Shared palette tokens and original homepage design |
 | `assets/ruru.css`, `assets/brand-theme.js`, `assets/ruru/` | Current shared Ruru identity, compatible theme preference, official logo/banner and visual assets |
+| `assets/quiet-home.css`, `assets/quiet-home.js` | Current homepage styling and independent two-photo hero with accessible motion controls |
 | `assets/home-sections.css` | Scoped course-first homepage, numbered chapters and distinct section backgrounds |
 | `assets/business.css`, `assets/business.js` | Shared customer support/footer styling and copyable inquiry drafts |
 | `assets/premium.css`, `assets/motion.js` | Shared editorial styling, unified course invitations, progressive reveal and reduced-motion handling |
@@ -127,9 +128,10 @@ Run from the project root:
 node tests/store.test.cjs
 node tests/i18n.test.cjs
 node tests/course.test.cjs
+node tests/quiet-home.test.cjs
 ```
 
-Expected on this release: 17 store checks, 5 localization checks and 4 course-integration checks pass. They cover valid seed/gallery/SKUs, live-price order snapshots, overselling, cancellation, shipping/tracking, batch idempotency, storage rollback, import validation, historical product deletion, old-brand migration, English product copy, link/query/hash preservation and raw-data integrity.
+Expected on this release: 17 store checks, 5 localization checks, 4 course-integration checks and 3 hero-motion checks pass. They cover valid seed/gallery/SKUs, live-price order snapshots, overselling, cancellation, shipping/tracking, batch idempotency, storage rollback, import validation, historical product deletion, old-brand migration, English product copy, link/query/hash preservation and raw-data integrity.
 
 Also check JavaScript syntax with `node --check` for changed files, local asset/link references and `git diff --check`. Use a real browser for interactions and visual verification. Previous viewport checks: 320×740, 390×844, 768×1024, 1280×900, and an 844×390 landscape homepage. Ten English product pages have been checked at 320px; the long Mandheling origin/altitude field exposed an overflow and was fixed using shrinkable grid columns.
 
@@ -194,3 +196,7 @@ All storefront pages and the demo admin now use 露露咖啡日記 / Ruru Coffee
 ## Official page assets (2026-10-26)
 
 Use `assets/ruru/official-logo.png` across headers, footers, demo admin and favicon. Use `assets/ruru/official-banner.png` in the homepage banner. The source PNGs are copied byte-for-byte from the user attachments. Layout-only CSS clips the banner’s supplied white margins and centers the artwork on narrow screens; the image itself is not edited. The Chinese/English booking introduction immediately follows the banner, with the booking action visible in the tested first viewports. Previous generated artwork and reconstructed SVG files are historical assets, not current logo/hero sources.
+
+## Quiet photographic homepage (2026-10-26)
+
+The latest six annotated user comments supersede the official-banner hero requirement. Keep the official logo, but the homepage hero now shows soft brewing photography and a real Lulu photo, with separate booking and class-coffee buttons. The course chapter uses a real front-facing duo photograph copied from the original course project. Course contents/price and the five sample products remain unchanged. The monthly-menu wording is user-provided business positioning; the demo catalog is still manually updated, with sample disclosure retained. Homepage copy describes defective-bean sorting without claiming medical benefits. Product and support backgrounds are now close warm-paper tones; typography is larger and copy more direct. New assets and provenance: `docs/quiet-home-assets.json`; design/QA: `docs/QUIET-HOME-2026-10-26.md`.
