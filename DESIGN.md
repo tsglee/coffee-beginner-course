@@ -66,7 +66,6 @@ components:
     backgroundColor: "#ffffff66"
   link-plain:
     textColor: "{colors.ink}"
-    typography: "{typography.label}"
     padding: "8px 0"
   flavor-control:
     backgroundColor: "transparent"
@@ -110,6 +109,8 @@ This records the implemented signature world in design-signature.html and assets
 
 ## Colors
 
+The sidecar tonal ramps are derived preview extensions; they are not shipped CSS scales. Plain links inherit the body weight rather than the action-label weight.
+
 The palette pairs the logo's sky-blue family with warm paper and legible dark blue ink. Values in the frontmatter are normative and map directly to the root CSS properties with the same names.
 
 ### Primary
@@ -131,7 +132,7 @@ The bean menu also uses translucent ink rules and a translucent paper selection 
 
 ## Typography
 
-**Display Font:** Noto Serif TC, with serif fallback.  
+**Display Font:** Noto Serif TC, with serif fallback.
 **Body Font:** Manrope for Latin and Noto Sans TC for Chinese, with sans-serif fallback.
 
 **Character:** generous Chinese serif strokes give the journal its voice; the sans-serif supporting layer keeps prices, facts and actions clear. The hierarchy uses independent responsive sizes rather than a strict mathematical scale.
