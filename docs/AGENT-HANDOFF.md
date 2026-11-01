@@ -219,3 +219,7 @@ See `docs/FIVE-DESIGNS-2026-11-01.md` and run the four existing suites, `node te
 Project-local design skills are pinned with provenance in `docs/signature-resources.json`. Read `PRODUCT.md`, `DESIGN.md`, `.impeccable/design.json` and `docs/SIGNATURE-DIRECTION-2026-11-01.md`. No approved image comp is claimed: creative direction was delegated and implementation was code-led. The new AI atmosphere image has its prompt embedded and documented; authentic teachers and Logo remain original. Screenshot previews are derived from the running website.
 
 Browser checks cover native flavor/menu controls, locale switching, direct LINE URLs and width overflow at 320/390/768/1280/1440. These are emulated viewports, not physical devices. Independent finish review and extracted design-system documentation complete the workflow.
+
+## Signature copy feedback (2026-11-01)
+
+The user's three browser annotations update only the signature proposal: learning centers on mastering techniques and becoming your own barista; the instructor section emphasizes mutual exchange and learning step by step, with finding answers as part of the process; the closing invites visitors to develop interests and nurture curiosity. English copy matches these changes. `assets/signature-i18n.js` and `assets/signature.css` cache suffix is `20261101-copy2`. Phone closing copy uses its full width with the Logo below; 701–980px titles scale down to avoid a one-character wrap. Course facts and both LINE actions are retained.
