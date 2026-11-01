@@ -46,9 +46,10 @@ node tests/store.test.cjs
 node tests/i18n.test.cjs
 node tests/course.test.cjs
 node tests/quiet-home.test.cjs
+node tests/line-inquiry.test.cjs
 ```
 
-There are 29 store/localization/course/animation checks. Browser viewport validation is documented in [docs/ENGLISH-RWD.md](docs/ENGLISH-RWD.md).
+There are 31 store/localization/course/animation/LINE checks. Browser viewport validation is documented in [docs/ENGLISH-RWD.md](docs/ENGLISH-RWD.md).
 
 ## Package a committed snapshot
 
@@ -93,3 +94,13 @@ node tests/line-inquiry.test.cjs
 ```
 
 Run the four existing test files as above for shared runtime changes. Details and QA are recorded in [docs/FIVE-DESIGNS-2026-11-01.md](docs/FIVE-DESIGNS-2026-11-01.md).
+
+## Signature proposal: photography journal (2026-11-01)
+
+[Open the new signature proposal](https://tsglee.github.io/coffee-beginner-course/design-signature.html). It is also featured on `designs.html`; the existing homepage remains available.
+
+This bespoke page uses large Chinese serif type, sky-blue photographic spreads, an original AI-generated pour-over photograph, real teachers, and a flavor selector reading the existing sample catalog. Buying beans and booking the workshop both open LINE. It supports Chinese/English and mobile navigation. `design=signature` preserves this palette and return route through supporting pages.
+
+No extra runtime installation is required. The project-local `.agents/skills/` contains pinned Impeccable and Anthropic frontend-design instructions used during development, not browser dependencies or permanent model training. Read `PRODUCT.md`, `DESIGN.md`, and [direction/provenance](docs/SIGNATURE-DIRECTION-2026-11-01.md) before extending it. Image prompt and resource commits are in `docs/signature-image-prompt.txt` and `docs/signature-resources.json`. The comparison preview is a screenshot of the implemented page.
+
+To preview, serve the repository with the command above and open `/design-signature.html`. `scripts/build_designs.py` rebuilds the original five variants and comparison board; it deliberately preserves the independent signature source.

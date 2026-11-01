@@ -6,3 +6,7 @@ node_modules/
 
 __pycache__/
 dist/
+
+.impeccable/review/
+.impeccable/questions/
+.impeccable/config.local.json

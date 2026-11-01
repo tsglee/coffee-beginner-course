@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const allowed = ['sky', 'sage', 'clay', 'noir', 'cobalt'];
+  const allowed = ['sky', 'sage', 'clay', 'noir', 'cobalt', 'signature'];
   const design = document.body.dataset.design || new URLSearchParams(location.search).get('design');
   if (!allowed.includes(design)) return;
   document.body.dataset.design = design;
@@ -14,7 +14,7 @@
     const file = url.pathname.split('/').pop();
     if (file === 'designs.html' || file === 'admin-orders.html') return;
     if (file === 'index.html') url.pathname = url.pathname.replace(/index\.html$/, `design-${design}.html`);
-    if (/^design-(sky|sage|clay|noir|cobalt)\.html$/.test(file)) return;
+    if (/^design-(sky|sage|clay|noir|cobalt|signature)\.html$/.test(file)) return;
     url.searchParams.set('design', design);
     const next = url.pathname + url.search + url.hash;
     if (raw !== next) anchor.setAttribute('href', next);

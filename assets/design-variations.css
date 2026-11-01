@@ -153,3 +153,5 @@ body[data-design][data-design=cobalt]{--paper:248 245 237;--card:255 254 248;--s
 
 .design-page .quiet-hero h1>span{text-wrap:balance}.design-page .quiet-hero-copy>*{animation:none!important}
 @media(max-width:767px){.design-page .quiet-hero h1,.design-page[data-design=noir] .quiet-hero h1{font-size:clamp(33px,9vw,39px)!important}}
+
+body[data-design][data-design=signature]{--paper:251 249 243;--card:255 254 250;--stage:207 228 237;--ink:23 59 75;--muted:67 93 103;--line:188 210 218;--primary:37 87 107;--primary-hover:23 59 75;--on-primary:255 254 250}

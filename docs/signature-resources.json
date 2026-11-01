@@ -1,0 +1,22 @@
+{
+  "anthropicFrontendDesign": {
+    "repository": "https://github.com/anthropics/skills",
+    "commit": "ca45fc496a3436251f191354091d557da31c15b5",
+    "path": ".agents/skills/anthropic-frontend-design"
+  },
+  "impeccable": {
+    "repository": "https://github.com/pbakaus/impeccable",
+    "commit": "4f956490f0056ae1ff5ea80372cf56e83c001d3c",
+    "path": ".agents/skills/impeccable"
+  },
+  "image": {
+    "tool": "built-in image_gen",
+    "original": "/Users/tsglee/.codex/generated_images/01a130c5-a936-7c92-9a16-881b989c64fa/exec-c536985c-57e5-4296-8a05-195c576e38f6.png",
+    "runtimeAsset": "assets/signature/ritual.jpg",
+    "prompt": "docs/signature-image-prompt.txt"
+  },
+  "preview": {
+    "asset": "assets/signature/preview.jpg",
+    "source": "Screenshot of implemented design-signature.html at 1440×1000, resized to 1200px width; not a generated design comp."
+  }
+}

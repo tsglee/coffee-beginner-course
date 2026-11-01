@@ -211,3 +211,11 @@ The latest direction requests larger text and five distinct colors/layouts. Shar
 The user requests both coffee purchases and workshop inquiries to go to LINE OA. All prominent booking and purchase actions point to `https://lin.ee/5bkhZu1`. Product weight/quantity selection and galleries are informational; the product action does not add to the demo cart. Keep `store.js` and transactional demo/order behavior compatible for retained admin and historical data. Existing prices and stock remain explicitly labeled demo data. Do not restore checkout as the public purchase action without new direction.
 
 See `docs/FIVE-DESIGNS-2026-11-01.md` and run the four existing suites, `node tests/line-inquiry.test.cjs`, and `python3 scripts/check_site.py`. CSS/JS URLs use `v=20261101-design1`.
+
+## 2026-11-01: signature photography-journal proposal
+
+`design-signature.html` is a new complete additive proposal, featured above the five alternatives on `designs.html`. The official index is retained. Its independent sources are `assets/signature.css`, `assets/signature.js`, and `assets/signature-i18n.js`; it reads the existing store without altering commerce state. Flavor controls and five menu buttons update the featured coffee. Both public actions open LINE. `assets/design-state.js` accepts `signature` and returns supporting-page home links to this proposal. Shared design-state/design-variations cache suffix is now `20261101-signature1`; readability suffix remains unchanged.
+
+Project-local design skills are pinned with provenance in `docs/signature-resources.json`. Read `PRODUCT.md`, `DESIGN.md`, `.impeccable/design.json` and `docs/SIGNATURE-DIRECTION-2026-11-01.md`. No approved image comp is claimed: creative direction was delegated and implementation was code-led. The new AI atmosphere image has its prompt embedded and documented; authentic teachers and Logo remain original. Screenshot previews are derived from the running website.
+
+Browser checks cover native flavor/menu controls, locale switching, direct LINE URLs and width overflow at 320/390/768/1280/1440. These are emulated viewports, not physical devices. Independent finish review and extracted design-system documentation complete the workflow.

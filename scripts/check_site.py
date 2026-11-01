@@ -39,7 +39,7 @@ for path in sorted(ROOT.glob('*.html')):
     parser = Check(path)
     parser.feed(path.read_text())
     if path.name != 'admin-orders.html':
-        assert 'assets/readability.css?v=20261101-design1' in path.read_text() or path.name == 'designs.html', path
+        assert 'assets/readability.css?v=20261101-design1' in path.read_text() or path.name in ['designs.html', 'design-signature.html'], path
     # Some course/store anchors are supplied by the documented client renderer.
     if path.name.startswith('design-') or path.name == 'index.html':
         assert parser.inquiries >= 4, (path, 'missing course/bean actions')
