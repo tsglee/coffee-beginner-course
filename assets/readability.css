@@ -1,0 +1,84 @@
+/* Shared reading scale. Main prose remains 18px on phones and 19px on desktop. */
+body:not([data-page=admin]){font-size:19px;line-height:1.85}
+body:not([data-page=admin]) :is(p,li,dd,dt,summary,label,input,select,textarea,th,td){font-size:19px!important;line-height:1.85}
+body:not([data-page=admin]) :is(.section-kicker,.course-eyebrow,.product-origin,.image-note,.demo-notice,.course-source,.course-fineprint,.line-note,.gallery-caption,.quiet-hero-meta){font-size:16px!important;line-height:1.8}
+body:not([data-page=admin]) :is(a,button,summary):focus-visible{outline:3px solid rgb(var(--primary));outline-offset:5px}
+body:not([data-page=admin]) :is(.business-nav a,.chapter-nav a,.course-section-nav a,.text-link,.product-link,.product-inquiry,.language-switch,.flavor-filters button,.primary-button,.quiet-outline-button,.course-outline-button,.theme-toggle,.theme-options button,.service-guides b,.business-footer a,.business-footer p,.business-footer h2,.business-footer-bottom span){font-size:17px!important;line-height:1.65}
+body:not([data-page=admin]) :is(button,.primary-button,.quiet-outline-button,.course-outline-button,input,select){min-height:48px}
+body:not([data-page=admin]) :is(.flavor-line,.catalog-spec,.catalog-price small,.product-bottom p>span,.flavor-tags span,.variant-options span,.quantity-line p,.batch-details span,.batch-details strong,.brew-grid p,.record-list,.teacher-photo figcaption,.collection-count,.quiet-photo-controls,.quiet-hero-bottom,.quiet-photo-controls #quiet-count,.quiet-hero-bottom #motion-toggle,.theme-options p,.course-materials li){font-size:16px!important;line-height:1.8}
+body:not([data-page=admin]) :is(h2,.chapter-heading h2,.course-section-heading h2){font-size:clamp(32px,3.2vw,46px)!important;line-height:1.5}
+body:not([data-page=admin]) :is(h3,.teacher-course-facts h3,.beans-introduction-copy h3){font-size:clamp(24px,2.4vw,32px)!important;line-height:1.55}
+body:not([data-page=admin]) h4{font-size:23px!important;line-height:1.6}
+.quiet-home .quiet-hero h1,html[data-lang=en] .quiet-home .quiet-hero h1{font-size:clamp(38px,4.2vw,62px);line-height:1.4;letter-spacing:-.025em}
+.quiet-home .quiet-hero-lead{font-size:21px!important;line-height:1.9}
+.quiet-home .quiet-hero-actions a{font-size:18px!important;min-width:0;padding:16px 21px;min-height:58px}
+.quiet-home .quiet-hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:44px}
+.quiet-home .chapter-heading{grid-template-columns:1fr 1fr;gap:25px 45px}
+.quiet-home .quiet-course-heading{grid-template-columns:1fr}
+.quiet-home .chapter-heading>p:last-child{max-width:540px}
+.quiet-home .beans-selection .coffee-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+.quiet-home .beans-selection .coffee-card{display:flex;flex-direction:column;min-width:0;background:rgb(var(--paper));border:1px solid rgb(var(--line));padding:0}
+.quiet-home .beans-selection .product-photo{display:block;width:100%;height:260px;overflow:hidden}
+.quiet-home .beans-selection .product-photo img{width:100%;height:100%;object-fit:cover}
+.quiet-home .beans-selection .product-copy{padding:25px;min-width:0;display:flex;flex:1;flex-direction:column}
+.quiet-home .beans-selection .product-copy h3{font-size:25px!important}
+.quiet-home .beans-selection .product-bottom{flex-wrap:wrap;align-items:start;gap:16px;margin-top:auto;padding-top:20px}
+.quiet-home .beans-selection .product-description{display:none}
+.quiet-home .beans-selection .product-origin{font-size:15px!important}
+.quiet-home .beans-selection .product-bottom p{flex:1 1 100%}
+.quiet-home .flavor-filters{flex-wrap:wrap;gap:12px 22px}
+.catalog-toolbar{grid-template-columns:minmax(180px,2fr) repeat(3,minmax(130px,1fr));gap:18px}
+.catalog-price{flex-wrap:wrap;gap:15px}.catalog-price .line-buy-button{width:100%}
+.line-buy-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:50px;padding:12px 18px;border:1px solid rgb(var(--primary));background:rgb(var(--primary));color:rgb(var(--on-primary));font:500 17px/1.6 Inter,'Noto Serif TC',serif;text-align:center}
+.line-buy-button:hover{background:rgb(var(--primary-hover))}
+#add-cart-form .line-buy-button{display:flex;width:100%;margin-top:24px}
+.line-purchase-note{margin-top:14px;color:rgb(var(--muted));font-size:16px!important}
+.line-nav-link{font:500 16px/1.5 Inter,sans-serif;padding:10px 14px;border:1px solid rgb(var(--line));white-space:nowrap}
+.line-conversation{padding:100px 0;background:rgb(var(--stage));text-align:center;border-top:1px solid rgb(var(--line))}
+.line-conversation h2{margin:20px 0}.line-conversation p{max-width:740px;margin-inline:auto}
+.line-conversation-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:16px;margin:30px 0 20px}
+.line-conversation-actions>a{padding:16px 24px;min-height:58px;min-width:230px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgb(var(--primary));font-size:18px!important}
+.line-note{color:rgb(var(--muted))}
+.business-footer-grid{grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr));gap:40px}
+.business-footer-grid>div{min-width:0}.business-footer a{overflow-wrap:anywhere}
+.course-parameter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.course-hero{height:auto;min-height:820px}.course-hero-content{padding-top:160px;padding-bottom:130px}
+.course-module-copy{min-width:0}.course-faq-list summary{padding-block:24px}
+.quiet-photo-controls{gap:12px}.quiet-photo-controls>div{gap:10px}
+@media(max-width:1150px){.quiet-home .beans-selection .coffee-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.site-header .business-nav{gap:18px}.site-header .business-nav a{font-size:16px!important}.nav-shell{gap:18px}.business-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:980px){.quiet-home .quiet-hero-grid{grid-template-columns:1fr;gap:28px}.quiet-photo-stack{height:470px}.quiet-home .quiet-hero-copy{max-width:730px}.quiet-home .quiet-hero{padding-top:115px}.teacher-spotlight{gap:32px}.business-nav{flex-wrap:wrap}.catalog-toolbar{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:767px){
+ body:not([data-page=admin]){font-size:18px}
+ body:not([data-page=admin]) :is(p,li,dd,dt,summary,label,input,select,textarea,th,td){font-size:18px!important}
+ body:not([data-page=admin]) :is(.section-kicker,.course-eyebrow,.product-origin,.image-note,.demo-notice,.course-source,.course-fineprint,.line-note,.gallery-caption,.quiet-hero-meta){font-size:15px!important}
+ body:not([data-page=admin]) :is(.business-footer a,.business-footer p,.business-footer h2,.business-footer-bottom span){font-size:16px!important}
+ .quiet-home .quiet-hero h1,html[data-lang=en] .quiet-home .quiet-hero h1{font-size:clamp(34px,8.5vw,46px);line-height:1.45}
+ .quiet-home .quiet-hero-lead{font-size:19px!important}.quiet-hero-copy>.section-kicker{margin-bottom:22px}
+ .quiet-home .quiet-hero-actions{display:grid;grid-template-columns:1fr;gap:12px;width:100%;margin-top:24px}
+ .quiet-home .quiet-hero-actions a{width:100%;min-height:56px}
+ .quiet-home .quiet-hero-grid{gap:20px}.quiet-home .quiet-hero-copy{padding-block:12px}
+ .quiet-photo-stack{height:350px}.quiet-photo-controls #quiet-count{font-size:14px!important}
+ .quiet-home .chapter-heading{grid-template-columns:1fr;gap:20px}.quiet-home .chapter-heading>p:last-child{justify-self:start}
+ .quiet-home .chapter-nav a{font-size:16px!important;gap:7px;padding:16px 8px;flex-direction:column}
+ .quiet-home .home-chapter{padding-block:65px}.quiet-home .beans-selection .coffee-grid{grid-template-columns:1fr}
+ .quiet-home .beans-selection .product-photo{height:280px}.quiet-home .beans-selection .product-copy{padding:25px}
+ .teacher-spotlight{grid-template-columns:1fr}.quiet-menu-heading{flex-direction:column;gap:12px}
+ .quiet-course-summary{grid-template-columns:1fr;gap:14px}.quiet-home .beans-introduction{grid-template-columns:1fr}
+ .quiet-hero-bottom{align-items:start;gap:15px;padding-block:16px}.quiet-hero-bottom>a{max-width:55%}
+ .business-footer-grid{grid-template-columns:1fr;gap:30px}.line-conversation{padding:65px 0}
+ .line-conversation-actions{display:grid;grid-template-columns:1fr}.line-conversation-actions>a{min-width:0;width:100%}
+ .catalog-toolbar{grid-template-columns:1fr}.catalog-grid{grid-template-columns:1fr}
+ .course-hero{min-height:900px}.course-hero-content{padding-top:130px;padding-bottom:100px}
+ .course-hero h1{font-size:38px!important}.course-hero-actions{flex-direction:column;align-items:stretch}
+ .course-parameter-grid{grid-template-columns:1fr}.course-section-nav{gap:14px;flex-wrap:wrap}
+ .nav-shell{width:calc(100% - 32px);gap:12px}.nav-actions{gap:5px}.quiet-home .brand-chinese{font-size:18px!important}
+ .quiet-home .ruru-official-logo{width:44px;height:44px}.line-nav-link{display:none}.theme-control{display:none}
+ .business-footer-bottom{align-items:start;flex-direction:column;gap:16px}.product-layout,.origin-panel{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+body:not([data-page=admin]) .ruru-brand.brand-with-emblem>.brand-chinese{font-size:20px!important;line-height:1.5}
+@media(max-width:767px){body:not([data-page=admin]) .ruru-brand.brand-with-emblem>.brand-chinese{font-size:18px!important}}
+
+/* Keep reading copy present immediately rather than fading in at small sizes. */
+html{scroll-behavior:auto}body:not([data-page=admin]) [data-reveal]{opacity:1!important;transform:none!important;transition:none!important}

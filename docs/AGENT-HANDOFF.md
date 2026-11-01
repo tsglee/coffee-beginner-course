@@ -200,3 +200,14 @@ Use `assets/ruru/official-logo.png` across headers, footers, demo admin and favi
 ## Quiet photographic homepage (2026-10-26)
 
 The latest six annotated user comments supersede the official-banner hero requirement. Keep the official logo, but the homepage hero now shows soft brewing photography and a real Lulu photo, with separate booking and class-coffee buttons. The course chapter uses a real front-facing duo photograph copied from the original course project. Course contents/price and the five sample products remain unchanged. The monthly-menu wording is user-provided business positioning; the demo catalog is still manually updated, with sample disclosure retained. Homepage copy describes defective-bean sorting without claiming medical benefits. Product and support backgrounds are now close warm-paper tones; typography is larger and copy more direct. New assets and provenance: `docs/quiet-home-assets.json`; design/QA: `docs/QUIET-HOME-2026-10-26.md`.
+
+
+## 2026-11-01: readability and five design variants
+
+The latest direction requests larger text and five distinct colors/layouts. Shared `assets/readability.css` follows the existing styles and raises main copy to 18–19px. `assets/design-variations.css` loads last. It defines five fixed palettes and composition rules scoped to `.design-page`. `assets/design-state.js` carries the selected design through internal links using URL parameters, without changing legacy localStorage keys. The Chinese course name stays 好好手沖.
+
+`designs.html` compares five full homepages. Rebuild them from current `index.html` with `python3 scripts/build_designs.py`; no new runtime dependency is required. Existing automatic-photo behavior remains on the current homepage. Design variations use one still photograph and show real instructors later in the page.
+
+The user requests both coffee purchases and workshop inquiries to go to LINE OA. All prominent booking and purchase actions point to `https://lin.ee/5bkhZu1`. Product weight/quantity selection and galleries are informational; the product action does not add to the demo cart. Keep `store.js` and transactional demo/order behavior compatible for retained admin and historical data. Existing prices and stock remain explicitly labeled demo data. Do not restore checkout as the public purchase action without new direction.
+
+See `docs/FIVE-DESIGNS-2026-11-01.md` and run the four existing suites, `node tests/line-inquiry.test.cjs`, and `python3 scripts/check_site.py`. CSS/JS URLs use `v=20261101-design1`.

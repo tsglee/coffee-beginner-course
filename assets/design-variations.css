@@ -1,0 +1,155 @@
+/* Five compositions, with fixed palettes independent of the legacy theme key. */
+body[data-design][data-design=sky]{--paper:248 252 255;--card:255 255 255;--stage:223 241 253;--ink:20 52 75;--muted:67 94 113;--line:190 216 232;--primary:25 77 111;--primary-hover:16 56 85;--on-primary:255 255 255}
+body[data-design][data-design=sage]{--paper:246 244 231;--card:255 253 243;--stage:224 231 211;--ink:39 65 46;--muted:81 100 78;--line:201 209 184;--primary:49 82 53;--primary-hover:32 62 38;--on-primary:255 253 243}
+body[data-design][data-design=clay]{--paper:251 240 225;--card:255 249 239;--stage:242 215 192;--ink:90 47 37;--muted:117 79 64;--line:222 192 169;--primary:150 65 46;--primary-hover:117 43 30;--on-primary:255 251 243}
+body[data-design][data-design=noir]{--paper:17 41 43;--card:24 51 52;--stage:31 63 63;--ink:250 241 220;--muted:200 209 194;--line:73 102 98;--primary:231 191 131;--primary-hover:246 212 162;--on-primary:28 47 44;color-scheme:dark}
+body[data-design][data-design=cobalt]{--paper:248 245 237;--card:255 254 248;--stage:225 231 254;--ink:29 48 113;--muted:78 92 132;--line:190 201 233;--primary:35 62 204;--primary-hover:23 43 161;--on-primary:255 255 255;--accent:220 87 41}
+.design-page .theme-control{display:none}.design-page .design-back{font:500 15px/1.5 Inter,sans-serif;border-bottom:1px solid currentColor;padding:10px 0;white-space:nowrap}
+.design-page .quiet-shot{animation:none}.design-page .quiet-hero{padding-top:110px}.design-page .quiet-photo-stack{height:570px}
+.design-page .quiet-hero h1{font-size:clamp(44px,4.8vw,74px)!important;line-height:1.35!important}
+.design-page .quiet-hero .section-kicker{letter-spacing:.1em}
+.design-page .quiet-hero-meta{font-size:18px!important}.design-page .quiet-hero-bottom{margin-top:26px}
+.design-page .quiet-hero-actions .quiet-outline-button{color:rgb(var(--primary))}
+.design-page .teacher-course-facts dl dd{font-size:30px!important}
+/* A — broad sky-blue photography with an airy left-aligned promise. */
+.design-page[data-design=sky] .quiet-hero{position:relative;isolation:isolate;overflow:hidden;min-height:840px;padding:145px 0 38px;background:rgb(var(--stage))}
+.design-page[data-design=sky] .quiet-hero-grid{position:static;display:block;min-height:570px}
+.design-page[data-design=sky] .quiet-hero-copy{position:relative;z-index:2;max-width:690px;padding-block:32px}
+.design-page[data-design=sky] .quiet-hero-media{position:absolute;inset:0;z-index:-2;margin:0}
+.design-page[data-design=sky] .quiet-photo-stack{height:100%;border:0}
+.design-page[data-design=sky] .quiet-hero:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#e3f3fef5 0%,#e3f3fee6 34%,#e3f3fe70 64%,#e3f3fe00)}
+.design-page[data-design=sky] .quiet-photo-controls{display:none}
+.design-page[data-design=sky] .quiet-shot{object-position:67% 50%;filter:none}
+.design-page[data-design=sky] .quiet-hero h1{max-width:680px}
+.design-page[data-design=sky] .quiet-hero-lead{max-width:490px}
+.design-page[data-design=sky] .quiet-hero-bottom{position:relative;z-index:2;border-color:#194d6f55}
+.design-page[data-design=sky] .workshop-chapter{background:white}
+.design-page[data-design=sky] .teacher-photo>img{border-radius:0 100px 0 0}
+.design-page[data-design=sky] .quiet-course-summary{border:0;gap:0;background:rgb(var(--stage));padding:28px}
+/* B — cream, botanical green and a calm magazine opening. */
+.design-page[data-design=sage] .quiet-hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:70px;padding-top:35px}
+.design-page[data-design=sage] .quiet-hero-media{order:-1;transform:rotate(-2deg);background:rgb(var(--card));padding:18px 18px 0;box-shadow:12px 16px 0 rgb(var(--stage))}
+.design-page[data-design=sage] .quiet-photo-stack{height:560px;border-radius:180px 180px 0 0}
+.design-page[data-design=sage] .quiet-hero-copy{padding-block:45px}
+.design-page[data-design=sage] .quiet-hero h1{font-weight:400;letter-spacing:.015em}
+.design-page[data-design=sage] .quiet-hero-actions{display:grid;grid-template-columns:1fr}
+.design-page[data-design=sage] .quiet-hero-bottom{margin-top:55px}
+.design-page[data-design=sage] .teacher-spotlight{grid-template-columns:.8fr 1.2fr;gap:80px}
+.design-page[data-design=sage] .teacher-photo{order:2}
+.design-page[data-design=sage] .teacher-course-facts{border-block:1px solid rgb(var(--line));padding-block:40px}
+.design-page[data-design=sage] .beans-introduction-copy h3{font-family:'Noto Serif TC',serif}
+.design-page[data-design=sage] .beans-selection .coffee-card{border:none;border-bottom:1px solid rgb(var(--line));background:transparent}
+.design-page[data-design=sage] .beans-selection .product-photo{border-radius:140px 140px 0 0}
+/* C — a warm studio poster, arch-shaped photograph and numbered blocks. */
+.design-page[data-design=clay] .quiet-hero{padding-top:130px;background:linear-gradient(90deg,rgb(var(--paper)) 58%,rgb(var(--stage)) 58%)}
+.design-page[data-design=clay] .quiet-hero-grid{grid-template-columns:1.05fr .95fr;gap:55px}
+.design-page[data-design=clay] .quiet-photo-stack{border-radius:260px 260px 8px 8px;height:600px}
+.design-page[data-design=clay] .quiet-hero h1{font-weight:600;letter-spacing:-.055em}
+.design-page[data-design=clay] .quiet-hero .section-kicker{border-left:4px solid rgb(var(--primary));padding-left:15px}
+.design-page[data-design=clay] .quiet-hero-actions{display:grid;grid-template-columns:1fr}
+.design-page[data-design=clay] .quiet-hero-actions>a{border-radius:40px}
+.design-page[data-design=clay] .chapter-nav{background:rgb(var(--primary));color:rgb(var(--on-primary))}
+.design-page[data-design=clay] .chapter-nav a{border-color:#ffffff44}.design-page[data-design=clay] .chapter-nav span{color:inherit}
+.design-page[data-design=clay] .teacher-spotlight{padding:35px;background:rgb(var(--stage));gap:45px}
+.design-page[data-design=clay] .teacher-photo>img{border-radius:180px 180px 0 0}
+.design-page[data-design=clay] .beans-selection .coffee-card{border:0;border-radius:18px;overflow:hidden}
+.design-page[data-design=clay] .line-conversation{background:rgb(var(--primary));color:rgb(var(--on-primary))}
+.design-page[data-design=clay] .line-conversation :is(.section-kicker,.line-note){color:#ffe3ce}
+.design-page[data-design=clay] .line-conversation-actions>a{background:#fff8ed;color:#773c2d;border-color:#fff8ed}
+/* D — cinematic dark teal, brass and wide editorial chapter spreads. */
+.design-page[data-design=noir] .quiet-hero{padding:150px 0 36px;position:relative;isolation:isolate;overflow:hidden;min-height:850px;background:#11292b}
+.design-page[data-design=noir] .quiet-hero-grid{display:block;min-height:580px;position:static}
+.design-page[data-design=noir] .quiet-hero-copy{position:relative;z-index:2;max-width:760px;padding-block:30px}
+.design-page[data-design=noir] .quiet-hero-media{position:absolute;inset:0;z-index:-2}
+.design-page[data-design=noir] .quiet-photo-stack{height:100%}
+.design-page[data-design=noir] .quiet-shot{filter:none;object-position:75% center}
+.design-page[data-design=noir] .quiet-hero:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0a282bf7 0%,#0a282bd9 37%,#0a282b55 69%,#0a282b11)}
+.design-page[data-design=noir] .quiet-photo-controls{display:none}
+.design-page[data-design=noir] .quiet-hero h1{font-weight:400;line-height:1.5!important;font-size:clamp(42px,4.4vw,68px)!important}
+.design-page[data-design=noir] .quiet-hero h1>span:last-child{color:#e7bf83}
+.design-page[data-design=noir] .quiet-hero-lead{max-width:600px}.design-page[data-design=noir] .quiet-hero .section-kicker{color:#e7bf83}
+.design-page[data-design=noir] .quiet-hero-actions .quiet-outline-button{color:#f5e9ce;border-color:#e7bf83aa}
+.design-page[data-design=noir] .quiet-hero-bottom{position:relative;z-index:2}
+.design-page[data-design=noir] .chapter-heading{grid-template-columns:.65fr 1fr}
+.design-page[data-design=noir] .teacher-spotlight{grid-template-columns:1.35fr 1fr;gap:75px}
+.design-page[data-design=noir] .teacher-photo>img{height:590px;filter:saturate(.55)}
+.design-page[data-design=noir] .beans-introduction{grid-template-columns:.9fr 1.1fr}
+.design-page[data-design=noir] .beans-selection .coffee-card{border:0;border-top:1px solid rgb(var(--line));padding-top:16px;background:transparent}
+.design-page[data-design=noir] .beans-selection .product-copy{padding-inline:0}
+.design-page[data-design=noir] .line-conversation{background:#e7bf83;color:#193a3a}
+.design-page[data-design=noir] .line-conversation :is(.section-kicker,.line-note){color:#34514b}
+.design-page[data-design=noir] .line-conversation-actions>a{background:#193a3a;color:#fff7e4;border-color:#193a3a}
+/* E — a cobalt typographic poster with a panoramic photograph below. */
+.design-page[data-design=cobalt] .quiet-hero{padding-top:125px;background:#233ecc;color:#fffdf5}
+.design-page[data-design=cobalt] .quiet-hero-grid{grid-template-columns:1fr;gap:35px}
+.design-page[data-design=cobalt] .quiet-hero-copy{display:grid;grid-template-columns:1.25fr .75fr;column-gap:55px;padding-block:25px}
+.design-page[data-design=cobalt] .quiet-hero h1{grid-column:1;grid-row:2/5;font-family:Inter,'Noto Serif TC',serif;font-size:clamp(48px,5.2vw,84px)!important;letter-spacing:-.04em;color:#fffdf5;line-height:1.18!important;font-weight:700}
+.design-page[data-design=cobalt] .quiet-hero-copy>.section-kicker{grid-column:1/-1;color:#ffd2b3;margin-bottom:30px}
+.design-page[data-design=cobalt] .quiet-hero-lead{grid-column:2;grid-row:2;color:#f0f0ff;margin-top:0}
+.design-page[data-design=cobalt] .quiet-hero-meta{grid-column:2;grid-row:3;color:#fff1d9}
+.design-page[data-design=cobalt] .quiet-hero-actions{grid-column:2;grid-row:4;display:grid;grid-template-columns:1fr;margin-top:20px}
+.design-page[data-design=cobalt] .quiet-hero-actions>.primary-button{background:#ffd1af;color:#233066;border-color:#ffd1af}
+.design-page[data-design=cobalt] .quiet-hero-actions>.quiet-outline-button{color:#fffdf5;border-color:#fffdf5}
+.design-page[data-design=cobalt] .quiet-photo-stack{height:380px;border-radius:0;transform:rotate(-1deg)}
+.design-page[data-design=cobalt] .quiet-photo-controls{color:#eff0ff}
+.design-page[data-design=cobalt] .quiet-hero-bottom{color:#fffdf5;border-color:#ffffff44}
+.design-page[data-design=cobalt] .teacher-spotlight{grid-template-columns:1fr;gap:0;position:relative;background:#ffd1af;padding:35px}
+.design-page[data-design=cobalt] .teacher-photo>img{height:540px;object-position:center 40%}
+.design-page[data-design=cobalt] .teacher-course-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px 45px;padding:35px 10px 0}
+.design-page[data-design=cobalt] .teacher-course-facts h3{font-size:42px!important}.design-page[data-design=cobalt] .teacher-course-facts dl{margin-top:0;grid-column:2;grid-row:1/3}
+.design-page[data-design=cobalt] .teacher-course-facts .primary-button{grid-column:2;grid-row:3}
+.design-page[data-design=cobalt] .beans-selection .coffee-card{border:2px solid rgb(var(--primary));box-shadow:7px 7px 0 rgb(var(--stage))}
+.design-page[data-design=cobalt] .line-conversation{background:#233ecc;color:#fffdf5}.design-page[data-design=cobalt] .line-conversation :is(.section-kicker,.line-note){color:#e1e7ff}
+.design-page[data-design=cobalt] .line-conversation-actions>a{background:#ffd1af;color:#233066;border-color:#ffd1af}
+@media(max-width:1100px){
+ .design-page .quiet-hero h1{font-size:48px!important}
+ .design-page[data-design=sage] .quiet-hero-grid,.design-page[data-design=clay] .quiet-hero-grid{gap:40px}
+ .design-page[data-design=cobalt] .quiet-hero-copy{column-gap:35px}
+ .design-page .quiet-hero-actions{flex-direction:column;align-items:stretch}
+}
+@media(max-width:980px){
+ .design-page[data-design=sage] .quiet-hero-grid,.design-page[data-design=clay] .quiet-hero-grid{grid-template-columns:1fr 1fr}
+ .design-page[data-design=sage] .quiet-hero-media{padding:10px 10px 0}.design-page[data-design=sage] .quiet-photo-stack{height:520px}
+ .design-page[data-design=clay] .quiet-photo-stack{height:570px}
+ .design-page[data-design=cobalt] .quiet-hero-copy{grid-template-columns:1fr}
+ .design-page[data-design=cobalt] .quiet-hero-copy>*{grid-column:1!important;grid-row:auto!important}
+ .design-page[data-design=cobalt] .quiet-hero h1{font-size:68px!important}
+ .design-page[data-design=cobalt] .quiet-hero-actions{grid-template-columns:1fr 1fr}
+ .design-page[data-design=cobalt] .quiet-hero-lead{margin-top:25px}
+ .design-page[data-design=noir] .teacher-spotlight{gap:35px}
+}
+@media(max-width:767px){
+ .design-page .design-back{display:none}.design-page .quiet-hero{padding-top:105px}
+ .design-page .quiet-hero h1,.design-page[data-design=noir] .quiet-hero h1{font-size:39px!important;line-height:1.45!important}
+ .design-page[data-design=sky] .quiet-hero,.design-page[data-design=noir] .quiet-hero{min-height:880px;padding:125px 0 26px}
+ .design-page[data-design=sky] .quiet-hero-grid,.design-page[data-design=noir] .quiet-hero-grid{min-height:650px}
+ .design-page[data-design=sky] .quiet-hero-copy,.design-page[data-design=noir] .quiet-hero-copy{padding:20px 0}
+ .design-page[data-design=sky] .quiet-hero:after{background:linear-gradient(180deg,#e3f3fef5 0%,#e3f3feea 55%,#e3f3fe44)}
+ .design-page[data-design=noir] .quiet-hero:after{background:linear-gradient(180deg,#0a282bf2 0%,#0a282bdf 56%,#0a282b66)}
+ .design-page[data-design=sky] .quiet-shot{object-position:66% center}
+ .design-page[data-design=noir] .quiet-shot{object-position:67% center}
+ .design-page[data-design=sage] .quiet-hero-grid,.design-page[data-design=clay] .quiet-hero-grid{grid-template-columns:1fr;gap:20px;padding-top:0}
+ .design-page[data-design=sage] .quiet-hero-media{order:initial;transform:rotate(-1deg);padding:12px 12px 0;margin-top:25px}
+ .design-page[data-design=sage] .quiet-hero-copy{padding-block:15px}
+ .design-page[data-design=sage] .quiet-photo-stack{height:360px;border-radius:150px 150px 0 0}
+ .design-page[data-design=clay] .quiet-photo-stack{height:400px;border-radius:200px 200px 0 0}
+ .design-page[data-design=clay] .quiet-hero{background:rgb(var(--paper))}
+ .design-page[data-design=clay] .teacher-spotlight{padding:20px;gap:25px}
+ .design-page[data-design=sage] .teacher-spotlight,.design-page[data-design=noir] .teacher-spotlight{grid-template-columns:1fr;gap:30px}
+ .design-page[data-design=sage] .teacher-photo{order:initial}
+ .design-page[data-design=noir] .chapter-heading{grid-template-columns:1fr}
+ .design-page[data-design=noir] .teacher-photo>img{height:380px}
+ .design-page[data-design=noir] .beans-introduction{grid-template-columns:1fr}
+ .design-page[data-design=cobalt] .quiet-hero-copy{display:block;padding-block:20px}
+ .design-page[data-design=cobalt] .quiet-hero h1{font-size:45px!important}
+ .design-page[data-design=cobalt] .quiet-hero-actions{grid-template-columns:1fr}
+ .design-page[data-design=cobalt] .quiet-photo-stack{height:280px;transform:none}
+ .design-page[data-design=cobalt] .teacher-spotlight{padding:20px}
+ .design-page[data-design=cobalt] .teacher-photo>img{height:310px}
+ .design-page[data-design=cobalt] .teacher-course-facts{display:block;padding:25px 0 0}
+ .design-page .teacher-photo>img{height:350px}
+ .design-page .quiet-photo-controls{font-size:15px!important}
+}
+
+.design-page .quiet-hero h1>span{text-wrap:balance}.design-page .quiet-hero-copy>*{animation:none!important}
+@media(max-width:767px){.design-page .quiet-hero h1,.design-page[data-design=noir] .quiet-hero h1{font-size:clamp(33px,9vw,39px)!important}}

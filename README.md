@@ -73,3 +73,23 @@ See the handoff guide for GitHub Pages deployment, repository synchronization an
 Data is saved in this browser's `localStorage`. There is no real authentication, multi-user database, payment, shipping or email service. Prices, stock, roast dates, batches and customer/order records are sample data. Product/origin images are illustrative. Do not treat this as a production commerce backend.
 
 The package contains the initial catalog, not edits made inside a user's browser. To transfer those edits too, export a JSON backup in Admin → Store & data settings and import it in the receiving browser. Google Fonts and official reference links require internet; local site assets and system-font fallbacks remain usable without it.
+
+
+## 2026-11-01: larger type, five designs and LINE inquiries
+
+- Public design comparison: https://tsglee.github.io/coffee-beginner-course/designs.html
+- Five complete homepages: `design-sky.html`, `design-sage.html`, `design-clay.html`, `design-noir.html`, `design-cobalt.html`.
+- Shared reading scale: 19px desktop prose, 18px phone prose; 17px navigation/actions; larger headings and 48px minimum controls.
+- Booking and bean-purchase actions go to the existing LINE OA (`https://lin.ee/5bkhZu1`). Product and course pages remain available for information. The product purchase action no longer adds a demo cart item.
+- The existing demo order/admin model and saved data remain compatible. The current homepage keeps its quiet composition with the larger type and direct LINE actions.
+- A selected design carries its palette through product/course pages using a `design` query parameter. The established storage keys and language/product query parameters are preserved.
+
+Rebuild the five variants after editing `index.html`:
+
+```sh
+python3 scripts/build_designs.py
+python3 scripts/check_site.py
+node tests/line-inquiry.test.cjs
+```
+
+Run the four existing test files as above for shared runtime changes. Details and QA are recorded in [docs/FIVE-DESIGNS-2026-11-01.md](docs/FIVE-DESIGNS-2026-11-01.md).
