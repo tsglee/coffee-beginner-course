@@ -1,0 +1,50 @@
+{
+  "impeccable": {
+    "url": "https://github.com/pbakaus/impeccable",
+    "source": ".agents/skills/impeccable",
+    "pinnedCommit": "4f956490f0056ae1ff5ea80372cf56e83c001d3c"
+  },
+  "font": {
+    "name": "Huninn",
+    "url": "https://github.com/google/fonts/tree/main/ofl/huninn",
+    "license": "design/Huninn-OFL.txt"
+  },
+  "authenticPhotos": {
+    "class-pour.jpg": "assets/courses/class-pour.jpg",
+    "class-circle.jpg": "assets/courses/class-circle.jpg",
+    "teachers.jpg": "assets/courses/teacher-duo.jpg",
+    "hsun-pour-web.jpg": "User-provided source project images/hsun-pour-web.jpg",
+    "lulu-pour-web.jpg": "User-provided source project images/lulu-pour-web.jpg",
+    "lulu-studio-web.jpg": "User-provided source project images/lulu-studio-web.jpg",
+    "student-server.jpg": "User-provided source project images/student-server.jpg",
+    "iced-set.jpg": "User-provided source project images/iced-set.jpg",
+    "team-four.jpg": "User-provided source project images/team-four.jpg"
+  },
+  "beanSource": "User-attached IMG_2076.jpeg, only the three highlighted origins/processing/tasting notes; no supplier identity/prices/contacts used.",
+  "prices": "User message 2026-11-05: light roast,220g,NT500,student10%off=NT450.",
+  "publication": "2026-11-06: user explicitly authorized local Git commits and publishing the confirmed Chinese version to tsglee/coffee-beginner-course main.",
+  "revision": "Confirmed Chinese workshop and rotating3–5coffee catalog, including all browser annotations and removal of English navigation; publication authorized2026-11-06.",
+  "productPhotography": {
+    "manifest": "design/photo-sources-v3.json",
+    "mode": "sourced genuine photography, not AI-generated",
+    "limitation": "Shared bean photo is not actual Ruru batch photography. Ethiopia drying scene exact region unconfirmed. No image establishes supply-chain provenance.",
+    "publication": "Authorized for the confirmed public release on 2026-11-06; reference-photo disclosures and licenses retained."
+  },
+  "catalog": {
+    "data": "data/coffees.json",
+    "maintenance": "UPDATE-COFFEES.md",
+    "range": [
+      3,
+      5
+    ],
+    "refreshMonths": 2,
+    "buildDefault": "Chinese only; preserved English HTML"
+  },
+  "coursePhotography": {
+    "date": "2026-11-07",
+    "request": "At least one content-relevant real photograph per homepage section and every curriculum stage.",
+    "authentic": "Six additional user-provided brewing, tasting, table and class photographs.",
+    "reference": "Two cottonbro studio / Pexels photographs of weighing beans and controlled pouring; visible reference captions and license credits.",
+    "coverage": "All ten homepage sections, SOP, brew-plan and flavor modules, plus all five curriculum stages."
+  }
+}

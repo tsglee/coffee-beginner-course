@@ -1,0 +1,134 @@
+{
+  "updated": "2026-11-05",
+  "refresh_months": 2,
+  "student_discount_percent": 10,
+  "products": [
+    {
+      "id": "twakok",
+      "zh": "桃可可",
+      "en": "Twakok",
+      "origin_zh": "衣索比亞・西達馬",
+      "origin_en": "Ethiopia · Sidama",
+      "process_zh": "日曬處理",
+      "process_en": "Natural process",
+      "notes_zh": [
+        "葡萄柚",
+        "玫瑰花",
+        "紅糖"
+      ],
+      "notes_en": [
+        "Grapefruit",
+        "Rose",
+        "Brown sugar"
+      ],
+      "title_zh": "花香裡，帶一點明亮的果甜。",
+      "title_en": "A little bright fruit, wrapped in florals.",
+      "body_zh": "喜歡花香，也喜歡果實的清爽？先從這杯開始。葡萄柚的明亮、玫瑰花的香氣，接著是紅糖般的甜感。",
+      "body_en": "For those who enjoy both floral aromas and lively fruit. Think bright grapefruit, rose, and a brown-sugar sweetness.",
+      "color": "rose",
+      "weight_g": 220,
+      "price_ntd": 500,
+      "roast_zh": "淺焙",
+      "roast_en": "Light",
+      "photos": {
+        "origin": "origin-sidama",
+        "location_zh": "西達馬・哈瓦薩近郊",
+        "location_en": "Sidama · Near Hawassa",
+        "flavor": "flavor-grapefruit",
+        "flavor_zh": "葡萄柚",
+        "flavor_en": "Grapefruit",
+        "beans": "beans-roasted",
+        "bean_caption_zh": "熟豆外觀・攝影參考，非本批實拍",
+        "bean_caption_en": "Roasted coffee · Reference photo, not this batch",
+        "context_zh": "產地照片為區域參考，非本批來源莊園；水果代表風味聯想，咖啡無添加水果。",
+        "context_en": "Origin photos provide regional context, not this lot’s farm. Fruit represents tasting notes, not added ingredients."
+      }
+    },
+    {
+      "id": "bishala",
+      "zh": "水風鈴",
+      "en": "Bishala",
+      "origin_zh": "衣索比亞・古吉",
+      "origin_en": "Ethiopia · Guji",
+      "process_zh": "紅蜜處理",
+      "process_en": "Red honey process",
+      "notes_zh": [
+        "荔枝",
+        "野薑花",
+        "水蜜桃",
+        "檸檬紅茶"
+      ],
+      "notes_en": [
+        "Lychee",
+        "Ginger lily",
+        "Peach",
+        "Lemon black tea"
+      ],
+      "title_zh": "像水果茶，溫柔又有層次。",
+      "title_en": "Soft, layered, a little like fruit tea.",
+      "body_zh": "想找一款可以慢慢喝的香甜？荔枝、水蜜桃與野薑花交織，帶著檸檬紅茶的風味方向，適合留一點時間細細品嚐。",
+      "body_en": "Make a little time for something aromatic. Lychee, peach and ginger lily meet a lemon-black-tea character, inviting you to sip slowly.",
+      "color": "blue",
+      "weight_g": 220,
+      "price_ntd": 500,
+      "roast_zh": "淺焙",
+      "roast_en": "Light",
+      "photos": {
+        "origin": "origin-ethiopia-drying",
+        "location_zh": "衣索比亞・咖啡果實日曬景象",
+        "location_en": "Ethiopia · Coffee cherries drying",
+        "flavor": "flavor-lychee",
+        "flavor_zh": "荔枝",
+        "flavor_en": "Lychee",
+        "beans": "beans-roasted",
+        "bean_caption_zh": "熟豆外觀・攝影參考，非本批實拍",
+        "bean_caption_en": "Roasted coffee · Reference photo, not this batch",
+        "context_zh": "衣索比亞日曬場景參考，未確認為古吉或本批處理場；荔枝代表風味聯想，並非添加物。",
+        "context_en": "Origin photos provide regional context, not this lot’s farm. Fruit represents tasting notes, not added ingredients."
+      }
+    },
+    {
+      "id": "yerihar",
+      "zh": "夜里花",
+      "en": "Yerihar",
+      "origin_zh": "肯亞・祈安布",
+      "origin_en": "Kenya · Kiambu",
+      "process_zh": "水洗處理",
+      "process_en": "Washed process",
+      "notes_zh": [
+        "蔓越莓",
+        "洛神花",
+        "楓糖",
+        "茶感"
+      ],
+      "notes_en": [
+        "Cranberry",
+        "Hibiscus",
+        "Maple syrup",
+        "Tea-like"
+      ],
+      "title_zh": "莓果與花香，喝起來有點驚喜。",
+      "title_en": "Berries and blossoms, with a little surprise.",
+      "body_zh": "如果你喜歡莓果的鮮明，這款值得認識。蔓越莓與洛神花的風味，接上楓糖般的甜與茶感，讓一杯咖啡多一點探索。",
+      "body_en": "If vivid berry notes are your thing, meet this coffee. Cranberry and hibiscus lead toward maple-like sweetness and a tea-like finish.",
+      "color": "green",
+      "weight_g": 220,
+      "price_ntd": 500,
+      "roast_zh": "淺焙",
+      "roast_en": "Light",
+      "photos": {
+        "origin": "origin-kiambu",
+        "location_zh": "祈安布・Fairview 咖啡園",
+        "location_en": "Kiambu · Fairview coffee fields",
+        "flavor": "flavor-cranberry",
+        "flavor_zh": "蔓越莓",
+        "flavor_en": "Cranberry",
+        "beans": "beans-roasted",
+        "bean_caption_zh": "熟豆外觀・攝影參考，非本批實拍",
+        "bean_caption_en": "Roasted coffee · Reference photo, not this batch",
+        "context_zh": "產地照片為區域參考，非本批來源莊園；水果代表風味聯想，咖啡無添加水果。",
+        "context_en": "Origin photos provide regional context, not this lot’s farm. Fruit represents tasting notes, not added ingredients."
+      }
+    }
+  ]
+}

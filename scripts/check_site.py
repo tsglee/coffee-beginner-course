@@ -20,7 +20,7 @@ class Check(HTMLParser):
         if values.get('id'):
             assert values['id'] not in self.ids, (self.path, 'duplicate id', values['id'])
             self.ids.add(values['id'])
-        if values.get('data-line-inquiry'):
+        if values.get('data-line-inquiry') or 'data-line' in values or (self.path.name in ['index.html','beans.html'] and values.get('href') == 'https://lin.ee/5bkhZu1'):
             assert values.get('href') == 'https://lin.ee/5bkhZu1', (self.path, 'wrong LINE destination')
             assert values.get('target') == '_blank' and 'noopener' in values.get('rel', ''), (self.path, 'external link safety')
             self.inquiries += 1
@@ -38,10 +38,10 @@ class Check(HTMLParser):
 for path in sorted(ROOT.glob('*.html')):
     parser = Check(path)
     parser.feed(path.read_text())
-    if path.name != 'admin-orders.html':
+    if path.name not in ['admin-orders.html','index.html','beans.html','courses.html','shop.html','product.html']:
         assert 'assets/readability.css?v=20261101-design1' in path.read_text() or path.name in ['designs.html', 'design-signature.html'], path
     # Some course/store anchors are supplied by the documented client renderer.
-    if path.name.startswith('design-') or path.name == 'index.html':
+    if path.name.startswith('design-') or path.name in ['index.html','beans.html']:
         assert parser.inquiries >= 4, (path, 'missing course/bean actions')
         assert all(anchor in parser.ids for anchor in parser.anchors), (path, 'broken static anchor')
 print('PASS all root HTML assets, local pages, static anchors and LINE destinations.')

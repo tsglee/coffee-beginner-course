@@ -1,106 +1,56 @@
 # 露露咖啡日記 / Ruru Coffee Journal
 
-This repository publishes 露露咖啡日記 / RURU COFFEE JOURNAL: a bilingual roasted-coffee storefront and the 好好手沖 workshop. The integrated version replaces the former course-only website on `main`, as requested by the user. See [deployment and rollback notes](docs/DEPLOYMENT-2026-10-22.md). See [course integration notes](docs/FORWARD-INTEGRATION.md) and the [five-coffee catalog guide](docs/FORWARD-CATALOG.md).
+目前正式版本是 **好好手沖** 中文課程首頁與「本期豆單」。2026-11-06 使用者確認本地預覽後，授權同步到本 repository 並發布；這取代較早的 signature、五配色提案與雙語示範首頁。
 
-The user separated this site from the Forward brand on 2026-10-26. The current identity keeps the official Ruru page logo and uses a quiet Japanese photographic homepage: warm paper, muted sage, soft photo crossfades, real teachers and class-coffee sales. See [latest homepage notes](docs/QUIET-HOME-2026-10-26.md). See [Ruru brand guide](docs/RURU-BRAND-2026-10-26.md).
+- 正式首頁：https://tsglee.github.io/coffee-beginner-course/
+- 本期熟豆：https://tsglee.github.io/coffee-beginner-course/beans.html
+- Repository：https://github.com/tsglee/coffee-beginner-course
 
-A bilingual, responsive roasted-coffee storefront and operable administration demo. Plain HTML, CSS and JavaScript; no build step, npm installation, backend or database is required.
-
-- Live Chinese site: https://tsglee.github.io/coffee-beginner-course/?lang=zh
-- Live English site: https://tsglee.github.io/coffee-beginner-course/?lang=en
-- Repository: https://github.com/tsglee/coffee-beginner-course
-- **For another AI agent: read [docs/AGENT-HANDOFF.md](docs/AGENT-HANDOFF.md) first.**
-
-## Run locally
-
-Unzip the handoff package and open a terminal in `encounter-coffee/`, the directory containing `index.html`:
+## 本地預覽
 
 ```sh
-python3 -m http.server 4173 --bind 127.0.0.1
+python3 -m http.server 4185 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:4173/?lang=en or http://127.0.0.1:4173/?lang=zh. Stop the server with Ctrl+C. Use HTTP rather than double-clicking HTML files so all pages share a consistent browser storage origin.
+開啟 http://127.0.0.1:4185/ 。靜態 HTML、CSS、JavaScript；訪客不需安裝套件、登入、Stitch 或任何 API 金鑰。
 
-## Pages
+## 目前內容
 
-| File | Purpose |
-| --- | --- |
-| `index.html` | Quiet photographic hero for workshops and class coffees, real instructor portrait, monthly sample menu and delivery/support |
-| `courses.html` | Complete 好好手沖 workshop, instructors, materials, FAQ and original LINE inquiry link |
-| `contact.html` | LINE and email contact with a copyable inquiry draft; nothing is sent automatically |
-| `policies.html` | Shipping, payment, returns, workshop booking and privacy information |
-| `shop.html` | Five sample roasted coffees with origin/roast filters, English/Chinese search and sorting |
-| `product.html?id=guji` | Six-image gallery, 250g/500g bags, stock, flavor, origin, roast date and duration |
-| `checkout.html` | Shared demo cart, weight/price calculations and local demo orders |
-| `admin-orders.html` | Products, stock, roast batches, orders, reports, settings and backup tools |
-| `story.html`, `about.html` | Responsive brand story and contact information |
+課程 NT$1,800／人、四小時、零經驗可參加、一人可開班、林口，由露露與阿勳親自授課。包含至少三種豆的實作、SOP 流程講義與100g上課豆帶回家練習。學習順序為五次注水比較、SOP、參數調整、換豆評估、冠軍4:6整合練習。80+是學習目標，並非認證或結果保證。
 
-Append `?lang=en` to a page URL, or `&lang=en` when an existing product query is present. The EN / 繁中 switch keeps the product ID and anchor. Both languages use the same stored demo data.
+目前豆款為桃可可、水風鈴、夜里花，均淺焙、220g／NT$500，學生九折NT$450。豆款約每兩個月依豆源調整，每期3–5款。買豆和上課都導流至 https://lin.ee/5bkhZu1 ，沒有購物車、付款或個資蒐集。
 
-## Validate
+英文版本切換已依使用者要求移除。品牌名稱 Ruru Coffee Journal 保留。
 
-Node.js is needed only for tests (Node 18+ recommended):
+## 換豆與重建
+
+編輯 `data/coffees.json`，再執行：
 
 ```sh
-node tests/store.test.cjs
-node tests/i18n.test.cjs
-node tests/course.test.cjs
-node tests/quiet-home.test.cjs
-node tests/line-inquiry.test.cjs
+python3 build.py
+python3 check.py
+python3 qa/check_catalog_variants.py
 ```
 
-There are 31 store/localization/course/animation/LINE checks. Browser viewport validation is documented in [docs/ENGLISH-RWD.md](docs/ENGLISH-RWD.md).
+預設只重建中文的 `index.html` 與 `beans.html`；商品導航、圖說、售價與學生折扣都依資料產生。3–5款限制、重複代號、缺圖與錯誤售價會在輸出前檢查。詳見 [換豆維護說明](UPDATE-COFFEES.md)。
 
-## Package a committed snapshot
+## 素材與設計
 
-In a clean Git checkout, using Python 3.9+:
+- `assets/style.css`、`assets/site.js`：響應式排版、手機選單、四參數互動；FAQ使用原生details。
+- 露露、阿勳、課堂與官方Logo為提供的真實原始素材；沒有生成代替講師的臉。
+- 課程情境使用兩張AI素描，提示詞在 `design/image-prompts.json`。
+- 商品區使用真實攝影參考，非本批實拍；區域／生產場景不作莊園溯源。頁面有明確圖說與作者、授權連結，紀錄在 `design/photo-sources-v3.json`。
+- Huninn字型自存本地；授權見 `design/Huninn-OFL.txt`。
+- `PRODUCT.md`、`DESIGN.md` 記錄目前產品事實與設計系統。
 
-```sh
-python3 scripts/package_site.py --release-date 2026-10-14
-```
+## 相容與歷史頁面
 
-This creates one ZIP in the ignored `dist/` directory, containing the committed source, all tracked website assets, tests, instructions and a generated `RELEASE-MANIFEST.json` with the exact Git commit and per-file SHA-256 hashes. It excludes Git history and browser-saved data.
+`courses.html` 導向目前首頁學習區，`shop.html`、`product.html` 導向本期豆單，避免舊連結顯示過期示範商品。舊商店/admin及storage程式保留供歷史與本機資料相容，不是目前公開販售流程；本次不修改既有瀏覽器的localStorage。
 
-Verify a received archive with:
+先前版本可從Git歷史回溯；正式替換前的main為 `9a0e571c38e9bd06cae06f90f4e9f20e0c2af624`。目前部署與驗收見 [發布紀錄](docs/DEPLOYMENT-2026-11-06.md)。歷史操作文件見 `docs/AGENT-HANDOFF.md` 的較早章節，與本次版本衝突時以本README和最新使用者指示為準。
 
-```sh
-python3 scripts/package_site.py --verify /path/to/encounter-coffee-package.zip
-```
+GitHub Pages發布來源為 `main` 根目錄；保留 `.nojekyll` 及相對路徑以支援 `/coffee-beginner-course/`。
 
-See the handoff guide for GitHub Pages deployment, repository synchronization and how to continue development from an extracted source snapshot.
+## 2026-11-07 課程攝影更新
 
-## Demo boundaries
-
-Data is saved in this browser's `localStorage`. There is no real authentication, multi-user database, payment, shipping or email service. Prices, stock, roast dates, batches and customer/order records are sample data. Product/origin images are illustrative. Do not treat this as a production commerce backend.
-
-The package contains the initial catalog, not edits made inside a user's browser. To transfer those edits too, export a JSON backup in Admin → Store & data settings and import it in the receiving browser. Google Fonts and official reference links require internet; local site assets and system-font fallbacks remain usable without it.
-
-
-## 2026-11-01: larger type, five designs and LINE inquiries
-
-- Public design comparison: https://tsglee.github.io/coffee-beginner-course/designs.html
-- Five complete homepages: `design-sky.html`, `design-sage.html`, `design-clay.html`, `design-noir.html`, `design-cobalt.html`.
-- Shared reading scale: 19px desktop prose, 18px phone prose; 17px navigation/actions; larger headings and 48px minimum controls.
-- Booking and bean-purchase actions go to the existing LINE OA (`https://lin.ee/5bkhZu1`). Product and course pages remain available for information. The product purchase action no longer adds a demo cart item.
-- The existing demo order/admin model and saved data remain compatible. The current homepage keeps its quiet composition with the larger type and direct LINE actions.
-- A selected design carries its palette through product/course pages using a `design` query parameter. The established storage keys and language/product query parameters are preserved.
-
-Rebuild the five variants after editing `index.html`:
-
-```sh
-python3 scripts/build_designs.py
-python3 scripts/check_site.py
-node tests/line-inquiry.test.cjs
-```
-
-Run the four existing test files as above for shared runtime changes. Details and QA are recorded in [docs/FIVE-DESIGNS-2026-11-01.md](docs/FIVE-DESIGNS-2026-11-01.md).
-
-## Signature proposal: photography journal (2026-11-01)
-
-[Open the new signature proposal](https://tsglee.github.io/coffee-beginner-course/design-signature.html). It is also featured on `designs.html`; the existing homepage remains available.
-
-This bespoke page uses large Chinese serif type, sky-blue photographic spreads, an original AI-generated pour-over photograph, real teachers, and a flavor selector reading the existing sample catalog. Buying beans and booking the workshop both open LINE. It supports Chinese/English and mobile navigation. `design=signature` preserves this palette and return route through supporting pages.
-
-No extra runtime installation is required. The project-local `.agents/skills/` contains pinned Impeccable and Anthropic frontend-design instructions used during development, not browser dependencies or permanent model training. Read `PRODUCT.md`, `DESIGN.md`, and [direction/provenance](docs/SIGNATURE-DIRECTION-2026-11-01.md) before extending it. Image prompt and resource commits are in `docs/signature-image-prompt.txt` and `docs/signature-resources.json`. The comparison preview is a screenshot of the implemented page.
-
-To preview, serve the repository with the command above and open `/design-signature.html`. `scripts/build_designs.py` rebuilds the original five variants and comparison board; it deliberately preserves the independent signature source.
+首頁十個主要區塊、五個課程階段皆有相關真實照片。新增六張既有實拍素材（阿勳沖煮、露露沖煮、日常沖煮、學員品飲、課堂合照、咖啡桌），另有兩張 cottonbro studio / Pexels 秤豆、注水器材特寫。情境參考與實際課堂明確區分；來源與授權在頁尾及 design/photo-sources-v3.json。仍保留兩張課程素描，不新增生成攝影。中文頁面更新，英文頁面未重建。

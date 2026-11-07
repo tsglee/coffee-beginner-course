@@ -1,0 +1,20 @@
+[
+  {
+    "id": "coffee-friends",
+    "tool": "built-in image_gen",
+    "mode": "style-transfer",
+    "original": "Development original: exec-0fefcde2-757d-49dd-9a09-61bc4f81bcc8.png",
+    "asset": "assets/coffee-friends-sketch-v2.jpg",
+    "prompt": "Use case: style-transfer. Edit the supplied illustration into an adult, understated observational pencil sketch for Ruru Coffee Journal. Keep the general coffee table arrangement with a gooseneck kettle actually supported sensibly or held by an anonymous partial hand pouring into a fluted dripper, a glass server, ceramic mug, scale and open notebook. Keep it a wide landscape asset. Simplify extra plants/stools so the brewing equipment is the focus. Completely remove every face, eye, mouth, blush, smile, limb, floating mascot and cartoon gesture. Objects must be ordinary credible coffee equipment with natural realistic proportions, not anthropomorphic or cute. Use confident fine graphite and a little warm charcoal crosshatching on clean warm-white #FFFDF6 paper, restrained precise linework with enough contrast to read at small website size, generous quiet edges, a tiny amount of muted dusty-blue pencil at most. Mature sketchbook still life, gentle and human without children's-book styling. Replace the original saturated watercolor rendering, rather than putting a sketch filter over smiling characters. No words, labels, numbers, logos, captions or watermark. No UI. No people or faces. Preserve the broad subject arrangement, with sensible physical placement and clean standalone artwork. Opaque background.",
+    "inputOriginal": "Development original: exec-5efe7b8a-c904-4e8d-8232-446c580cdde8.png"
+  },
+  {
+    "id": "practice-kit",
+    "tool": "built-in image_gen",
+    "mode": "style-transfer",
+    "original": "Development original: exec-842dd58b-47eb-4715-a770-712e44f29f6f.png",
+    "asset": "assets/practice-kit-sketch-v2.jpg",
+    "prompt": "Use case: style-transfer. Edit the supplied illustration into an adult, understated observational pencil sketch for Ruru Coffee Journal. Keep the compact still life of a paper coffee pouch, an open process handout/notebook, plain ceramic dripper, cup and a few roasted beans. Keep it a wide landscape asset. The sheet is an SOP handout, not a separate learning card. No implied gift of any equipment. Completely remove every face, eye, mouth, blush, smile, limb, floating mascot and cartoon gesture. Objects must be ordinary credible coffee equipment with natural realistic proportions, not anthropomorphic or cute. Use confident fine graphite and a little warm charcoal crosshatching on clean warm-white #FFFDF6 paper, restrained precise linework with enough contrast to read at small website size, generous quiet edges, a tiny amount of muted dusty-blue pencil at most. Mature sketchbook still life, gentle and human without children's-book styling. Replace the original saturated watercolor rendering, rather than putting a sketch filter over smiling characters. No words, labels, numbers, logos, captions or watermark. No UI. No people or faces. Preserve the broad subject arrangement, with sensible physical placement and clean standalone artwork. Opaque background.",
+    "inputOriginal": "Development original: exec-ab1d222d-2f98-43f2-8280-cd49b944868d.png"
+  }
+]

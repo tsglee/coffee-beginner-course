@@ -1,300 +1,342 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-01T04:12:29.841885+00:00",
-  "title": "Design System: Ruru Coffee Journal — Signature",
+  "generatedAt": "2026-11-05T07:59:23.883734+00:00",
+  "title": "Design System: Ruru Coffee Journal — Warm Workshop",
   "extensions": {
     "colorMeta": {
       "paper": {
         "role": "neutral",
-        "displayName": "Warm Paper",
+        "displayName": "Warm paper",
+        "canonical": "#fffdf6",
         "tonalRamp": [
-          "oklch(0.15 0.0029 91.48)",
-          "oklch(0.27 0.0053 91.48)",
-          "oklch(0.39 0.0070 91.48)",
-          "oklch(0.51 0.0082 91.48)",
-          "oklch(0.63 0.0082 91.48)",
-          "oklch(0.75 0.0070 91.48)",
-          "oklch(0.87 0.0049 91.48)",
-          "oklch(0.95 0.0025 91.48)"
-        ]
-      },
-      "cream": {
-        "role": "neutral",
-        "displayName": "Cream Paper",
-        "tonalRamp": [
-          "oklch(0.15 0.0043 91.52)",
-          "oklch(0.27 0.0080 91.52)",
-          "oklch(0.39 0.0105 91.52)",
-          "oklch(0.51 0.0124 91.52)",
-          "oklch(0.63 0.0124 91.52)",
-          "oklch(0.75 0.0105 91.52)",
-          "oklch(0.87 0.0074 91.52)",
-          "oklch(0.95 0.0037 91.52)"
+          "oklch(15% 0.0019 93.57)",
+          "oklch(27% 0.0057 93.57)",
+          "oklch(39% 0.0085 93.57)",
+          "oklch(51% 0.0095 93.57)",
+          "oklch(63% 0.0095 93.57)",
+          "oklch(75% 0.0085 93.57)",
+          "oklch(87% 0.0057 93.57)",
+          "oklch(95% 0.0019 93.57)"
         ]
       },
       "sky": {
         "role": "primary",
-        "displayName": "Sky Paper",
+        "displayName": "Light sky",
+        "canonical": "#dceef5",
         "tonalRamp": [
-          "oklch(0.15 0.0089 225.33)",
-          "oklch(0.27 0.0166 225.33)",
-          "oklch(0.39 0.0217 225.33)",
-          "oklch(0.51 0.0255 225.33)",
-          "oklch(0.63 0.0255 225.33)",
-          "oklch(0.75 0.0217 225.33)",
-          "oklch(0.87 0.0153 225.33)",
-          "oklch(0.95 0.0077 225.33)"
-        ]
-      },
-      "ink": {
-        "role": "primary",
-        "displayName": "Blue Ink",
-        "tonalRamp": [
-          "oklch(0.15 0.0174 229.92)",
-          "oklch(0.27 0.0323 229.92)",
-          "oklch(0.39 0.0423 229.92)",
-          "oklch(0.51 0.0498 229.92)",
-          "oklch(0.63 0.0498 229.92)",
-          "oklch(0.75 0.0423 229.92)",
-          "oklch(0.87 0.0299 229.92)",
-          "oklch(0.95 0.0149 229.92)"
+          "oklch(15% 0.0043 223.01)",
+          "oklch(27% 0.0128 223.01)",
+          "oklch(39% 0.0192 223.01)",
+          "oklch(51% 0.0213 223.01)",
+          "oklch(63% 0.0213 223.01)",
+          "oklch(75% 0.0192 223.01)",
+          "oklch(87% 0.0128 223.01)",
+          "oklch(95% 0.0043 223.01)"
         ]
       },
       "blue": {
         "role": "primary",
-        "displayName": "Deep Blue",
+        "displayName": "Deep workshop blue",
+        "canonical": "#28536a",
         "tonalRamp": [
-          "oklch(0.15 0.0219 227.23)",
-          "oklch(0.27 0.0407 227.23)",
-          "oklch(0.39 0.0533 227.23)",
-          "oklch(0.51 0.0627 227.23)",
-          "oklch(0.63 0.0627 227.23)",
-          "oklch(0.75 0.0533 227.23)",
-          "oklch(0.87 0.0376 227.23)",
-          "oklch(0.95 0.0188 227.23)"
+          "oklch(15% 0.0122 234.16)",
+          "oklch(27% 0.0367 234.16)",
+          "oklch(39% 0.0551 234.16)",
+          "oklch(51% 0.0612 234.16)",
+          "oklch(63% 0.0612 234.16)",
+          "oklch(75% 0.0551 234.16)",
+          "oklch(87% 0.0367 234.16)",
+          "oklch(95% 0.0122 234.16)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Cocoa ink",
+        "canonical": "#443a34",
+        "tonalRamp": [
+          "oklch(15% 0.0035 52.90)",
+          "oklch(27% 0.0104 52.90)",
+          "oklch(39% 0.0157 52.90)",
+          "oklch(51% 0.0174 52.90)",
+          "oklch(63% 0.0174 52.90)",
+          "oklch(75% 0.0157 52.90)",
+          "oklch(87% 0.0104 52.90)",
+          "oklch(95% 0.0035 52.90)"
         ]
       },
       "muted": {
         "role": "neutral",
-        "displayName": "Muted Blue Gray",
+        "displayName": "Warm muted ink",
+        "canonical": "#6a6059",
         "tonalRamp": [
-          "oklch(0.15 0.0121 226.79)",
-          "oklch(0.27 0.0226 226.79)",
-          "oklch(0.39 0.0295 226.79)",
-          "oklch(0.51 0.0347 226.79)",
-          "oklch(0.63 0.0347 226.79)",
-          "oklch(0.75 0.0295 226.79)",
-          "oklch(0.87 0.0208 226.79)",
-          "oklch(0.95 0.0104 226.79)"
+          "oklch(15% 0.0034 57.32)",
+          "oklch(27% 0.0102 57.32)",
+          "oklch(39% 0.0152 57.32)",
+          "oklch(51% 0.0169 57.32)",
+          "oklch(63% 0.0169 57.32)",
+          "oklch(75% 0.0152 57.32)",
+          "oklch(87% 0.0102 57.32)",
+          "oklch(95% 0.0034 57.32)"
         ]
       },
       "line": {
         "role": "neutral",
-        "displayName": "Paper Rule",
+        "displayName": "Soft divider",
+        "canonical": "#d8d4c8",
         "tonalRamp": [
-          "oklch(0.15 0.0059 211.04)",
-          "oklch(0.27 0.0110 211.04)",
-          "oklch(0.39 0.0143 211.04)",
-          "oklch(0.51 0.0169 211.04)",
-          "oklch(0.63 0.0169 211.04)",
-          "oklch(0.75 0.0143 211.04)",
-          "oklch(0.87 0.0101 211.04)",
-          "oklch(0.95 0.0051 211.04)"
+          "oklch(15% 0.0034 91.57)",
+          "oklch(27% 0.0101 91.57)",
+          "oklch(39% 0.0152 91.57)",
+          "oklch(51% 0.0168 91.57)",
+          "oklch(63% 0.0168 91.57)",
+          "oklch(75% 0.0152 91.57)",
+          "oklch(87% 0.0101 91.57)",
+          "oklch(95% 0.0034 91.57)"
+        ]
+      },
+      "honey": {
+        "role": "secondary",
+        "displayName": "Honey",
+        "canonical": "#f5e3a8",
+        "tonalRamp": [
+          "oklch(15% 0.0156 93.14)",
+          "oklch(27% 0.0468 93.14)",
+          "oklch(39% 0.0703 93.14)",
+          "oklch(51% 0.0781 93.14)",
+          "oklch(63% 0.0781 93.14)",
+          "oklch(75% 0.0703 93.14)",
+          "oklch(87% 0.0468 93.14)",
+          "oklch(95% 0.0156 93.14)"
+        ]
+      },
+      "peach": {
+        "role": "secondary",
+        "displayName": "Peach",
+        "canonical": "#f4dfce",
+        "tonalRamp": [
+          "oklch(15% 0.0065 61.41)",
+          "oklch(27% 0.0195 61.41)",
+          "oklch(39% 0.0293 61.41)",
+          "oklch(51% 0.0325 61.41)",
+          "oklch(63% 0.0325 61.41)",
+          "oklch(75% 0.0293 61.41)",
+          "oklch(87% 0.0195 61.41)",
+          "oklch(95% 0.0065 61.41)"
+        ]
+      },
+      "sage": {
+        "role": "secondary",
+        "displayName": "Sage",
+        "canonical": "#e9efe4",
+        "tonalRamp": [
+          "oklch(15% 0.0032 130.42)",
+          "oklch(27% 0.0096 130.42)",
+          "oklch(39% 0.0143 130.42)",
+          "oklch(51% 0.0159 130.42)",
+          "oklch(63% 0.0159 130.42)",
+          "oklch(75% 0.0143 130.42)",
+          "oklch(87% 0.0096 130.42)",
+          "oklch(95% 0.0032 130.42)"
+        ]
+      },
+      "rose": {
+        "role": "secondary",
+        "displayName": "Rose",
+        "canonical": "#f4e7df",
+        "tonalRamp": [
+          "oklch(15% 0.0036 53.97)",
+          "oklch(27% 0.0107 53.97)",
+          "oklch(39% 0.0160 53.97)",
+          "oklch(51% 0.0178 53.97)",
+          "oklch(63% 0.0178 53.97)",
+          "oklch(75% 0.0160 53.97)",
+          "oklch(87% 0.0107 53.97)",
+          "oklch(95% 0.0036 53.97)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Opening Title",
-        "purpose": "Chinese opening title, with separate phone and English adaptations."
+        "displayName": "Display",
+        "purpose": "Baseline course hero before responsive overrides."
       },
       "headline": {
-        "displayName": "Spread Headline",
-        "purpose": "Shared learning, flavor and people headings."
+        "displayName": "Headline",
+        "purpose": "Baseline section h2; individual sections override it."
       },
       "title": {
-        "displayName": "Featured Bean Title",
-        "purpose": "Selected catalog feature name."
+        "displayName": "Title",
+        "purpose": "Baseline h3 for subsection titles."
       },
       "body": {
-        "displayName": "Desktop Reading",
-        "purpose": "Main desktop prose."
+        "displayName": "Body",
+        "purpose": "Default desktop reading text."
       },
       "body-phone": {
-        "displayName": "Phone Reading",
-        "purpose": "Main phone prose at 700px and below."
+        "displayName": "Body Phone",
+        "purpose": "Default body at 600px and below."
       },
       "label": {
-        "displayName": "Action Label",
-        "purpose": "Primary and outline inquiry labels."
+        "displayName": "Label",
+        "purpose": "Primary and secondary button labels."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Default supporting captions and source links."
       }
     },
-    "shadows": [
-      {
-        "name": "open-navigation",
-        "value": "0 10px 20px #173b4b12",
-        "purpose": "Open collapsed navigation surface only."
-      },
-      {
-        "name": "photo-caption-text",
-        "value": "0 1px 9px #0009",
-        "purpose": "Opening-image text shadow."
-      }
-    ],
+    "tonalRampNote": "All tonalRamp arrays are derived OKLCH preview extensions, not implemented CSS scales. Canonical colors remain the frontmatter values.",
+    "shadows": [],
     "motion": [
       {
-        "name": "state-transition",
+        "name": "action-transition",
         "value": "0.2s ease",
-        "purpose": "Button fill, navigation underline, menu bars and plain-link arrow."
+        "purpose": "Button color/transform, link arrows, menu strokes and FAQ symbol states."
       },
       {
-        "name": "selection-underline",
-        "value": "0.25s ease",
-        "purpose": "Flavor-control underline scale."
-      },
-      {
-        "name": "photograph-hover",
-        "value": "0.7s cubic-bezier(.16,1,.3,1)",
-        "purpose": "Opening photograph scale from 1 to 1.025."
-      },
-      {
-        "name": "change-page",
-        "value": "0.35s cubic-bezier(.16,1,.3,1)",
-        "purpose": "Featured photograph opacity .55 to 1 and translateX(12px) to 0."
+        "name": "lesson-unfold",
+        "value": "unfold 0.26s ease-out both",
+        "purpose": "Parameter content fades from 0.6 opacity and translates upward from 5px."
       },
       {
         "name": "reduced-motion",
-        "value": "prefers-reduced-motion: reduce",
-        "purpose": "Disable animation and transitions; smooth scrolling becomes auto."
+        "value": "animation:none!important;transition:none!important;scroll-behavior:auto",
+        "purpose": "Actual reduced-motion override."
       }
     ],
     "breakpoints": [
       {
-        "name": "wide-gutter",
-        "value": "min-width:1600px"
+        "name": "large-desktop",
+        "value": "1500px",
+        "purpose": "min-width hero expansion."
       },
       {
         "name": "compact-desktop",
-        "value": "max-width:1200px"
+        "value": "1200px",
+        "purpose": "max-width spacing and type adjustments."
       },
       {
-        "name": "collapsed-navigation",
-        "value": "max-width:980px"
+        "name": "menu-collapse",
+        "value": "1040px",
+        "purpose": "max-width navigation disclosure and lesson rearrangement."
+      },
+      {
+        "name": "tablet",
+        "value": "760px",
+        "purpose": "max-width shell gutter and hero reading order."
       },
       {
         "name": "phone",
-        "value": "max-width:700px"
+        "value": "600px",
+        "purpose": "max-width body size, stacking and fixed actions."
       },
       {
         "name": "narrow-phone",
-        "value": "max-width:359px"
+        "value": "359px",
+        "purpose": "max-width compact gutters and local overflow protection."
       }
     ]
   },
   "components": [
     {
-      "name": "Ink Inquiry Action",
+      "name": "Primary inquiry action",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Direct LINE course or bean inquiry.",
-      "html": "<a class=\"ds-ink\" href=\"https://lin.ee/5bkhZu1\" target=\"_blank\" rel=\"noopener noreferrer\">LINE 預約課程<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a>",
-      "css": ".ds-ink{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;font:500 17px/1.85 Manrope,'Noto Sans TC',sans-serif;min-height:57px;padding:15px 21px;border:1px solid var(--ink,#173b4b);text-decoration:none;transition:background .2s;background:var(--ink,#173b4b);color:var(--paper,#fbf9f3)}.ds-ink:hover{background:var(--blue,#25576b)}.ds-ink:focus-visible{outline:3px solid var(--blue,#25576b);outline-offset:6px}.ds-ink svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}@media(prefers-reduced-motion:reduce){:host *, :host *:before, :host *:after{animation:none!important;transition:none!important}}"
+      "description": "Real LINE anchor; blue action shared by course and bean inquiries.",
+      "html": "<a class=\"ds-primary\" href=\"https://lin.ee/5bkhZu1\" target=\"_blank\" rel=\"noopener noreferrer\">LINE 問問開課時間<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-height:58px;padding:14px 24px;border:1px solid var(--blue,#28536a);border-radius:10px;font-size:18px;line-height:1.6;text-decoration:none;font-family:var(--body,Huninn,'PingFang TC','Microsoft JhengHei',sans-serif);font-weight:400;transition:background .2s,color .2s,transform .2s;background:var(--blue,#28536a);color:var(--paper,#fffdf6)}.ds-primary svg{width:24px;height:24px;stroke:currentColor;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}.ds-primary:hover{background:#1d4256;transform:translateY(-2px)}.ds-primary:focus-visible{outline:3px solid var(--blue,#28536a);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text svg,.ds-faq svg,.ds-parameter button{transition:none}}"
     },
     {
-      "name": "Outline Inquiry Action",
+      "name": "Secondary page action",
       "kind": "button",
-      "refersTo": "button-outline",
-      "description": "Secondary direct inquiry on a light surface.",
-      "html": "<a class=\"ds-outline\" href=\"https://lin.ee/5bkhZu1\" target=\"_blank\" rel=\"noopener noreferrer\">LINE 買豆諮詢<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a>",
-      "css": ".ds-outline{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;font:500 17px/1.85 Manrope,'Noto Sans TC',sans-serif;min-height:57px;padding:15px 21px;border:1px solid var(--ink,#173b4b);text-decoration:none;transition:background .2s;background:transparent;color:var(--ink,#173b4b)}.ds-outline:hover{background:#ffffff66}.ds-outline:focus-visible{outline:3px solid var(--blue,#25576b);outline-offset:6px}.ds-outline svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}@media(prefers-reduced-motion:reduce){:host *, :host *:before, :host *:after{animation:none!important;transition:none!important}}"
+      "refersTo": "button-secondary",
+      "description": "Outlined companion action connecting the workshop and coffee pages.",
+      "html": "<a class=\"ds-secondary\" href=\"beans.html\">看看露露的三款豆<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-height:58px;padding:14px 24px;border:1px solid var(--blue,#28536a);border-radius:10px;font-size:18px;line-height:1.6;text-decoration:none;font-family:var(--body,Huninn,'PingFang TC','Microsoft JhengHei',sans-serif);font-weight:400;transition:background .2s,color .2s,transform .2s;background:var(--paper,#fffdf6);color:var(--blue,#28536a)}.ds-secondary svg{width:24px;height:24px;stroke:currentColor;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}.ds-secondary:hover{background:var(--sky,#dceef5)}.ds-secondary:focus-visible{outline:3px solid var(--blue,#28536a);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text svg,.ds-faq svg,.ds-parameter button{transition:none}}"
     },
     {
-      "name": "Ruled Arrow Link",
+      "name": "Underlined text link",
       "kind": "button",
-      "refersTo": "link-plain",
-      "description": "Supporting navigation with a moving arrow.",
-      "html": "<a class=\"ds-link\" href=\"#learn\">看看完整課程與 FAQ<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></a>",
-      "css": ".ds-link{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;font:400 17px/1.85 Manrope,'Noto Sans TC',sans-serif;color:var(--ink,#173b4b);min-height:48px;border-bottom:1px solid currentColor;padding:8px 0;text-decoration:none}.ds-link svg{transition:transform .2s}.ds-link:hover svg{transform:translateX(4px)}.ds-link:focus-visible{outline:3px solid var(--blue,#25576b);outline-offset:6px}.ds-link svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}@media(prefers-reduced-motion:reduce){:host *, :host *:before, :host *:after{animation:none!important;transition:none!important}}"
+      "refersTo": "text-link",
+      "description": "Lightweight anchor with a moving arrow; not a filled button.",
+      "html": "<a class=\"ds-text\" href=\"#learn\">先看看會學到什麼<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14m-5-5 5 5-5 5\"/></svg></a>",
+      "css": ".ds-text{font-family:var(--body,Huninn,'PingFang TC','Microsoft JhengHei',sans-serif);font-weight:400;display:inline-flex;align-items:center;gap:22px;min-height:48px;font-size:18px;line-height:1.85;padding:8px 0;color:var(--blue,#28536a);border-bottom:1px solid var(--blue,#28536a);text-decoration:none}.ds-text svg{width:24px;height:24px;stroke:currentColor;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;transition:transform .2s}.ds-text:hover svg{transform:translateX(4px)}.ds-text:focus-visible{outline:3px solid var(--blue,#28536a);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text svg,.ds-faq svg,.ds-parameter button{transition:none}}"
     },
     {
-      "name": "Journal Navigation",
+      "name": "Main navigation links",
       "kind": "nav",
       "refersTo": "navigation",
-      "description": "Current-section underline; static desktop snippet of the shipped navigation.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"主要導覽\"><a href=\"#learn\" aria-current=\"location\">一起學手沖</a><a href=\"#beans\">找喜歡的豆</a><a href=\"#people\">認識露露與阿勳</a></nav>",
-      "css": ".ds-nav{display:flex;gap:30px;flex-wrap:wrap;background:var(--paper,#fbf9f3);color:var(--ink,#173b4b);font:400 17px/1.85 Manrope,'Noto Sans TC',sans-serif}.ds-nav a{padding:10px 0;position:relative;color:inherit;text-decoration:none}.ds-nav a:after{content:\"\";height:1px;position:absolute;left:0;right:100%;bottom:6px;background:var(--ink,#173b4b);transition:right .2s}.ds-nav a:hover:after,.ds-nav a[aria-current=location]:after{right:0}.ds-nav a:focus-visible{outline:3px solid var(--blue,#25576b);outline-offset:6px}@media(prefers-reduced-motion:reduce){:host *, :host *:before, :host *:after{animation:none!important;transition:none!important}}"
+      "description": "Desktop link pattern with hover/current underlines; the local menu disclosure remains in site.js.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"主要導覽\"><a href=\"index.html#learn\">四小時學什麼</a><a href=\"index.html#class-info\">課程資訊</a><a href=\"beans.html\" aria-current=\"page\">露露烘的豆</a></nav>",
+      "css": ".ds-nav{font-family:var(--body,Huninn,'PingFang TC','Microsoft JhengHei',sans-serif);font-weight:400;display:flex;flex-wrap:wrap;gap:25px;align-items:center;font-size:17px;line-height:1.85;background:var(--paper,#fffdf6);color:var(--ink,#443a34)}.ds-nav a{min-height:44px;padding:7px 0;border-bottom:1px solid transparent;text-decoration:none;color:inherit}.ds-nav a:hover,.ds-nav a[aria-current]{color:var(--blue,#28536a);border-color:var(--blue,#28536a)}.ds-nav a:focus-visible{outline:3px solid var(--blue,#28536a);outline-offset:5px;}"
     },
     {
-      "name": "Flavor Controls",
-      "kind": "custom",
-      "refersTo": "flavor-control",
-      "description": "Native pressed-state buttons; actual feature replacement is handled by signature.js.",
-      "html": "<div class=\"ds-tastes\" role=\"group\" aria-label=\"依照風味探索咖啡\"><button type=\"button\" aria-pressed=\"true\">明亮花果</button><button type=\"button\" aria-pressed=\"false\">溫柔甜感</button><button type=\"button\" aria-pressed=\"false\">濃厚可可</button></div>",
-      "css": ".ds-tastes{display:flex;gap:40px;background:var(--sky,#cfe4ed);border-bottom:1px solid #173b4b44;color:var(--ink,#173b4b)}.ds-tastes button{position:relative;flex:1;background:none;border:0;padding:18px 5px 22px;font:500 clamp(22px,2vw,30px)/1.6 'Noto Serif TC',serif;color:inherit;opacity:.8;transition:opacity .2s;cursor:pointer}.ds-tastes button:after{content:\"\";position:absolute;height:3px;bottom:-1px;left:0;right:0;background:var(--ink,#173b4b);transform:scaleX(0);transition:transform .25s}.ds-tastes button[aria-pressed=true],.ds-tastes button:hover{opacity:1}.ds-tastes button[aria-pressed=true]:after{transform:scaleX(1)}.ds-tastes button:focus-visible{outline:3px solid var(--blue,#25576b);outline-offset:6px}@media(max-width:700px){.ds-tastes{gap:10px}.ds-tastes button{font-size:20px;padding:15px 0 19px;line-height:1.7}}@media(prefers-reduced-motion:reduce){:host *, :host *:before, :host *:after{animation:none!important;transition:none!important}}"
+      "name": "Static flavor tags",
+      "kind": "chip",
+      "refersTo": "flavor-tag",
+      "description": "Noninteractive flavor-note spans; rose, sky and sage identify the three coffee contexts.",
+      "html": "<div class=\"ds-tags\"><span>葡萄柚</span><span>玫瑰花</span><span>紅糖</span></div>",
+      "css": ".ds-tags{display:flex;flex-wrap:wrap;gap:10px;color:var(--ink,#443a34);font-family:var(--body,Huninn,'PingFang TC','Microsoft JhengHei',sans-serif);font-weight:400;line-height:1.85}.ds-tags span{font-size:16px;background:var(--rose,#f4e7df);padding:4px 13px;border-radius:6px}@media(max-width:600px){.ds-tags{gap:9px}.ds-tags span{font-size:17px;padding:4px 12px}}"
     },
     {
-      "name": "Ruled Bean Menu Row",
-      "kind": "custom",
-      "refersTo": "bean-menu-row",
-      "description": "Selection row sample; placeholder labels indicate structure rather than a catalog promise.",
-      "html": "<button class=\"ds-bean\" type=\"button\" aria-pressed=\"true\"><strong>豆款名稱</strong><span>風味筆記</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button>",
-      "css": ".ds-bean{display:grid;width:100%;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) 28px;align-items:center;gap:30px;padding:23px 16px;border:0;border-bottom:1px solid #173b4b44;background:none;color:var(--ink,#173b4b);text-align:left;transition:background .2s;cursor:pointer}.ds-bean strong{font:500 21px/1.7 'Noto Serif TC',serif}.ds-bean>span{font:400 16px/1.8 Manrope,'Noto Sans TC',sans-serif}.ds-bean:hover,.ds-bean[aria-pressed=true]{background:#fbf9f34d}.ds-bean:focus-visible{outline:3px solid var(--blue,#25576b);outline-offset:6px}.ds-bean svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}@media(max-width:700px){.ds-bean{grid-template-columns:minmax(0,1fr) 20px;gap:8px 15px;padding:21px 5px}.ds-bean strong{font-size:20px}.ds-bean>span{grid-column:1;grid-row:2}.ds-bean svg{grid-column:2;grid-row:1/3}}@media(prefers-reduced-motion:reduce){:host *, :host *:before, :host *:after{animation:none!important;transition:none!important}}"
-    },
-    {
-      "name": "Sky Invitation Plate",
+      "name": "Course facts panel",
       "kind": "card",
-      "refersTo": "invitation-plate",
-      "description": "Course facts on the overlapping sky-blue surface; excerpt of the shipped plate.",
-      "html": "<section class=\"ds-plate\"><h2>從好好手沖開始。</h2><p>零經驗也能參加，<br>和我們一起練出自己的第一杯。</p><div class=\"ds-price\"><strong>NT$1,800<small>／人</small></strong><span>四小時</span></div></section>",
-      "css": ".ds-plate{background:var(--sky,#cfe4ed);color:var(--ink,#173b4b);width:395px;max-width:100%;padding:30px 32px 26px}.ds-plate h2{font:600 26px/1.6 'Noto Serif TC',serif;letter-spacing:-.02em;margin:0}.ds-plate>p{font:400 18px/1.9 Manrope,'Noto Sans TC',sans-serif;margin:12px 0 0}.ds-price{display:flex;gap:24px;align-items:center;margin:19px 0}.ds-price strong{font:600 24px/1.6 Manrope,'Noto Sans TC',sans-serif;white-space:nowrap}.ds-price small{font:400 14px/1.6 Manrope,'Noto Sans TC',sans-serif;margin-left:4px}.ds-price>span{font:400 17px/1.85 Manrope,'Noto Sans TC',sans-serif}@media(max-width:700px){.ds-plate{width:auto;padding:25px 25px 24px}.ds-plate h2{font-size:25px}}@media(prefers-reduced-motion:reduce){:host *, :host *:before, :host *:after{animation:none!important;transition:none!important}}"
+      "refersTo": "course-facts",
+      "description": "Peach definition-list container for actual course facts; not a generic catalog card.",
+      "html": "<section class=\"ds-facts\" aria-label=\"課程資訊\"><dl><div><dt>體驗費用</dt><dd>NT$1,800／人</dd></div><div><dt>上課時間</dt><dd>四小時</dd></div></dl><p><strong>費用包含：</strong>至少三種豆實作、SOP 學習卡、筆記講義與 100g 上課豆。</p></section>",
+      "css": ".ds-facts{font-family:var(--body,Huninn,'PingFang TC','Microsoft JhengHei',sans-serif);font-weight:400;line-height:1.85;color:var(--ink,#443a34);padding:30px 34px;background:var(--peach,#f4dfce);border-radius:16px}.ds-facts dl{margin:0}.ds-facts dl>div{display:grid;grid-template-columns:100px 1fr;gap:20px;border-bottom:1px solid #ccb9a7;padding:16px 0;font-size:18px}.ds-facts dl>div:first-child{padding-top:0}.ds-facts dt{color:#655448}.ds-facts dd{margin:0}.ds-facts p{font-size:17px;margin:22px 0 0}.ds-facts strong{font-weight:400;color:var(--blue,#28536a)}@media(max-width:600px){.ds-facts{padding:24px}.ds-facts dl>div{grid-template-columns:75px minmax(0,1fr);gap:16px}}"
     },
     {
-      "name": "Course Fact Rows",
+      "name": "Native FAQ disclosure",
       "kind": "custom",
-      "refersTo": "lesson-fact-row",
-      "description": "Definition-list rows beside the authentic classroom photograph.",
-      "html": "<dl class=\"ds-facts\"><div><dt>時間</dt><dd>四小時</dd></div><div><dt>費用</dt><dd>NT$1,800／人</dd></div><div><dt>地點</dt><dd>林口／樹林／土城</dd></div></dl>",
-      "css": ".ds-facts{margin:28px 0 30px;color:var(--ink,#173b4b)}.ds-facts>div{display:grid;grid-template-columns:100px 1fr;gap:25px;padding:13px 0;border-bottom:1px solid var(--line,#bfced1);font:400 17px/1.85 Manrope,'Noto Sans TC',sans-serif}.ds-facts dt{color:var(--muted,#48616c)}.ds-facts dd{margin:0}@media(max-width:700px){.ds-facts>div{grid-template-columns:80px 1fr;gap:20px}}@media(prefers-reduced-motion:reduce){:host *, :host *:before, :host *:after{animation:none!important;transition:none!important}}"
+      "refersTo": "faq-summary",
+      "description": "Working native disclosure with an inline plus that rotates on open.",
+      "html": "<details class=\"ds-faq\"><summary>完全沒有經驗，可以參加嗎？<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></summary><div><p>可以，從認識器材、拿壺、注水到品飲，一步步陪你練。</p></div></details>",
+      "css": ".ds-faq{font-family:var(--body,Huninn,'PingFang TC','Microsoft JhengHei',sans-serif);font-weight:400;color:var(--ink,#443a34);border-bottom:1px solid var(--line,#d8d4c8)}.ds-faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:22px;font-size:21px;cursor:pointer;padding:22px 0;line-height:1.65}.ds-faq summary::-webkit-details-marker{display:none}.ds-faq svg{width:24px;height:24px;stroke:currentColor;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;width:22px;height:22px;color:var(--blue,#28536a);transition:transform .2s}.ds-faq[open] summary{color:var(--blue,#28536a)}.ds-faq[open] svg{transform:rotate(45deg)}.ds-faq summary:focus-visible{outline:3px solid var(--blue,#28536a);outline-offset:5px;}.ds-faq>div{padding:0 40px 24px 0;color:var(--muted,#6a6059);font-size:18px;line-height:1.85}.ds-faq p{margin:0}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text svg,.ds-faq svg,.ds-parameter button{transition:none}}"
+    },
+    {
+      "name": "Parameter selector states",
+      "kind": "custom",
+      "refersTo": "parameter-control",
+      "description": "Actual four-button visual pattern with one pressed state. Full lesson switching requires assets/site.js; this preview is intentionally a state sample.",
+      "html": "<div class=\"ds-parameter\" role=\"group\" aria-label=\"選擇想認識的沖煮參數\"><button type=\"button\" aria-pressed=\"true\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M10 14V5a2 2 0 0 1 4 0v9a4 4 0 1 1-4 0Z\"/><path d=\"M12 10v8m6-11h3m-3 4h2\"/></svg><span>水溫</span></button><button type=\"button\" aria-pressed=\"false\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 4h12l-2 7H8L6 4Zm2 7h8v5H8zm-2 5h12v5H6zm13-9h3v5\"/></svg><span>研磨刻度</span></button><button type=\"button\" aria-pressed=\"false\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 11h14l2 10H3l2-10Zm3-7h8l-1 7H9L8 4Zm2 12h4\"/></svg><span>豆量與水量</span></button><button type=\"button\" aria-pressed=\"false\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"14\" r=\"7\"/><path d=\"M12 10v4l3 2M9 3h6m-3 0v4m6-1 2 2\"/></svg><span>時間</span></button></div>",
+      "css": ".ds-parameter{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid #8eabb4;gap:8px;background:var(--sky,#dceef5);font-family:var(--body,Huninn,'PingFang TC','Microsoft JhengHei',sans-serif);font-weight:400;}.ds-parameter button{font-family:var(--body,Huninn,'PingFang TC','Microsoft JhengHei',sans-serif);font-weight:400;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:16px 4px 18px;min-height:90px;background:transparent;border:0;border-bottom:3px solid transparent;font-size:17px;line-height:1.5;color:#456171;cursor:pointer;transition:background .2s}.ds-parameter svg{width:24px;height:24px;stroke:currentColor;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;width:30px;height:30px}.ds-parameter button:hover{background:#fffdf644}.ds-parameter button[aria-pressed=true]{border-bottom-color:var(--blue,#28536a);color:var(--blue,#28536a);background:#fffdf666}.ds-parameter button:focus-visible{outline:3px solid var(--blue,#28536a);outline-offset:5px;}@media(max-width:600px){.ds-parameter{gap:4px}.ds-parameter button{font-size:15px;padding:12px 0 16px;gap:9px;min-height:88px}.ds-parameter svg{width:27px;height:27px}}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text svg,.ds-faq svg,.ds-parameter button{transition:none}}"
     }
   ],
   "narrative": {
-    "northStar": "The Independent Coffee Photography Book",
-    "overview": "The Independent Coffee Photography Book uses sky-blue paper, dark blue ink and generous photographic spreads to make a personal coffee ritual feel approachable. Chinese serif headings carry the expressive voice; large sans-serif copy and plain controls keep the practical information easy to read.\n\nThis records the implemented signature world in design-signature.html and assets/signature.css, with behavior in assets/signature.js. It applies to future work explicitly extending that world; it does not restyle index.html or the five legacy variants. The build is code-led under delegated creative direction, without an approved visual comp. Preserve the supplied official logo unchanged and keep photographs of the teachers authentic.",
+    "northStar": "A home-practice invitation",
+    "overview": "A warm, simple coffee workshop world: rounded readable lettering, cream paper, Logo-derived sky blue and cocoa ink. Open information rows and generous breathing room make a substantial beginner course approachable. Genuine classroom and instructor photographs sit alongside restrained observational pencil sketches of brewing, home practice and tasting notes, without anthropomorphic faces. Bean-sales introductions use the supplied Ruru packaging design reference, visibly labeled as illustrative rather than actual product specifications.\n\nThis documents only the independent local `warm-workshop` prototype. It is extracted from `assets/style.css`, `assets/site.js`, `index.html` and `beans.html`, with `PRODUCT.md` and `design/direction.md` supplying confirmed identity context. The build is code-led; there is no approved visual comp. It does not replace any production design system.",
     "keyCharacteristics": [
-      "Sky blue, warm paper and dark blue ink.",
-      "Large Chinese serif headings with readable supporting copy.",
-      "Square photographic spreads, overlapping information plates and ruled lists.",
-      "Visible flavor selection and direct LINE inquiries."
+      "Warm paper and light blue, with dark readable type.",
+      "One locally hosted rounded typeface across Chinese and English.",
+      "Real people and original illustrative coffee companions.",
+      "Open rows, quiet dividers and selective colored panels.",
+      "Native controls, visible focus and modest motion."
     ],
     "rules": [
       {
-        "name": "The Logo-to-Paper Rule",
-        "body": "Use the supplied logo as the identity anchor; carry its sky-blue family into broad paper-like surfaces and retain dark ink for text and actions.",
+        "name": "The Reading Ink Rule",
+        "body": "Use cocoa or deep blue for readable content on pastel surfaces; pale fills organize the page rather than replacing dark text.",
         "section": "colors"
       },
       {
-        "name": "The Readable Journal Rule",
-        "body": "Keep main body copy at 19px on desktop and 18px on phones. Smaller captions and functional labels have their own roles; they are not a substitute for body copy.",
+        "name": "The Comfortable Reading Rule",
+        "body": "Preserve the actual 19px desktop and 18px phone body sizes with 1.85 leading; captions remain a distinct supporting role.",
         "section": "typography"
-      },
-      {
-        "name": "The Paper Overlap Rule",
-        "body": "Create structural depth through solid surface overlaps and photographic framing. Keep the small diffuse shadow confined to the open mobile navigation.",
-        "section": "elevation"
       }
     ],
     "dos": [
-      "Do preserve the official logo and authentic teacher photographs.",
-      "Do keep body copy at the documented desktop and phone sizes.",
-      "Do use native buttons, visible focus outlines and aria-pressed for flavor and bean selection.",
-      "Do keep course and bean inquiry actions leading directly to LINE.",
-      "Do disclose illustrative photography and sample catalog content where the implemented page does."
+      "**Do** preserve the original blue/cream Logo and locally hosted Huninn.",
+      "**Do** keep body text at 19px on desktop and 18px on phones, with generous leading.",
+      "**Do** pair authentic people photographs with original illustrations and identify illustrative situations honestly.",
+      "**Do** retain visible keyboard focus, native disclosure semantics and reduced-motion support.",
+      "**Do** use the existing LINE inquiry destination for course and bean actions."
     ],
     "donts": [
-      "Don't replace the signature world with repeated equal marketing cards or a dark luxury treatment.",
-      "Don't fabricate teacher portraits, testimonials, stock promises or equipment gifts.",
-      "Don't turn the sample bean menu into a public checkout action.",
-      "Don't apply this signature specification retroactively to the legacy variants."
+      "**Don't** replace real instructor or classroom evidence with generated people.",
+      "**Don't** present flavor illustrations as ingredients or practice illustrations as actual packaging.",
+      "**Don't** treat derived sidecar ramps as implemented CSS tokens.",
+      "**Don't** turn the current hero order or open-row composition into a prohibition on future surface layouts."
     ]
   }
 }

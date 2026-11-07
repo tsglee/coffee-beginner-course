@@ -1,0 +1,107 @@
+{
+  "source": "Confirmed warm-workshop local preview",
+  "date": "2026-11-07",
+  "assets": {
+    "assets/Huninn-Regular.ttf": {
+      "sha256": "1bd770a5ffc0c06723b567686f8b5db5abf9ab54227f3bbc4e6fd648f4698805",
+      "bytes": 4683972
+    },
+    "assets/beans-roasted-photo.jpg": {
+      "sha256": "2f854790d83e206dd6204326daa007415ccb88fc44a25b42b67084165324fdef",
+      "bytes": 433465
+    },
+    "assets/beans-surface-photo.jpg": {
+      "sha256": "e83dd590223cb13e7203367c85b0676924463ccc9677a6262ae8a9403cae5e56",
+      "bytes": 144800
+    },
+    "assets/class-circle.jpg": {
+      "sha256": "b3fe58ac0a5187896dfe5968b7955f9acc0c92978fe993118eb4427cfc634028",
+      "bytes": 195193
+    },
+    "assets/class-pour.jpg": {
+      "sha256": "6f0237462dc141d31ad1c97e989eea50f4246c176f4227b52612803f7441452c",
+      "bytes": 481944
+    },
+    "assets/coffee-friends-sketch-v2.jpg": {
+      "sha256": "c2db2a931c794796c70b8a535b0b900ff635b1ee91b9db9c0f9e3fb85bc73b8c",
+      "bytes": 525864
+    },
+    "assets/flavor-cranberry-photo.jpg": {
+      "sha256": "f9f7cd8e3c45f27212bf51ec83da7d0781951686ff761e572e1a0485d1bb5504",
+      "bytes": 393823
+    },
+    "assets/flavor-grapefruit-photo.jpg": {
+      "sha256": "b3cbc0b3aa35403ad42f724bcd5c0192e7542ab2cc235e0ce757bd8541dbce5a",
+      "bytes": 269536
+    },
+    "assets/flavor-lychee-photo.jpg": {
+      "sha256": "0599cee7110106ae37a41e4ba949718604dc49f16b3d6167ad09171cee5844f7",
+      "bytes": 278665
+    },
+    "assets/hsun-pour-web.jpg": {
+      "sha256": "3b20024464ebe0c3964e9bd833a9d1ddb44bd34c0ec072b83755934b7693e509",
+      "bytes": 209787
+    },
+    "assets/iced-set.jpg": {
+      "sha256": "87f5d2829c178577740790b9db96f0e012688c9a34c2e423346344b46195882b",
+      "bytes": 445141
+    },
+    "assets/logo.png": {
+      "sha256": "a6c4c36e87890825e88696d9dec00eb1eea7aeb0eda31112a49dd16afdd758a0",
+      "bytes": 1317765
+    },
+    "assets/lulu-pour-web.jpg": {
+      "sha256": "821795b8693aae1ce6edea0e9c939cd80da2b78ffad5982afbfc2b9b11707e59",
+      "bytes": 482895
+    },
+    "assets/lulu-studio-web.jpg": {
+      "sha256": "c0e407d3c35bcae7e91cfb5d084b5f9a25d927154787ad16f3c61302d3024554",
+      "bytes": 374216
+    },
+    "assets/origin-ethiopia-drying-photo.jpg": {
+      "sha256": "b108c7386b4444bf972734dc4629cb22ea3c26f71859fb2dab6c7376328ca140",
+      "bytes": 797097
+    },
+    "assets/origin-kiambu-photo.jpg": {
+      "sha256": "f8be6346f24f3190d4975bb8d37d83cbe1aae5bb002d60a9c54b43e4a82e91c1",
+      "bytes": 589804
+    },
+    "assets/origin-sidama-photo.jpg": {
+      "sha256": "9dbb76bc442b68dd778ffb7ebf586f482c6d00dbb006942e232637b435fb4cfd",
+      "bytes": 303634
+    },
+    "assets/practice-kit-sketch-v2.jpg": {
+      "sha256": "ad8000cbbf89c3688a89b0571e8ba30783cc62ca702acaef608987ee36e7ab5a",
+      "bytes": 519569
+    },
+    "assets/site.js": {
+      "sha256": "eae2aa7077b8bedd187860fe1f2f7670a6d266db383fbfff8cd7558489328177",
+      "bytes": 4097
+    },
+    "assets/student-server.jpg": {
+      "sha256": "976b4e9617c4f504ea133f63749aae63a16ab6c9cf2efae16333f7ff6b475938",
+      "bytes": 156687
+    },
+    "assets/style.css": {
+      "sha256": "ba3f8d8067d8265fd280760be9022c739855e69c3c58c087f98017fae6012c9d",
+      "bytes": 45284
+    },
+    "assets/teachers.jpg": {
+      "sha256": "2da383274ec97908916c415c48023014b4fcc6a7da76222097a8cbc8a75a89f1",
+      "bytes": 251951
+    },
+    "assets/team-four.jpg": {
+      "sha256": "3eed26101fe80e5339431b967847930ac6b98adc80a567fa77c7b020e7512094",
+      "bytes": 290313
+    },
+    "assets/tools-pouring-photo.jpg": {
+      "sha256": "80d89fe8118471aaac11a7108801748108e186a4b7dd19cdf08e82b53856b303",
+      "bytes": 224743
+    },
+    "assets/tools-weighing-photo.jpg": {
+      "sha256": "d7f20237877b9e38e82b58e10da12e8c8a9978782ea844c27e307eeef9521efc",
+      "bytes": 297689
+    }
+  },
+  "note": "Active image/font assets only; no original supplier sheet, unused packaging concept or generated flavor illustrations published."
+}

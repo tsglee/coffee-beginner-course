@@ -45,15 +45,19 @@ test('all 12 imported course images match the recorded source checksums', () => 
 });
 
 test('all existing page shells expose the integrated course and use the Ruru brand', () => {
-  for (const file of ['index.html', 'shop.html', 'product.html', 'checkout.html', 'story.html', 'about.html', 'admin-orders.html']) {
+  for (const file of ['checkout.html', 'story.html', 'about.html', 'admin-orders.html']) {
     const html = fs.readFileSync(path.join(root, file), 'utf8');
     assert.ok(html.includes('href="courses.html"'), file);
     assert.ok(html.includes('露露咖啡日記'), file);
     assert.ok(!html.includes('佛我咖啡') && !html.includes('FORWARD'), file);
     assert.ok(!html.includes('一遇') && !html.includes('ENCOUNTER'), file);
   }
-  const html = fs.readFileSync(path.join(root, 'courses.html'), 'utf8');
-  assert.ok(html.includes('href="shop.html"'));
-  assert.ok(html.indexOf('assets/i18n.js') < html.indexOf('assets/courses.js'));
-  assert.ok(html.includes('assets/course-data.js'));
+  for (const [file, target] of [['courses.html', 'index.html#learn'], ['shop.html', 'beans.html'], ['product.html', 'beans.html']]) {
+    const html = fs.readFileSync(path.join(root, file), 'utf8');
+    assert.ok(html.includes('http-equiv="refresh"') && html.includes('href="' + target + '"'), file);
+    assert.ok(html.includes('露露咖啡日記'), file);
+  }
+  const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+  assert.ok(html.includes('id="learn"') && html.includes('href="beans.html"'));
+  assert.ok(!html.includes('class="language"'));
 });

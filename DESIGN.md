@@ -1,218 +1,226 @@
 ---
-name: Ruru Coffee Journal — Signature
-description: A sky-blue photography book for learning a personal coffee ritual.
+name: Ruru Coffee Journal — Warm Workshop
+description: A warm, readable local coffee-workshop prototype with real people and original illustrations.
 colors:
-  paper: "#fbf9f3"
-  cream: "#f3f0e7"
-  sky: "#cfe4ed"
-  ink: "#173b4b"
-  blue: "#25576b"
-  muted: "#48616c"
-  line: "#bfced1"
+  paper: "#fffdf6"
+  sky: "#dceef5"
+  blue: "#28536a"
+  ink: "#443a34"
+  muted: "#6a6059"
+  line: "#d8d4c8"
+  honey: "#f5e3a8"
+  peach: "#f4dfce"
+  sage: "#e9efe4"
+  rose: "#f4e7df"
 typography:
   display:
-    fontFamily: "'Noto Serif TC', serif"
-    fontSize: "clamp(55px, 6.4vw, 96px)"
-    fontWeight: 500
-    lineHeight: 1.45
-    letterSpacing: "-0.035em"
-  headline:
-    fontFamily: "'Noto Serif TC', serif"
-    fontSize: "clamp(38px, 3.6vw, 58px)"
-    fontWeight: 500
-    lineHeight: 1.5
+    fontFamily: "Huninn, 'PingFang TC', 'Microsoft JhengHei', sans-serif"
+    fontSize: "61px"
+    fontWeight: 400
+    lineHeight: 1.35
     letterSpacing: "-0.025em"
-  title:
-    fontFamily: "'Noto Serif TC', serif"
-    fontSize: "clamp(29px, 2.8vw, 43px)"
-    fontWeight: 500
-    lineHeight: 1.6
+  headline:
+    fontFamily: "Huninn, 'PingFang TC', 'Microsoft JhengHei', sans-serif"
+    fontSize: "45px"
+    fontWeight: 400
+    lineHeight: 1.45
     letterSpacing: "-0.02em"
+  title:
+    fontFamily: "Huninn, 'PingFang TC', 'Microsoft JhengHei', sans-serif"
+    fontSize: "28px"
+    fontWeight: 400
+    lineHeight: 1.45
   body:
-    fontFamily: "Manrope, 'Noto Sans TC', sans-serif"
+    fontFamily: "Huninn, 'PingFang TC', 'Microsoft JhengHei', sans-serif"
     fontSize: "19px"
     fontWeight: 400
     lineHeight: 1.85
   body-phone:
-    fontFamily: "Manrope, 'Noto Sans TC', sans-serif"
+    fontFamily: "Huninn, 'PingFang TC', 'Microsoft JhengHei', sans-serif"
     fontSize: "18px"
     fontWeight: 400
     lineHeight: 1.85
   label:
-    fontFamily: "Manrope, 'Noto Sans TC', sans-serif"
-    fontSize: "17px"
-    fontWeight: 500
-    lineHeight: 1.85
+    fontFamily: "Huninn, 'PingFang TC', 'Microsoft JhengHei', sans-serif"
+    fontSize: "18px"
+    fontWeight: 400
+    lineHeight: 1.6
+  caption:
+    fontFamily: "Huninn, 'PingFang TC', 'Microsoft JhengHei', sans-serif"
+    fontSize: "15px"
+    fontWeight: 400
+    lineHeight: 1.8
+rounded:
+  tag: "6px"
+  compact: "8px"
+  button: "10px"
+  photo: "14px"
+  panel: "16px"
+  hero: "24px"
 spacing:
-  phone-gutter: "20px"
-  button-block: "15px"
-  button-inline: "21px"
-  content-gap: "30px"
-  spread-gap: "65px"
+  inline-small: "12px"
+  inline: "24px"
+  gutter: "32px"
+  panel: "48px"
+  section-phone: "60px"
+  section-tablet: "70px"
+  section: "100px"
 components:
   button-primary:
-    backgroundColor: "{colors.ink}"
+    backgroundColor: "{colors.blue}"
     textColor: "{colors.paper}"
     typography: "{typography.label}"
-    padding: "15px 21px"
+    rounded: "{rounded.button}"
+    padding: "14px 24px"
   button-primary-hover:
-    backgroundColor: "{colors.blue}"
-  button-outline:
-    backgroundColor: "transparent"
-    textColor: "{colors.ink}"
+    backgroundColor: "#1d4256"
+  button-secondary:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.blue}"
     typography: "{typography.label}"
-    padding: "15px 21px"
-  button-outline-hover:
-    backgroundColor: "#ffffff66"
-  link-plain:
-    textColor: "{colors.ink}"
-    padding: "8px 0"
-  flavor-control:
-    backgroundColor: "transparent"
-    textColor: "{colors.ink}"
-    padding: "18px 5px 22px"
-  bean-menu-row:
-    backgroundColor: "transparent"
-    textColor: "{colors.ink}"
-    padding: "23px 16px"
-  bean-menu-row-selected:
-    backgroundColor: "#fbf9f34d"
-  invitation-plate:
+    rounded: "{rounded.button}"
+    padding: "14px 24px"
+  button-secondary-hover:
     backgroundColor: "{colors.sky}"
-    textColor: "{colors.ink}"
-    padding: "30px 32px 26px"
-    width: "395px"
+  text-link:
+    textColor: "{colors.blue}"
+    typography: "{typography.label}"
+    padding: "8px 0"
   navigation:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.ink}"
-  lesson-fact-row:
+    padding: "7px 0"
+  flavor-tag:
+    backgroundColor: "{colors.rose}"
     textColor: "{colors.ink}"
-    padding: "13px 0"
+    rounded: "{rounded.tag}"
+    padding: "4px 13px"
+  course-facts:
+    backgroundColor: "{colors.peach}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.panel}"
+    padding: "30px 34px"
+  parameter-control:
+    textColor: "#456171"
+    padding: "16px 4px 18px"
+  faq-summary:
+    textColor: "{colors.ink}"
+    padding: "22px 0"
 ---
 
-# Design System: Ruru Coffee Journal — Signature
+# Design System: Ruru Coffee Journal — Warm Workshop
 
 ## Overview
 
-**Creative North Star: "The Independent Coffee Photography Book"**
+**Creative North Star: "A home-practice invitation"**
 
-The Independent Coffee Photography Book uses sky-blue paper, dark blue ink and generous photographic spreads to make a personal coffee ritual feel approachable. Chinese serif headings carry the expressive voice; large sans-serif copy and plain controls keep the practical information easy to read.
+A warm, simple coffee workshop world: rounded readable lettering, cream paper, Logo-derived sky blue and cocoa ink. Open information rows and generous breathing room make a substantial beginner course approachable. Genuine classroom and instructor photographs sit alongside restrained observational pencil sketches of brewing, home practice and tasting notes, without anthropomorphic faces. Bean-sales introductions and product rows use genuine sourced coffee, regional/context and fruit photography, with visible reference-photo disclosures and licensed attribution; no AI product pictures.
 
-This records the implemented signature world in design-signature.html and assets/signature.css, with behavior in assets/signature.js. It applies to future work explicitly extending that world; it does not restyle index.html or the five legacy variants. The build is code-led under delegated creative direction, without an approved visual comp. Preserve the supplied official logo unchanged and keep photographs of the teachers authentic.
+This documents the confirmed Warm Workshop implementation now used for the published Chinese homepage and current-coffee page. It is extracted from `assets/style.css`, `assets/site.js`, `index.html` and `beans.html`, with `PRODUCT.md` and `design/direction.md` supplying confirmed identity context. The build is code-led; there is no approved visual comp. It supersedes the former signature-proposal system for the active public pages. Historical signature documentation is preserved under docs/archive/.
 
 **Key Characteristics:**
-
-- Sky blue, warm paper and dark blue ink.
-- Large Chinese serif headings with readable supporting copy.
-- Square photographic spreads, overlapping information plates and ruled lists.
-- Visible flavor selection and direct LINE inquiries.
+- Warm paper and light blue, with dark readable type.
+- One locally hosted rounded typeface across Chinese and English.
+- Real people and original illustrative coffee companions.
+- Open rows, quiet dividers and selective colored panels.
+- Native controls, visible focus and modest motion.
 
 ## Colors
 
-The sidecar tonal ramps are derived preview extensions; they are not shipped CSS scales. Plain links inherit the body weight rather than the action-label weight.
-
-The palette pairs the logo's sky-blue family with warm paper and legible dark blue ink. Values in the frontmatter are normative and map directly to the root CSS properties with the same names.
+Pastel surfaces carry warmth; dark blue and cocoa carry reading and action. Frontmatter records the reused implementation colors, not every local tint.
 
 ### Primary
+- **Deep workshop blue:** primary actions, linked headings, navigation states and focus outlines.
+- **Light sky:** the hero, lesson panel, teacher section and course bridge.
 
-- **Sky Paper** (`sky`): broad flavor surfaces and the overlapping invitation plate.
-- **Blue Ink** (`ink`): headings, body text, solid inquiry actions and selected control underlines.
-- **Deep Blue** (`blue`): primary-action hover, text selection and keyboard focus outlines.
+### Secondary
+- **Honey:** the bean invitation and selected-text highlight.
+- **Peach:** practical course facts.
+- **Sage:** the learning section and one bean's flavor tags.
+- **Rose:** the default bean flavor tags.
 
 ### Neutral
+- **Paper:** page background, outlined buttons and light text on primary actions.
+- **Cocoa ink:** primary reading text.
+- **Warm muted ink:** supporting paragraphs and captions.
+- **Soft divider:** open-list and section boundaries.
 
-- **Warm Paper** (`paper`): page canvas, caption labels and text on dark actions.
-- **Cream Paper** (`cream`): the closing spread's quiet tonal change.
-- **Muted Blue Gray** (`muted`): supporting copy, captions and disclosures.
-- **Paper Rule** (`line`): header edges, fact rows and the fixed mobile action bar.
+**The Reading Ink Rule.** Use cocoa or deep blue for readable content on pastel surfaces; pale fills organize the page rather than replacing dark text.
 
-The bean menu also uses translucent ink rules and a translucent paper selection fill. White is used for the photographic caption and the outline-action hover wash. Peach is declared in CSS but unused in this build and is not a normative palette role.
-
-**The Logo-to-Paper Rule.** Use the supplied logo as the identity anchor; carry its sky-blue family into broad paper-like surfaces and retain dark ink for text and actions.
+The sidecar's eight-step tonal ramps are derived preview extensions only. They are not CSS scales or authorization to substitute new colors into this build. Unused root declarations are omitted.
 
 ## Typography
 
-**Display Font:** Noto Serif TC, with serif fallback.
-**Body Font:** Manrope for Latin and Noto Sans TC for Chinese, with sans-serif fallback.
+**Display and Body Font:** locally hosted Huninn Regular (`assets/Huninn-Regular.ttf`), with PingFang TC, Microsoft JhengHei and sans-serif fallbacks. Headings inherit the actual body stack; the separately declared display variable is not assigned in the current stylesheet.
 
-**Character:** generous Chinese serif strokes give the journal its voice; the sans-serif supporting layer keeps prices, facts and actions clear. The hierarchy uses independent responsive sizes rather than a strict mathematical scale.
+Rounded strokes, regular weight and generous leading make the long beginner explanation feel conversational. This is an observed hierarchy with responsive and component overrides, not a mathematical scale.
 
-### Hierarchy
+- **Display:** course hero baseline from the frontmatter; its blue phrase is smaller (55px). Bean hero uses a separate larger treatment (66px, 1.4).
+- **Headline:** baseline h2 from the frontmatter; built sections vary approximately 35–45px on desktop and 32–36px on phones.
+- **Title:** baseline h3; audience and lesson rows commonly use 24–28px.
+- **Body:** desktop value from the frontmatter, switching to the phone value at 600px and below; paragraphs cap at 70ch.
+- **Label:** primary action text; navigation is 17px on desktop and 18px inside the expanded mobile menu.
+- **Caption:** default supporting text; local fine print ranges from 13–17px and is not a second body-size standard.
 
-- **Display:** the opening Chinese title uses the frontmatter display role. At phone width it becomes `clamp(33px, 8.4vw, 55px)` with line-height (1.65); below 360px it is (30px). English has its own wrapping and sizing rules: desktop `clamp(48px, 4.4vw, 72px)`, phone (44px / 1.3).
-- **Headline:** shared section headings use the headline role; phones use (35px / 1.55), with English at (34px). The closing headline is larger: `clamp(60px, 6vw, 96px)` / (1.35), then (52px / 1.5) on phones.
-- **Title:** the featured bean uses the title role, then (30px / 1.65) on phones. The lesson subheading has its own (41px / 1.55) treatment, then (34px) on phones.
-- **Body:** the body roles define the main reading size. Most prose uses a more generous line-height (1.95). Text length follows the spread columns rather than a universal character limit.
-- **Label:** action labels use the label role. Navigation and fact rows are (17px); phone sticky actions are (16px). Captions, materials notes and disclosures range from (13–16px), depending on their context.
-
-**The Readable Journal Rule.** Keep main body copy at 19px on desktop and 18px on phones. Smaller captions and functional labels have their own roles; they are not a substitute for body copy.
+**The Comfortable Reading Rule.** Preserve the actual 19px desktop and 18px phone body sizes with 1.85 leading; captions remain a distinct supporting role.
 
 ## Layout
 
-The signature world uses wide photographic spreads, asymmetrical image-to-copy ratios and solid rectangular information plates. The header, opening and content spreads cap at (1600px); blue-section children and closing content cap at (1344px). Desktop outer gutters are (4vw) for the header/opening and (8vw) for the main spreads. Main content gutters settle to (128px) above 1600px.
+The shared content shell caps at 1280px including 32px side padding; header and hero cap at 1440px. Sections normally use 100px vertical padding. The stylesheet uses contextual gaps and padding, not a strict spacing multiplier.
 
-The opening image is offset by (12%) and sits in a (550px) tall frame. Its invitation plate overlaps the lower left. Course content uses a (1.05fr / 1fr) grid with a (75px) gap; flavor content uses (1.15fr / 1fr) and a (65px) gap. People content begins at (1.5fr / 1fr). Sections use substantial vertical padding, generally (80–120px) on desktop.
+Desktop compositions combine two columns, open learning rows, a four-column lesson sequence and alternating bean image/text rows. At 1040px and below, the main menu becomes a disclosure, section introductions stack, the parameter lesson becomes one column and the lesson sequence becomes two columns. At 760px, shell padding becomes 24px and section spacing 70px; several content pairs stack. At 600px, body copy becomes 18px, section spacing 60px, remaining principal pairs and the lesson sequence stack, and bean image/text order resets to natural reading order. Below 360px, shell padding becomes 20px. Above 1500px, the hero receives larger side padding and a taller photograph.
 
-At 1200px the main gutters become (6vw) and gaps reduce. At 980px navigation collapses behind a menu button, opening supporting copy gets its own row, and people content becomes one column. At 700px content stacks with (20px) gutters and approximately (55–70px) vertical section padding. The photograph remains offset relative to the invitation plate; the plate becomes part of the vertical flow with a (-25px) overlap. Course and bean actions remain available in a fixed two-column bottom bar with safe-area padding; the body reserves (66px + safe area). At 359px the header and prominent type compact again.
+The current course hero specifically reorders at 760px and below: title, beginner introduction, price/duration, take-home promise, photo plus illustration, explanatory paragraph, inline actions. At 600px its outer blue surface becomes full width with square outside corners. Final phone course display is 42px with a 34px blue phrase; below 360px it is 39px/31px. English has separate measured overrides, including 37px/31px on phones. These are surface-specific arrangements, not requirements for every future page.
+
+The sticky header reserves scroll offsets (112px; 90px below 761px). At 600px and below, two fixed bottom actions use 52px minimum height, safe-area padding and matching body clearance. Course and bean inquiries lead to the existing LINE URL; the secondary action connects the two pages.
 
 ## Elevation & Depth
 
-Depth comes from photograph crops, solid paper captions, section color changes and overlapping planes. There are no elevated card shadows or hard offset shadows in the signature UI. A single diffuse navigation shadow distinguishes the open mobile menu; photograph-caption text has a soft shadow for legibility over the image.
+The implementation has no box shadows. Broad pale surfaces, quiet borders, photo/illustration overlap and slight image rotation create depth. Most reading lists remain on the page background; a few instructional or practical blocks receive colored rounded containers. No elevation scale is invented.
 
-### Shadow Vocabulary
-
-- **Open navigation:** `0 10px 20px #173b4b12`; only on the collapsed navigation surface.
-- **Photograph-caption text:** `0 1px 9px #0009`; white text over the opening image.
-
-**The Paper Overlap Rule.** Create structural depth through solid surface overlaps and photographic framing. Keep the small diffuse shadow confined to the open mobile navigation.
+Buttons transition over 0.2s; the primary hover moves upward 2px and darkens. Link arrows move 4px. Parameter copy unfolds over 0.26s with a 5px movement. Reduced-motion mode removes animations and transitions and disables smooth scrolling.
 
 ## Shapes
 
-Photographs, plates, buttons and ruled menu rows use square edges. Component corners have no rounded treatment. Thin one-pixel rules provide structure; the selected flavor control uses a three-pixel underline. The official logo retains its supplied circular artwork. Arrow icons are inline stroked SVG with rounded joins and caps, generally (22px) with a (1.5) stroke width. The custom scrollbar's (8px) radius is a browser detail rather than a component corner token.
+Soft rectangular corners distinguish roles: small flavor tags, compact fixed actions, primary buttons, photos, learning panels and the broad hero use the extracted radius tokens. Numbered steps use circles. Thin borders organize rows and keyboard focus uses a blue outline (3px, offset 5px). The hero's illustration has a cream picture frame and a small rotation; these are image treatments rather than shadow styles.
 
 ## Components
 
-### Buttons
+### Buttons and text links
 
-Plain, firm rectangular actions. The primary action uses Blue Ink with Warm Paper text, a one-pixel ink border, minimum height (57px) and the documented padding. Hover changes its fill to Deep Blue over (0.2s). The outline variant keeps ink text and border over a transparent surface; hover adds a white translucent wash. General plain links have a bottom rule, minimum height (48px) and an arrow that moves (4px) on hover. The opening's secondary link is a compact unruled variation. Keyboard focus on links and buttons uses a (3px) Deep Blue outline offset by (6px).
-
-### Cards / Containers
-
-The invitation plate is a square Sky Paper information surface rather than a general card family. It carries the course title, short copy, price/duration and two LINE inquiry actions. Its desktop width and padding appear in the frontmatter; on phones it uses full available width and (25px 25px 24px) padding. Photo captions are small Warm Paper plates, or white text directly over the opening image. Do not extrapolate a generic card grid from these patterns.
+Primary and secondary actions share a blue border, regular 18px label, 58px minimum height, 28px internal gap and the frontmatter shape/padding. Primary uses blue/paper; secondary uses paper/blue and becomes sky on hover. Focus uses the common outline. Text links use an underline border and 48px minimum height; their inline SVG arrow moves on hover. Relevant actions stretch to full width on phones.
 
 ### Navigation
 
-Desktop navigation is a horizontal row with a fine underline that grows across the label on hover and on the current section. Section tracking sets `aria-current="location"`. At 980px and below, the menu button controls a full-width paper dropdown; it announces expanded state, closes after a section link is chosen, and closes with Escape while returning focus. The separate language control is supplied by the site's bilingual layer. This header scrolls with the page; the phone inquiry bar is fixed.
+The original blue/cream Logo remains intact. The desktop nav is a simple horizontal row with a blue underline for hover/current state, plus a language link and LINE link. Below 1041px a 46px menu button reveals stacked links; selection or Escape closes it, and Escape returns focus to the button. The header LINE label hides below 601px while the fixed action bar provides inquiry access. English routes contain actual translations.
 
-### Flavor Selector
+### Flavor tags
 
-Three native buttons form a ruled row, with serif labels and equal available width. Unselected buttons use opacity (0.8); hover and selection use full opacity. `aria-pressed="true"` adds the ink underline. Selection replaces the feature photograph, coffee name, flavor notes, description and inquiry link from active catalog data. The result is a polite live region. It does not filter away the full bean menu. The selected picture can enter with a (0.35s) opacity/translation animation; reduced-motion settings disable animations and transitions.
+Static noninteractive spans use rose, sky or sage fills according to the bean, with rounded corners. Phone tags use 17px text and 4px 12px padding. Bean selection uses anchor links, not tag filtering or tasting-note toggles.
 
-### Bean Menu
+### Information panels and open rows
 
-Ruled native button rows show a bean name, flavor notes and an arrow. Hover and selection add translucent Warm Paper. A selected row updates the same feature and synchronizes its pressed state with the flavor controls. Desktop rows have three columns; phones move notes under the name with the arrow spanning both lines. The catalog is a sample display; availability and purchasing are confirmed through LINE.
+Course facts use a peach panel with a compact definition list, dividers and a closing inclusion note; padding becomes 24px on phones. The SOP uses a warm cream panel, and the parameter lesson uses sky. Audience statements, course sequence, care notes and bean descriptions stay as open rows with quiet dividers. Bean products are two-column articles rather than a generic boxed card library.
 
-### Course Facts
+### Parameter lesson
 
-A definition list uses one-pixel dividers and a two-column label/value layout, with muted labels. Its desktop column definition is (100px / 1fr) with a (25px) gap, adapting at narrower widths. It keeps the class facts readable beside the real classroom photograph.
+Four native buttons for water temperature, grind, coffee/water and time share a four-column row. `aria-pressed` communicates selection; an active blue underline and translucent paper fill reinforce it. The script replaces heading, explanation, practice tip and SVG symbol; the live region communicates updates. On phones the separate large symbol hides and text remains readable. The sidecar control sample represents these visual states; the complete content-switching behavior lives in `assets/site.js`.
 
-No input field, checkout form, tooltip or chip component is shipped on this signature page; this document defines none.
+### Native FAQ
+
+Each `details`/`summary` pair has an open-row divider, a generous clickable summary and an inline plus SVG. Opening changes the summary to blue and rotates the plus 45 degrees; the browser provides keyboard disclosure behavior. There are no input fields, cart, checkout, payment UI or backend components in this prototype.
 
 ## Do's and Don'ts
 
 ### Do:
-
-- **Do** preserve the official logo and authentic teacher photographs.
-- **Do** keep body copy at the documented desktop and phone sizes.
-- **Do** use native buttons, visible focus outlines and aria-pressed for flavor and bean selection.
-- **Do** keep course and bean inquiry actions leading directly to LINE.
-- **Do** disclose illustrative photography and sample catalog content where the implemented page does.
+- **Do** preserve the original blue/cream Logo and locally hosted Huninn.
+- **Do** keep body text at 19px on desktop and 18px on phones, with generous leading.
+- **Do** pair authentic people photographs with original illustrations and identify illustrative situations honestly.
+- **Do** retain visible keyboard focus, native disclosure semantics and reduced-motion support.
+- **Do** use the existing LINE inquiry destination for course and bean actions.
 
 ### Don't:
-
-- **Don't** replace the signature world with repeated equal marketing cards or a dark luxury treatment.
-- **Don't** fabricate teacher portraits, testimonials, stock promises or equipment gifts.
-- **Don't** turn the sample bean menu into a public checkout action.
-- **Don't** apply this signature specification retroactively to the legacy variants.
-
-Documentation limits: source and the provided desktop/phone captures were inspected. The separate finish review owns the current craft verdict; this record does not assert an approved visual comp or certify every interactive state. The unused peach declaration is deliberately not canonized; no UI repairs are part of this documentation pass.
+- **Don't** replace real instructor or classroom evidence with generated people.
+- **Don't** present flavor illustrations as ingredients or practice illustrations as actual packaging.
+- **Don't** treat derived sidecar ramps as implemented CSS tokens.
+- **Don't** turn the current hero order or open-row composition into a prohibition on future surface layouts.

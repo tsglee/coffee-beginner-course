@@ -2,6 +2,18 @@
 
 This document is the starting point for another AI agent receiving the ZIP. It describes the current implementation, not a proposal. Package provenance and exact file hashes are in the ZIP's root `RELEASE-MANIFEST.json`; a regular Git clone has no generated manifest until a package is built.
 
+## Photography update — 2026-11-07
+
+User requested relevant genuine photography in every section and curriculum stage. All ten homepage sections and all five stages now have real photographs. Six additional authentic supplied images plus two licensed cottonbro/Pexels equipment references are used. Classroom photos are not generated. Reference captions and credits remain visible. New CSS cache suffix:20261107-photos1. English pages remain untouched.
+
+## Current release — 2026-11-06
+
+The user explicitly authorized publishing the reviewed local Warm Workshop version. The canonical Chinese homepage is now root index.html; beans.html is the rotating3–5coffee catalog maintained through data/coffees.json. Both inquiries use LINE. English navigation is removed. Use root build.py (defaultzh),check.py and qa/check_catalog_variants.py; do not run the historical scripts/build_designs.py over the new index.
+
+Course facts:1800/person,4hours,Linkouonly,atleast3practicecoffees,SOPprocesshandout,100gclassbeansgift. Currentcoffees:Twakok/Bishala/Yerihar,lightroast220g500/student450. All latest browser-annotation wording is included. Product photos are genuine sourced references, not this batch. Provenance/licenses are in design/photo-sources-v3.json and public captions. Course sketches have prompts in design/image-prompts.json.
+
+Legacy courses.html redirects to index.html#learn;shop.html/product.html redirect to beans.html. Older store/admin modules and storage remain untouched. The older documentation below describes those historical demos, not the current offer. See README.md,UPDATE-COFFEES.md and docs/DEPLOYMENT-2026-11-06.md first.
+
 ## Branch update: forward (2026-10-22)
 
 The integration was developed on `tsglee/coffee-site` branch `forward` at `74cdd4118c5d15801b45f48ce88e148c312a482d`. The user then explicitly requested replacing the course repository with this version. This repository, `tsglee/coffee-beginner-course`, now publishes the integrated site from `main` at https://tsglee.github.io/coffee-beginner-course/. The latest homepage leads with teaching, then introduces coffee sales in a separate chapter, followed by delivery/support. This follows the user’s latest direction and supersedes the earlier 50/50 hero. See `docs/DEPLOYMENT-2026-10-22.md` for the old release backup, compatibility redirect and rollback. The separate `coffee-site` repository was not merged into its own main.
